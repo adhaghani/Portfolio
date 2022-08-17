@@ -76,35 +76,93 @@ body .topnav .container .toplist li a:hover {
   border-bottom: 1px solid var(--color-black);
 }
 body .topnav .container .hamburger {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 8px;
-  border: 1px solid var(--color-black);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   display: none;
+  position: fixed;
+  z-index: 5;
+  right: 10%;
+  top: 3%;
 }
-body .topnav .container .hamburger span {
-  transition: 0.25s all ease;
-  display: block;
+body .topnav .container .hamburger div {
+  transition: all 0.25s ease-in-out;
   background: var(--color-black);
-  width: 40px;
-  height: 5px;
-  margin: 5px 0px;
+  width: 30px;
+  height: 4px;
+  margin: 9px auto;
   border-radius: 8px;
-  pointer-events: none;
 }
-body .topnav .container .hamburger.active span.top {
-  transform: rotate(45deg) translateX(11px) translateY(10px);
+body .topnav .container .hamburger.active div.top {
+  transform: rotate(45deg) translateX(9px) translateY(10px);
 }
-body .topnav .container .hamburger.active span.bot {
-  transform: rotate(-45deg) translateX(10px) translateY(-10px);
+body .topnav .container .hamburger.active div.bot {
+  transform: rotate(-45deg) translateX(8px) translateY(-10px);
 }
-body .topnav .container .hamburger.active span.mid {
+body .topnav .container .hamburger.active div.mid {
   opacity: 0;
+}
+body .sidenav {
+  width: 65%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.4745098039);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  right: 0px;
+  height: 100vh;
+  top: 0;
+  z-index: 0;
+  border-left: 1px solid var(--color-gray);
+  transform: translateX(100%);
+  transition: all 0.25s ease;
+  z-index: 3;
+}
+body .sidenav.active {
+  transform: translateX(0%);
+}
+body .sidenav .logo {
+  margin-top: 140px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+body .sidenav .line {
+  width: 90%;
+  height: 3px;
+  background: var(--color-black);
+  border-radius: 8px;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+body .sidenav .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .sidenav .list li {
+  width: 100%;
+}
+body .sidenav .list li a {
+  color: var(--color-gray);
+  height: 50px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  transition: all 0.2s ease;
+}
+body .sidenav .list li a:hover {
+  color: var(--color-black);
+  background: rgba(85, 89, 94, 0.1215686275);
 }
 body .header {
   width: 100%;
@@ -531,7 +589,6 @@ body .footer .container .copyright-container .copyright-content {
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
   body {
     background: var(--color-white);
-    overflow: hidden;
   }
   body .header .container .text-container {
     width: 100%;
@@ -668,6 +725,9 @@ body .footer .container .copyright-container .copyright-content {
   body {
     background: var(--color-white);
     overflow: hidden;
+  }
+  body .topnav .container {
+    justify-content: flex-start;
   }
   body .topnav .container .toplist {
     display: none;
@@ -881,9 +941,13 @@ body .footer .container .copyright-container .copyright-content {
     background: var(--color-white);
     overflow: hidden;
   }
+  body .topnav .container {
+    justify-content: flex-start;
+  }
   body .topnav .container .logo {
     font-size: 1.3rem;
     letter-spacing: 3px;
+    margin-left: 5%;
   }
   body .topnav .container .toplist {
     display: none;

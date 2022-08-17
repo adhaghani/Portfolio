@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="index.js"></script>
+    
     <title>Portfolio</title>
 </head>
 <body>
@@ -18,19 +18,32 @@
         <h3 class="logo">Adhaghani</h3>
         <!-- toplist -->
         <ul class="toplist">
-            <li><a href="">About</a></li>
-            <li><a href="">Skill</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <!-- hamburger -->
-        <button class="hamburger" id="hamburger">
-            <span class="top"></span>
-            <span class="mid"></span>
-            <span class="bot"></span>
+        <button class="hamburger"  id="hamburger">
+            <div class="top"></div>
+            <div class="mid"></div>
+            <div class="bot"></div>
         </button>
     </div>
     </nav>
+
+        <!-- sidenav -->
+        <div class="sidenav" id="sidenav">
+            <h2 class="logo">Adhaghani</h2>
+            <div class="line"></div>
+            <ul class="list">
+                <li><a href="#about" onclick="activeside()" >About</a></li>
+                <li><a href="#skill" onclick="activeside()">Skill</a></li>
+                <li><a href="#project" onclick="activeside()">Project</a></li>
+                <li><a href="#contact" onclick="activeside()">Contact</a></li>
+            </ul>
+        </div>
+
 
          <!-- Header -->
         <header class="header" id="header">
@@ -209,18 +222,18 @@
                     <h2 class="title">Contact</h2>
                 </div>
                 <div class="contact-container">
-                    <form action="">
+                    <form action="contact-form-handler.php" method="post">
                         <h2 class="title">Email me</h2>
                         <div class="line"></div>
                         <!-- email -->
                         <p class="label">Email Address</p>
-                        <input type="email" name="" id="">
+                        <input type="email" name="email" id="">
                         <!-- subject -->
                         <p class="label">Subject</p>
-                        <input type="text" name="" id="">
+                        <input type="text" name="name" id="">
                         <!-- message -->
                         <p class="label">Message</p>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
                         <!-- submit button -->
                         <input type="submit" value="Submit" class="button">
                     </form>
@@ -235,9 +248,9 @@
                     <h3 class="social-title">My Socials</h3>
                     <div class="social-icons">
                         <ul>
-                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/adhaghani/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://mobile.twitter.com/LautYangBiru" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/adhaghani" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -248,4 +261,6 @@
             </div>
         </div>
 </body>
+<script src="index.js"></script>
+
 </html>
