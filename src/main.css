@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --bg_colour_white: #fff;
-  --bg_colour_black: #202020;
-  --bg_colour_lblack: #1f1f1f;
+  --bg_colour_black: #111111;
+  --bg_colour_lblack: #181818;
   --text_colour_white: #f7f7f7;
   --text_colour_black: #202020;
   --text_colour_dkgray: #6f6f6f;
+  --padding_20: 20px;
+  --padding_020: 0px 20px;
+  --padding_1020: 10px 20px;
+  --padding_200: 0px 20px;
+  --padding_2010: 20px 10px;
+  --margin_auto: auto;
+  --margin_20auto: 20px auto;
+  --margoin_auto20: auto 20px;
+  --nav_height: 60px;
+  --width_container: clamp(1px, 100%, 2560px);
+  --gap_15: 15px;
 }
 
 * {

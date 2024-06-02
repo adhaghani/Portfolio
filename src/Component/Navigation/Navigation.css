@@ -1,1 +1,35 @@
-/*# sourceMappingURL=Navigation.css.map */
+#Navigation {
+  width: 100%;
+  height: var(--nav_height);
+  background-color: var(--bg_colour_lblack);
+  display: grid;
+  place-items: center;
+}
+#Navigation .Navigation-Container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: var(--width_container);
+  padding: var(--padding_020);
+  height: var(--nav_height);
+}
+#Navigation .Navigation-Container .Shortcurt {
+  display: flex;
+  gap: var(--gap_15);
+}
+#Navigation .Navigation-Container .Shortcurt li a {
+  display: block;
+  color: var(--text_colour_white);
+  padding: var(--padding_1020);
+}
+#Navigation .Navigation-Container .Link {
+  display: flex;
+  gap: var(--gap_15);
+}
+#Navigation .Navigation-Container .Link li a {
+  display: grid;
+  align-items: center;
+  border-radius: 24px;
+  background-color: white;
+}/*# sourceMappingURL=Navigation.css.map */

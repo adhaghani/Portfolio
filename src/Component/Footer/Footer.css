@@ -1,0 +1,10 @@
+#Footer {
+  width: 100%;
+  background-color: var(--bg_colour_lblack);
+  display: grid;
+  place-items: center;
+}
+#Footer .Footer-Container {
+  width: var(--width_container);
+  padding: var(--padding_20);
+}/*# sourceMappingURL=Footer.css.map */
