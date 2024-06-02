@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --bg_colour_white: #fff;
+  --bg_colour_black: #202020;
+  --bg_colour_lblack: #1f1f1f;
+  --text_colour_white: #f7f7f7;
+  --text_colour_black: #202020;
+  --text_colour_dkgray: #6f6f6f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.2s linear;
+}
+
+body {
+  background-color: var(--bg_colour_black);
+  color: var(--bg_colour_white);
+}/*# sourceMappingURL=main.css.map */
