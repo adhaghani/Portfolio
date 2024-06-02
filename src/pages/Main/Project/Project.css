@@ -1,0 +1,51 @@
+#Project {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+#Project .Project-Container {
+  width: var(--width_container);
+  padding: var(--padding_020);
+}
+#Project .Project-Container .Card-Container {
+  display: flex;
+  gap: var(--gap_15);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Project .Project-Container .Card-Container #projectCard {
+  background-color: var(--bg_colour_lblack);
+  border-radius: 4px;
+  width: clamp(320px, 100%, 450px);
+  overflow: hidden;
+}
+#Project .Project-Container .Card-Container #projectCard .image-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: var(--text_colour_black);
+  display: grid;
+  place-items: center;
+}
+#Project .Project-Container .Card-Container #projectCard .project-details {
+  padding: var(--padding_20);
+}
+#Project .Project-Container .Card-Container #projectCard .project-details .project-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#Project .Project-Container .Card-Container #projectCard .project-details .project-title .title {
+  color: var(--text_colour_white);
+  font-size: 1.3rem;
+}
+#Project .Project-Container .Card-Container #projectCard .project-details .project-title .techstack {
+  color: var(--text_colour_dkgray);
+  font-size: 0.9rem;
+}
+#Project .Project-Container .Card-Container #projectCard .button-action {
+  display: flex;
+  gap: var(--gap_15);
+  margin-top: 10px;
+}/*# sourceMappingURL=Project.css.map */

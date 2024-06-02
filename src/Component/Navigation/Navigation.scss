@@ -4,8 +4,8 @@
   background-color: var(--bg_colour_lblack);
   display: grid;
   place-items: center;
+  position: fixed;
   .Navigation-Container {
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -13,6 +13,9 @@
     padding: var(--padding_020);
     height: var(--nav_height);
     .Logo {
+      h2 {
+        color: var(--text_colour_white);
+      }
     }
     .Shortcurt {
       display: flex;

@@ -1,0 +1,51 @@
+#Project {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  .Project-Container {
+    width: var(--width_container);
+    padding: var(--padding_020);
+    .Card-Container {
+      display: flex;
+      gap: var(--gap_15);
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      #projectCard {
+        background-color: var(--bg_colour_lblack);
+        border-radius: 4px;
+        width: clamp(320px, 100%, 450px);
+        overflow: hidden;
+        .image-container {
+          width: 100%;
+          aspect-ratio: 1/1;
+          background-color: var(--text_colour_black);
+          display: grid;
+          place-items: center;
+        }
+        .project-details {
+          padding: var(--padding_20);
+          .project-title {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            .title {
+              color: var(--text_colour_white);
+              font-size: 1.3rem;
+            }
+            .techstack {
+              color: var(--text_colour_dkgray);
+              font-size: 0.9rem;
+            }
+          }
+        }
+        .button-action {
+          display: flex;
+          gap: var(--gap_15);
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

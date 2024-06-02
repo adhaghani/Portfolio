@@ -4,15 +4,18 @@
   background-color: var(--bg_colour_lblack);
   display: grid;
   place-items: center;
+  position: fixed;
 }
 #Navigation .Navigation-Container {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: var(--width_container);
   padding: var(--padding_020);
   height: var(--nav_height);
+}
+#Navigation .Navigation-Container .Logo h2 {
+  color: var(--text_colour_white);
 }
 #Navigation .Navigation-Container .Shortcurt {
   display: flex;

@@ -10,9 +10,9 @@ const Navigation = () => {
   return (
     <div className="Navigation" id="Navigation">
       <div className="Navigation-Container">
-        <h1 className="Logo">
-          <h5>Adhaghani</h5>
-        </h1>
+        <div className="Logo">
+          <h2>Adhaghani</h2>
+        </div>
         <ul className="Shortcurt">
           <li>
             <a href="#">About</a>

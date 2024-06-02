@@ -1,0 +1,10 @@
+.button {
+  background-color: var(--bg_colour_black);
+  padding: var(--padding_1020);
+  color: var(--text_colour_white);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
