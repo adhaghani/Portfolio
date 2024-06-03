@@ -22,6 +22,15 @@
           background-color: var(--text_colour_black);
           display: grid;
           place-items: center;
+          .no-image {
+            display: grid;
+            place-items: center;
+            h3 {
+              color: var(--text_colour_white);
+              padding-top: 10px;
+              text-align: center;
+            }
+          }
         }
         .project-details {
           padding: var(--padding_20);

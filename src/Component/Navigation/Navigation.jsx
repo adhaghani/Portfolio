@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 import "./Navigation.css";
 
-import github from "./github.svg";
-import linkedin from "./link.svg";
+import github from "/github.svg";
+import linkedin from "/link.svg";
 const Navigation = () => {
   const [Sidebar, setSidebar] = useState(false);
 
@@ -15,13 +15,13 @@ const Navigation = () => {
         </div>
         <ul className="Shortcurt">
           <li>
-            <a href="#">About</a>
+            <a href="#About">About</a>
           </li>
           <li>
-            <a href="#">Project</a>
+            <a href="#Project">Project</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#Contact">Contact</a>
           </li>
         </ul>
         <ul className="Link">

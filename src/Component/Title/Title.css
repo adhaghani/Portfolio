@@ -1,0 +1,11 @@
+.Title-Container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.Title-Container .Title {
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.Title-Container .Subtitle {
+  letter-spacing: 1px;
+}/*# sourceMappingURL=Title.css.map */

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Button.css";
 
-import code from "./code.svg";
-import view from "./view.svg";
+import code from "/code.svg";
+import view from "/view.svg";
 const Button = (props) => {
   return (
     <a className={props.classname} href={props.href}>

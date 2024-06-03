@@ -1,10 +1,16 @@
 import React from "react";
 import Button from "../../../../Component/Button/Button";
 
+import noImage from "/noimg.svg";
 const ProjectCard = () => {
   return (
     <div className="projectCard" id="projectCard">
-      <div className="image-container"> image </div>
+      <div className="image-container">
+        <div className="no-image">
+          <img src={noImage} alt="" />
+          <h3>No image available</h3>
+        </div>
+      </div>
       <div className="project-details">
         <div className="project-title">
           <h3 className="title">Personal Portfolio</h3>
