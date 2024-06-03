@@ -18,24 +18,98 @@
   color: var(--text_colour_white);
   cursor: default;
 }
-#Navigation .Navigation-Container .Shortcurt {
+#Navigation .Navigation-Container #hamburger {
+  background-color: var(--bg_colour_black);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  width: 40px;
+  border-radius: 4px;
+}
+#Navigation .Navigation-Container #hamburger div {
+  width: 28px;
+  height: 5px;
+  background-color: var(--bg_colour_white);
+  margin: 3px 0px;
+  border-radius: 2px;
+}
+#Navigation .Navigation-Container #hamburger.active div.top {
+  transform: rotate(45deg) translateX(7px) translateY(6px);
+}
+#Navigation .Navigation-Container #hamburger.active div.mid {
+  opacity: 0;
+  width: 0px;
+}
+#Navigation .Navigation-Container #hamburger.active div.bot {
+  transform: rotate(-45deg) translateX(9px) translateY(-8px);
+}
+#Navigation #SideNav {
+  display: none;
+  position: absolute;
+  background-color: var(--bg_colour_lblack);
+  right: 0px;
+  top: var(--nav_height);
+  height: calc(100vh - var(--nav_height));
+  width: 300px;
+  padding: 20px;
+  transform: translateX(100%);
+}
+#Navigation #SideNav.active {
+  transform: translateX(0px);
+}
+#Navigation #SideNav .SideNav-Container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+#Navigation #SideNav .SideNav-Container .Shortcurt {
+  flex-direction: column;
+}
+#Navigation #SideNav .SideNav-Container .Shortcurt a {
+  display: grid;
+  place-items: center;
+  height: 70px;
+}
+#Navigation #SideNav .SideNav-Container .Link {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#Navigation .Shortcurt {
   display: flex;
 }
-#Navigation .Navigation-Container .Shortcurt li a {
+#Navigation .Shortcurt li a {
   display: block;
   color: var(--text_colour_white);
   padding: var(--padding_1020);
 }
-#Navigation .Navigation-Container .Shortcurt li a:hover {
+#Navigation .Shortcurt li a:hover {
   color: var(--colour_main_blue);
 }
-#Navigation .Navigation-Container .Link {
+#Navigation .Link {
   display: flex;
   gap: var(--gap_15);
 }
-#Navigation .Navigation-Container .Link li a {
+#Navigation .Link li a {
   display: grid;
   align-items: center;
   border-radius: 24px;
   background-color: white;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Navigation .Navigation-Container .Shortcurt {
+    display: none;
+  }
+  #Navigation .Navigation-Container .Link {
+    display: none;
+  }
+  #Navigation .Navigation-Container #hamburger {
+    display: flex;
+  }
+  #Navigation #SideNav {
+    display: block;
+  }
 }/*# sourceMappingURL=Navigation.css.map */

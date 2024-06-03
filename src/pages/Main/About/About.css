@@ -25,4 +25,10 @@
 }
 #About .About-Container .About-Content .About-Text a {
   color: var(--colour_main_blue);
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .About-Container .About-Content {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=About.css.map */
