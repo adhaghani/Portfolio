@@ -1,1 +1,10 @@
-/*# sourceMappingURL=Contact.css.map */
+#Contact .Contact-Container .form-container {
+  padding: var(--padding_20);
+  width: clamp(300px, 100%, 700px);
+  margin: auto;
+}
+#Contact .Contact-Container .form-container form .button-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}/*# sourceMappingURL=Contact.css.map */

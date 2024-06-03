@@ -21,6 +21,7 @@ const ProjectCard = () => {
             classname="button"
             href="https://google.com"
             value="Live Server"
+            type="view"
           />
           <Button classname="button" value="Source Code" type="code" />
         </div>

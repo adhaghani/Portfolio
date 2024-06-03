@@ -16,15 +16,18 @@
 }
 #Navigation .Navigation-Container .Logo h2 {
   color: var(--text_colour_white);
+  cursor: default;
 }
 #Navigation .Navigation-Container .Shortcurt {
   display: flex;
-  gap: var(--gap_15);
 }
 #Navigation .Navigation-Container .Shortcurt li a {
   display: block;
   color: var(--text_colour_white);
   padding: var(--padding_1020);
+}
+#Navigation .Navigation-Container .Shortcurt li a:hover {
+  color: var(--colour_main_blue);
 }
 #Navigation .Navigation-Container .Link {
   display: flex;

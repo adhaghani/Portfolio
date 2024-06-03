@@ -7,4 +7,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  &.Contact {
+    background-color: transparent;
+    border: 2px solid var(--text_colour_dkgray);
+    font-weight: 600;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: var(--colour_main_blue);
+      border: 2px solid var(--colour_main_blue);
+    }
+  }
 }

@@ -1,0 +1,29 @@
+.Input {
+  margin: 20px auto;
+  border-radius: 4px;
+  border: 2px solid var(--text_colour_dkgray);
+}
+.Input label {
+  position: absolute;
+  transform: translateX(10px) translateY(-12px);
+  background-color: var(--bg_colour_black);
+  padding: 0px 10px;
+  color: var(--text_colour_white);
+}
+.Input input,
+.Input textarea {
+  display: block;
+  width: 100%;
+  padding: var(--padding_1020);
+  background-color: var(--bg_colour_black);
+  font-size: var(--font_size_16);
+  color: var(--text_colour_white);
+  resize: none;
+  border-radius: 2px;
+}
+.Input input {
+  height: 50px;
+}
+.Input textarea {
+  height: 150px;
+}/*# sourceMappingURL=Input.css.map */

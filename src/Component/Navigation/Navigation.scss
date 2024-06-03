@@ -15,16 +15,19 @@
     .Logo {
       h2 {
         color: var(--text_colour_white);
+        cursor: default;
       }
     }
     .Shortcurt {
       display: flex;
-      gap: var(--gap_15);
       li {
         a {
           display: block;
           color: var(--text_colour_white);
           padding: var(--padding_1020);
+          &:hover {
+            color: var(--colour_main_blue);
+          }
         }
       }
     }

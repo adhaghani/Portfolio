@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Hero.css";
 
-import profile from "/memoji.png";
+import profile from "/memoji.png";                                  
 import Button from "../../../Component/Button/Button";
 const Hero = () => {
   return (
