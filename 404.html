@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Not Found</title>
+    <script>
+      function redirectToIndexHtml() {
+        const isProduction = window.location.hostname !== "localhost";
+        const indexHtmlPath = isProduction
+          ? "dist/index.html"
+          : "eportfolio/index.html";
+        window.location.href = indexHtmlPath;
+      }
+
+      window.addEventListener("DOMContentLoaded", redirectToIndexHtml);
+    </script>
+  </head>
+  <body>
+    <h1>Page Not Found</h1>
+    <p>Redirecting to the appropriate index.html file...</p>
+  </body>
+</html>
