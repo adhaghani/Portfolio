@@ -1,10 +1,20 @@
 #Contact .Contact-Container .form-container {
-  padding: var(--padding_20);
+  padding-bottom: 40px;
   width: clamp(300px, 100%, 700px);
   margin: auto;
+  display: grid;
+  place-items: center;
 }
-#Contact .Contact-Container .form-container form .button-end {
+#Contact .Contact-Container .form-container a {
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  gap: 15px;
+  border: 2px solid var(--text_colour_dkgray);
+  padding: var(--padding_1020);
+  font-weight: 500;
+  font-size: var(--font_size_16);
+  border-radius: 8px;
+  color: var(--text_colour_white);
 }/*# sourceMappingURL=Contact.css.map */

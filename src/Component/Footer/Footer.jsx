@@ -50,7 +50,7 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="section-group">
-          <p>Copyright © 2022 Adhaghani</p>
+          <p>Copyright © 2024 Adhaghani</p>
         </div>
       </div>
     </div>

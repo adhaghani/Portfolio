@@ -17,4 +17,7 @@
 .button.Contact:hover {
   background-color: var(--colour_main_blue);
   border: 2px solid var(--colour_main_blue);
+}
+.button:hover {
+  color: var(--colour_main_blue);
 }/*# sourceMappingURL=Button.css.map */

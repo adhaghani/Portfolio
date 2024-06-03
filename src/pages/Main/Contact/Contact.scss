@@ -1,15 +1,22 @@
 #Contact {
   .Contact-Container {
     .form-container {
-      padding: var(--padding_20);
+      padding-bottom: 40px;
       width: clamp(300px, 100%, 700px);
       margin: auto;
-      form {
-        .button-end {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-        }
+      display: grid;
+      place-items: center;
+      a {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 2px solid var(--text_colour_dkgray);
+        padding: var(--padding_1020);
+        font-weight: 500;
+        font-size: var(--font_size_16);
+        border-radius: 8px;
+        color: var(--text_colour_white);
       }
     }
   }
