@@ -30,11 +30,19 @@
 #Project .Project-Container .Card-Container #projectCard .image-container .no-image {
   display: grid;
   place-items: center;
+  height: 100%;
+  overflow: hidden;
 }
 #Project .Project-Container .Card-Container #projectCard .image-container .no-image h3 {
   color: var(--text_colour_white);
   padding-top: 10px;
   text-align: center;
+}
+#Project .Project-Container .Card-Container #projectCard .image-container .no-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #Project .Project-Container .Card-Container #projectCard .project-details {
   padding: var(--padding_20);

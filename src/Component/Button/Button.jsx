@@ -7,13 +7,13 @@ const Button = (props) => {
   return (
     <>
       {props.type == "code" && (
-        <a className={props.classname} href={props.href}>
+        <a className={props.classname} href={props.href} target="_blank">
           <img src={code} alt="" />
           {props.value}
         </a>
       )}
       {props.type == "view" && (
-        <a className={props.classname} href={props.href}>
+        <a className={props.classname} href={props.href} target="_blank">
           <img src={view} alt="" />
           {props.value}
         </a>

@@ -1,1 +1,28 @@
-/*# sourceMappingURL=About.css.map */
+#About .About-Container {
+  width: var(--width_container);
+  padding: var(--padding_20);
+  margin: auto;
+}
+#About .About-Container .About-Content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#About .About-Container .About-Content .About-Image {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 30px;
+  background-image: url("/blobabt.svg");
+}
+#About .About-Container .About-Content .About-Image img {
+  width: clamp(250px, 35vw, 350px);
+}
+#About .About-Container .About-Content .About-Text {
+  max-width: 750px;
+  line-height: 1.4;
+  font-size: var(--font_size_20);
+  color: var(--text_colour_white);
+}
+#About .About-Container .About-Content .About-Text a {
+  color: var(--colour_main_blue);
+}/*# sourceMappingURL=About.css.map */

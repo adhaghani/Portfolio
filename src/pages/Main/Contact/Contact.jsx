@@ -15,30 +15,30 @@ const Contact = () => {
           <form action="">
             <Input
               isInput={true}
-              id={"email address"}
-              name={"email address"}
+              id="emailaddress"
+              name="emailaddress"
               type={"email"}
               placeholder={"JohnCole@gmail.com"}
               label={"Email Address"}
             />
             <Input
               isInput={true}
-              id={"Subject"}
-              name={"Subject"}
+              id="Subject"
+              name="Subject"
               type={"text"}
               placeholder={"Internship Offer"}
               label={"Subject"}
             />
             <Input
               isInput={false}
-              label={"Message"}
-              name={"Message"}
-              id={"Message"}
+              label="Message"
+              name="Message"
+              id={"essage"}
               placeholder={"lorem ipsum dolom colom"}
             />
             <div className="button-end">
               <Button
-                type={"submit"}
+                type="submit"
                 value={"Send Message"}
                 classname="button Contact"
               />
