@@ -5,6 +5,7 @@
   flex-wrap: wrap-reverse;
   width: var(--width_container);
   margin: auto;
+  margin-bottom: -30px;
   .greetings-container {
     width: clamp(300px, 100%, 550px);
     padding: var(--padding_20);
