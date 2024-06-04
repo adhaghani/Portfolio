@@ -4,6 +4,7 @@ import "./Navigation.css";
 
 import github from "/github.svg";
 import linkedin from "/link.svg";
+import hackerrank from "/HackerRank.svg";
 const Navigation = () => {
   const [Sidebar, setSidebar] = useState(false);
 
@@ -75,6 +76,14 @@ const Navigation = () => {
             <li>
               <a href="https://www.linkedin.com/in/adhaghani/" target="_BLANK">
                 <img src={linkedin} alt="" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.hackerrank.com/profile/Adhaghani"
+                target="_BLANK"
+              >
+                <img src={hackerrank} alt="" />
               </a>
             </li>
           </ul>

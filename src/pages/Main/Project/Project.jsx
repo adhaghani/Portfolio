@@ -17,12 +17,30 @@ const Project = () => {
         <Title title="Projects" subtitle="All of my past projects." />
         <div className="Card-Container">
           <ProjectCard
+            title="Personal Portfolio"
+            subtitle="HTML, Css, js, React.js"
+            image={projectportfolio}
+            livelink="https://adhaghani.github.io/eportfolio/"
+            githublink="https://github.com/adhaghani/eportfolio"
+          />
+
+          <ProjectCard
+            title="Car Dealership System"
+            subtitle="Java, OOP Concept"
+            githublink="https://github.com/adhaghani/SimpleCarDealershipApplication"
+          />
+
+          <ProjectCard
+            title="Bank System"
+            subtitle="Java, OOP Concept, Data Structure"
+            githublink="https://github.com/adhaghani/SimpleCarDealershipApplication"
+          />
+          <ProjectCard
             title="Starbucks Landing Page"
             subtitle="HTML, Css, js, React.js"
             image={projectstarbuck}
             livelink="https://adhaghani.github.io/starbuck-lp.github.io/"
             githublink="https://github.com/adhaghani/starbuck-lp.github.io"
-            techstack="HTML, Css, js, React.js"
           />
           <ProjectCard
             title="Expense Chart"
@@ -30,7 +48,6 @@ const Project = () => {
             image={projectchart}
             livelink="https://adhaghani.github.io/ExpensesChart/"
             githublink="https://github.com/adhaghani/ExpensesChart"
-            techstack="HTML, Css, js, React.js"
           />
           <ProjectCard
             title="Advice Generator"
@@ -38,7 +55,6 @@ const Project = () => {
             image={projectAdvice}
             livelink="https://adhaghani.github.io/AdviceGenerator/"
             githublink="https://github.com/adhaghani/AdviceGenerator"
-            techstack="HTML, Css, js, React.js"
           />
           <ProjectCard
             title="Calculator"
@@ -46,15 +62,6 @@ const Project = () => {
             image={projectcalc}
             livelink="https://adhaghani.github.io/Calculator/"
             githublink="https://github.com/adhaghani/Calculator"
-            techstack="HTML, Css, js, React.js"
-          />
-          <ProjectCard
-            title="Personal Portfolio"
-            subtitle="HTML, Css, js, React.js"
-            image={projectportfolio}
-            livelink="https://adhaghani.github.io/eportfolio/"
-            githublink="https://github.com/adhaghani/eportfolio"
-            techstack="HTML, Css, js, React.js"
           />
         </div>
       </div>

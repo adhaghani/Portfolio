@@ -29,8 +29,7 @@ const About = () => {
             <br />
             <br />
             Feel free to reach me out if you have/known any positions available
-            for internship. You can download my resume below, and do connect
-            with me on{" "}
+            for internship. connect with me on{" "}
             <a href="https://www.linkedin.com/in/adhaghani" target="_BLANK">
               LinkedIn
             </a>

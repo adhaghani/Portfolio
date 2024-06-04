@@ -5,6 +5,7 @@ import "./Footer.css";
 import github from "/github.svg";
 import linkedin from "/link.svg";
 import instagram from "/instagram.svg";
+import hackerrank from "/HackerRank.svg";
 
 const Footer = () => {
   return (
@@ -30,6 +31,14 @@ const Footer = () => {
                   target="_BLANK"
                 >
                   <img src={linkedin} alt="" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.hackerrank.com/profile/Adhaghani"
+                  target="_BLANK"
+                >
+                  <img src={hackerrank} alt="" />
                 </a>
               </li>
             </ul>

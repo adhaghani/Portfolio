@@ -44,6 +44,18 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+#Project .Project-Container .Card-Container #projectCard .image-container .no-image.yes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#Project .Project-Container .Card-Container #projectCard .image-container .no-image.yes img {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 #Project .Project-Container .Card-Container #projectCard .project-details {
   padding: var(--padding_20);
 }

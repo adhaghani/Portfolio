@@ -37,6 +37,16 @@
               height: 100%;
               object-fit: cover;
             }
+            &.yes {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              gap: 10px;
+              img {
+                height: fit-content;
+                width: fit-content;
+              }
+            }
           }
         }
         .project-details {
