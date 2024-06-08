@@ -9,7 +9,7 @@ import projectcalc from "/project_calc.png";
 import projectchart from "/project_chart.png";
 import projectportfolio from "/project_portfolio.png";
 import projectstarbuck from "/project_starbuck.png";
-
+import projectUC from "/project_UC.png";
 const Project = () => {
   return (
     <div className="Project" id="Project">
@@ -23,7 +23,13 @@ const Project = () => {
             livelink="https://adhaghani.github.io/eportfolio/"
             githublink="https://github.com/adhaghani/eportfolio"
           />
-
+          <ProjectCard
+            title="UndanganCinta"
+            subtitle="HTML, Css, js, React.js"
+            image={projectUC}
+            livelink="https://adhaghani.github.io/UndanganCinta/"
+            githublink="https://github.com/adhaghani/UndanganCinta"
+          />
           <ProjectCard
             title="Car Dealership System"
             subtitle="Java, OOP Concept"
