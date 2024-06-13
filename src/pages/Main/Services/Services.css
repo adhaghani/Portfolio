@@ -11,10 +11,14 @@
   padding: var(--padding_20);
 }
 #Services .ServiceCard-Container #ServiceCard {
-  border: 2px solid white;
+  border: 2px solid var(--text_colour_dkgray);
   padding: var(--padding_20);
   border-radius: 8px;
   width: 350px;
+  cursor: default;
+}
+#Services .ServiceCard-Container #ServiceCard:hover {
+  border: 2px solid var(--bg_colour_white);
 }
 #Services .ServiceCard-Container #ServiceCard .Title {
   text-align: center;
@@ -39,11 +43,17 @@
   font-size: var(--font_size_16);
 }
 #Services .ServiceCard-Container #ServiceCard .Content {
-  margin-top: 30px;
+  margin: 30px 0px;
+}
+#Services .ServiceCard-Container #ServiceCard .Content ul {
+  height: 170px;
 }
 #Services .ServiceCard-Container #ServiceCard .Content ul li {
   margin: 10px 0px;
 }
 #Services .ServiceCard-Container #ServiceCard .Content ul li p {
   font-size: var(--font_size_16);
+  display: flex;
+  align-items: center;
+  gap: var(--gap_15);
 }/*# sourceMappingURL=Services.css.map */

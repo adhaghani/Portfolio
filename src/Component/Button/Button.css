@@ -18,6 +18,16 @@
   background-color: var(--colour_main_blue);
   border: 2px solid var(--colour_main_blue);
 }
-.button:hover {
-  color: var(--colour_main_blue);
+.button.Full {
+  width: 100%;
+  justify-content: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: var(--font_size_16);
+}
+.button.Fillprimary {
+  background-color: var(--colour_main_blue);
+}
+.button.Fillprimary:hover {
+  background-color: var(--colour_main_blue_dark);
 }/*# sourceMappingURL=Button.css.map */

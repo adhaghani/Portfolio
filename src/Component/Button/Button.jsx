@@ -24,7 +24,7 @@ const Button = (props) => {
         </button>
       )}
       {props.type == null && (
-        <button type="submit" className={props.classname} href={props.href}>
+        <button className={props.classname} href={props.href}>
           {props.value}
         </button>
       )}

@@ -9,10 +9,14 @@
     flex-wrap: wrap;
     padding: var(--padding_20);
     #ServiceCard {
-      border: 2px solid white;
+      border: 2px solid var(--text_colour_dkgray);
       padding: var(--padding_20);
       border-radius: 8px;
       width: 350px;
+      cursor: default;
+      &:hover {
+        border: 2px solid var(--bg_colour_white);
+      }
       .Title {
         text-align: center;
         margin: 10px 0px;
@@ -36,12 +40,16 @@
         }
       }
       .Content {
-        margin-top: 30px;
+        margin: 30px 0px;
         ul {
+          height: 170px;
           li {
             margin: 10px 0px;
             p {
               font-size: var(--font_size_16);
+              display: flex;
+              align-items: center;
+              gap: var(--gap_15);
             }
           }
         }
