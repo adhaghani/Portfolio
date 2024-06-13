@@ -1,4 +1,49 @@
 #Services {
   width: var(--width_container);
   margin: auto;
+}
+#Services .ServiceCard-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_15);
+  flex-wrap: wrap;
+  padding: var(--padding_20);
+}
+#Services .ServiceCard-Container #ServiceCard {
+  border: 2px solid white;
+  padding: var(--padding_20);
+  border-radius: 8px;
+  width: 350px;
+}
+#Services .ServiceCard-Container #ServiceCard .Title {
+  text-align: center;
+  margin: 10px 0px;
+}
+#Services .ServiceCard-Container #ServiceCard .Title h3 {
+  font-size: var(--font_size_20);
+  letter-spacing: 1px;
+}
+#Services .ServiceCard-Container #ServiceCard .Fee {
+  text-align: center;
+}
+#Services .ServiceCard-Container #ServiceCard .Fee h3 {
+  font-size: var(--font_size_25);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 500;
+}
+#Services .ServiceCard-Container #ServiceCard .Fee h3 span {
+  margin-top: 2px;
+  font-size: var(--font_size_16);
+}
+#Services .ServiceCard-Container #ServiceCard .Content {
+  margin-top: 30px;
+}
+#Services .ServiceCard-Container #ServiceCard .Content ul li {
+  margin: 10px 0px;
+}
+#Services .ServiceCard-Container #ServiceCard .Content ul li p {
+  font-size: var(--font_size_16);
 }/*# sourceMappingURL=Services.css.map */

@@ -1,4 +1,51 @@
 #Services {
   width: var(--width_container);
   margin: auto;
+  .ServiceCard-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap_15);
+    flex-wrap: wrap;
+    padding: var(--padding_20);
+    #ServiceCard {
+      border: 2px solid white;
+      padding: var(--padding_20);
+      border-radius: 8px;
+      width: 350px;
+      .Title {
+        text-align: center;
+        margin: 10px 0px;
+        h3 {
+          font-size: var(--font_size_20);
+          letter-spacing: 1px;
+        }
+      }
+      .Fee {
+        text-align: center;
+        h3 {
+          font-size: var(--font_size_25);
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+          font-weight: 500;
+          span {
+            margin-top: 2px;
+            font-size: var(--font_size_16);
+          }
+        }
+      }
+      .Content {
+        margin-top: 30px;
+        ul {
+          li {
+            margin: 10px 0px;
+            p {
+              font-size: var(--font_size_16);
+            }
+          }
+        }
+      }
+    }
+  }
 }

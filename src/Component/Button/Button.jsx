@@ -23,6 +23,11 @@ const Button = (props) => {
           {props.value}
         </button>
       )}
+      {props.type == null && (
+        <button type="submit" className={props.classname} href={props.href}>
+          {props.value}
+        </button>
+      )}
     </>
   );
 };
