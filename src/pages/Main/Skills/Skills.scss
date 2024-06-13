@@ -1,0 +1,21 @@
+#Skills {
+  width: var(--width_container);
+  margin: auto;
+  .SkillCard-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    #SkillCard {
+      aspect-ratio: 1/1;
+      width: 140px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      img {
+        max-width: 70px;
+      }
+    }
+  }
+}

@@ -5,7 +5,9 @@ import Footer from "../../Component/Footer/Footer";
 
 import Hero from "./Hero/Hero";
 import About from "./About/About";
+import Skills from "./Skills/Skills";
 import Project from "./Project/Project";
+import Services from "./Services/Services";
 import Contact from "./Contact/Contact";
 
 import "./MainPage.css";
@@ -16,7 +18,9 @@ const Main = () => {
       <div className="Main-Component">
         <Hero />
         <About />
+        <Skills />
         <Project />
+        <Services />
         <Contact />
       </div>
       <Footer />

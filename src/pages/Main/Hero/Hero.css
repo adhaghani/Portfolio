@@ -36,14 +36,14 @@
 }
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
-  .Hero-Container .greetings-container {
+  #Hero .Hero-Container .greetings-container {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .Hero-Container .greetings-container h1 {
+  #Hero .Hero-Container .greetings-container h1 {
     text-align: center;
   }
-  .Hero-Container .greetings-container h2 {
+  #Hero .Hero-Container .greetings-container h2 {
     text-align: center !important;
   }
 }/*# sourceMappingURL=Hero.css.map */
