@@ -5,6 +5,8 @@ import "./Services.css";
 import Title from "../../../Component/Title/Title";
 import ServiceCard from "./ServiceCard/ServiceCard";
 
+import hero1 from "/Hero/hero1.png";
+
 const Services = () => {
   const serviceData = [
     {
@@ -27,6 +29,9 @@ const Services = () => {
     <div className="Services" id="Services">
       <Title title="Services" subtitle="What i can do as of right now." />
       <div className="wrapper">
+        <div className="ServiceImage-Container">
+          <img src={hero1} alt="" />
+        </div>
         <div className="ServiceCard-Container">
           {serviceData.map((serviceData) => (
             <ServiceCard data={serviceData} />

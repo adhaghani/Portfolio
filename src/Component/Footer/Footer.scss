@@ -38,3 +38,9 @@
     }
   }
 }
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Footer {
+    padding-left: 0px;
+  }
+}

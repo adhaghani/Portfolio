@@ -25,11 +25,22 @@
     .image-container {
       width: fit-content;
       padding: 30px;
-      background-image: url("/blob.svg");
       img {
         width: clamp(250px, 35vw, 350px);
       }
     }
+  }
+}
+.image-Container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  transform: translateY(-100%);
+  left: 0px;
+  img {
+    width: 250px;
+    max-width: fit-content;
   }
 }
 

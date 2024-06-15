@@ -3,7 +3,9 @@ import React from "react";
 import "./Hero.css";
 
 import profile from "/memoji.png";
-import Button from "../../../Component/Button/Button";
+
+import hero1 from "/Hero/hero1.png";
+import hero2 from "/Hero/hero2.png";
 const Hero = () => {
   return (
     <div className="Hero" id="Hero">

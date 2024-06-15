@@ -31,4 +31,10 @@
 #Footer .Footer-Container .section-group .section.Socials ul a {
   border-radius: 24px;
   background-color: var(--bg_colour_white);
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Footer {
+    padding-left: 0px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

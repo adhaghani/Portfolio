@@ -8,9 +8,11 @@
 #Services .wrapper .ServiceCard-Container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
   padding: var(--padding_20);
+  width: 50%;
 }
 #Services .wrapper .ServiceCard-Container #ServiceCard {
   padding: var(--padding_20);
@@ -35,4 +37,29 @@
 #Services .wrapper .ServiceCard-Container #ServiceCard .Content p {
   text-align: justify;
   font-size: var(--font_size_20);
+  padding: var(--padding_020);
+}
+#Services .wrapper .ServiceImage-Container {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+#Services .wrapper .ServiceImage-Container img {
+  width: 60%;
+}
+
+@media screen and (min-width: 1px) and (max-width: 728px) {
+  #Services .wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #Services .wrapper .ServiceCard-Container {
+    width: 100%;
+  }
+  #Services .wrapper .ServiceImage-Container {
+    width: 100%;
+  }
+  #Services .wrapper .ServiceImage-Container img {
+    max-width: 250px;
+  }
 }/*# sourceMappingURL=Services.css.map */

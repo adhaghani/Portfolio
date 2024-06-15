@@ -6,9 +6,11 @@
     .ServiceCard-Container {
       display: flex;
       justify-content: center;
+      flex-direction: column;
       gap: 20px;
       flex-wrap: wrap;
       padding: var(--padding_20);
+      width: 50%;
       #ServiceCard {
         padding: var(--padding_20);
         border-radius: 8px;
@@ -31,7 +33,34 @@
           p {
             text-align: justify;
             font-size: var(--font_size_20);
+            padding: var(--padding_020);
           }
+        }
+      }
+    }
+    .ServiceImage-Container {
+      width: 50%;
+      display: grid;
+      place-items: center;
+      img {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 728px) {
+  #Services {
+    .wrapper {
+      flex-direction: column;
+      gap: 50px;
+      .ServiceCard-Container {
+        width: 100%;
+      }
+      .ServiceImage-Container {
+        width: 100%;
+        img {
+          max-width: 250px;
         }
       }
     }

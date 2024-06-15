@@ -1,23 +1,50 @@
 #Skills {
   width: var(--width_container);
   margin: auto;
-  .SkillCard-Container {
+  .Skills-Container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: var(--padding_20);
-    #SkillCard {
-      background-color: var(--colour_pure_white);
-      aspect-ratio: 1/1;
-      width: 140px;
-      border-radius: 8px;
+    .SkillCard-Container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: var(--padding_20);
+      width: 50%;
+      #SkillCard {
+        background-color: var(--colour_pure_white);
+        aspect-ratio: 1/1;
+        width: 100px;
+        border-radius: 24px;
+        display: grid;
+        place-items: center;
+        box-shadow: var(--box_shadow);
+        img {
+          max-width: 60px;
+        }
+      }
+    }
+    .Image-Container {
+      width: 50%;
       display: grid;
       place-items: center;
-      box-shadow: var(--box_shadow);
+      min-width: 300px;
       img {
-        max-width: 70px;
+        width: clamp(300px, 95%, 500px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Skills {
+    .Skills-Container {
+      flex-direction: column-reverse;
+      gap: 50px;
+      .SkillCard-Container {
+        width: 100%;
       }
     }
   }

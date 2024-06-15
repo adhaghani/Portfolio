@@ -25,10 +25,23 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 30px;
-  background-image: url("/blob.svg");
 }
 .Hero-Container .icon-container .image-container img {
   width: clamp(250px, 35vw, 350px);
+}
+
+.image-Container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  transform: translateY(-100%);
+  left: 0px;
+}
+.image-Container img {
+  width: 250px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
