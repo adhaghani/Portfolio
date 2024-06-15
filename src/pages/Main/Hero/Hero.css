@@ -1,29 +1,25 @@
 .Hero-Container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column-reverse;
   align-items: center;
-  flex-wrap: wrap-reverse;
+  justify-content: center;
   width: var(--width_container);
   margin: auto;
-  margin-bottom: -30px;
+  height: 95vh;
 }
 .Hero-Container .greetings-container {
-  width: clamp(300px, 100%, 550px);
-  padding: var(--padding_20);
+  text-align: center;
 }
 .Hero-Container .greetings-container h1 {
   font-size: var(--font_size_64);
-  color: var(--text_colour_white);
 }
 .Hero-Container .greetings-container h1 span {
   color: var(--colour_main_blue);
 }
-.Hero-Container .greetings-container h2 {
+.Hero-Container .greetings-container p {
+  letter-spacing: 1px;
   max-width: 700px;
   font-size: var(--font_size_25);
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--text_colour_white);
 }
 .Hero-Container .icon-container .image-container {
   width: -moz-fit-content;

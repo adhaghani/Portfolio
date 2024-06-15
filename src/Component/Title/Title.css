@@ -1,13 +1,13 @@
 .Title-Container {
-  margin-bottom: 40px;
+  padding: 100px 0px;
   text-align: center;
 }
 .Title-Container .Title {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 5px;
-  color: var(--text_colour_white);
+  color: var(--text_colour_black);
 }
 .Title-Container .Subtitle {
   letter-spacing: 1px;
-  color: var(--text_colour_white);
+  color: var(--text_colour_dkgray);
 }/*# sourceMappingURL=Title.css.map */

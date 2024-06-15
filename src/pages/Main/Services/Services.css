@@ -2,58 +2,37 @@
   width: var(--width_container);
   margin: auto;
 }
-#Services .ServiceCard-Container {
+#Services .wrapper {
+  display: flex;
+}
+#Services .wrapper .ServiceCard-Container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: var(--gap_15);
+  gap: 20px;
   flex-wrap: wrap;
   padding: var(--padding_20);
 }
-#Services .ServiceCard-Container #ServiceCard {
-  border: 2px solid var(--text_colour_dkgray);
+#Services .wrapper .ServiceCard-Container #ServiceCard {
   padding: var(--padding_20);
   border-radius: 8px;
-  width: 350px;
+  flex: 1 1 0;
+  min-width: 300px;
+  background-color: var(--colour_pure_white);
+  box-shadow: var(--box_shadow);
   cursor: default;
 }
-#Services .ServiceCard-Container #ServiceCard:hover {
-  border: 2px solid var(--bg_colour_white);
-}
-#Services .ServiceCard-Container #ServiceCard .Title {
+#Services .wrapper .ServiceCard-Container #ServiceCard .Title {
   text-align: center;
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
-#Services .ServiceCard-Container #ServiceCard .Title h3 {
-  font-size: var(--font_size_20);
+#Services .wrapper .ServiceCard-Container #ServiceCard .Title h3 {
+  font-size: var(--font_size_25);
   letter-spacing: 1px;
 }
-#Services .ServiceCard-Container #ServiceCard .Fee {
-  text-align: center;
+#Services .wrapper .ServiceCard-Container #ServiceCard .Content {
+  margin: 20px 0px;
 }
-#Services .ServiceCard-Container #ServiceCard .Fee h3 {
-  font-size: var(--font_size_25);
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  font-weight: 500;
-}
-#Services .ServiceCard-Container #ServiceCard .Fee h3 span {
-  margin-top: 2px;
-  font-size: var(--font_size_16);
-}
-#Services .ServiceCard-Container #ServiceCard .Content {
-  margin: 30px 0px;
-}
-#Services .ServiceCard-Container #ServiceCard .Content ul {
-  height: 170px;
-}
-#Services .ServiceCard-Container #ServiceCard .Content ul li {
-  margin: 10px 0px;
-}
-#Services .ServiceCard-Container #ServiceCard .Content ul li p {
-  font-size: var(--font_size_16);
-  display: flex;
-  align-items: center;
-  gap: var(--gap_15);
+#Services .wrapper .ServiceCard-Container #ServiceCard .Content p {
+  text-align: justify;
+  font-size: var(--font_size_20);
 }/*# sourceMappingURL=Services.css.map */

@@ -5,6 +5,7 @@ import Footer from "../../Component/Footer/Footer";
 
 import Hero from "./Hero/Hero";
 import About from "./About/About";
+import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
 import Project from "./Project/Project";
 import Services from "./Services/Services";
@@ -18,9 +19,11 @@ const Main = () => {
       <div className="Main-Component">
         <Hero />
         <About />
+        {/* <Education /> */}
         <Skills />
-        <Project />
+
         <Services />
+        <Project />
         <Contact />
       </div>
       <Footer />

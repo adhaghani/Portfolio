@@ -11,12 +11,6 @@ const Contact = () => {
     <div className="Contact" id="Contact">
       <div className="Contact-Container">
         <Title title="Contact" subtitle="Get in touch with me" />
-        <div className="form-container">
-          <a href="mailto:adhaahmadwork@gmail.com" target="_blank">
-            <img src={Mail} alt="" />
-            Mail me
-          </a>
-        </div>
       </div>
     </div>
   );

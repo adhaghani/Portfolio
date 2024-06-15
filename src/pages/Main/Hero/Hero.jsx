@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Hero.css";
 
-import profile from "/memoji.png";                                  
+import profile from "/memoji.png";
 import Button from "../../../Component/Button/Button";
 const Hero = () => {
   return (
@@ -10,11 +10,9 @@ const Hero = () => {
       <div className="Hero-Container">
         <div className="greetings-container">
           <h1>
-            Hello, I'm <span>Adha</span>!
+            Hello, I'm <span>Adha</span>
           </h1>
-          <h2>
-            A computer science Student passionated in Software Development.
-          </h2>
+          <p>A computer science student.</p>
         </div>
         <div className="icon-container">
           <div className="image-container">

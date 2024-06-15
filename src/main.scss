@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-  --bg_colour_white: #fff;
+  --colour_pure_white: #fff;
+  --bg_colour_white: #f9f7fd;
   --bg_colour_black: #111111;
   --bg_colour_lblack: #181818;
 
@@ -9,7 +10,7 @@
   --colour_main_blue: #008dcf;
 
   --text_colour_white: #d1d1d1;
-  --text_colour_black: #202020;
+  --text_colour_black: #353252;
 
   --text_colour_dkgray: #6f6f6f;
 
@@ -18,6 +19,7 @@
   --padding_1020: 10px 20px;
   --padding_200: 0px 20px;
   --padding_2010: 20px 10px;
+  --padding_10: 10px;
 
   --margin_auto: auto;
   --margin_20auto: 20px auto;
@@ -37,6 +39,9 @@
   --font_size_16: clamp(14px, 6vw, 16px);
   --font_size_14: clamp(12px, 6vw, 14px);
   --font_size_10: clamp(10px, 6vw, 10px);
+
+  --box_shadow: rgba(88, 88, 117, 0.05) 0px 4px 16px,
+    rgba(83, 83, 126, 0.05) 0px 8px 32px;
 }
 
 * {
@@ -50,11 +55,8 @@
   scroll-behavior: smooth;
 
   font-family: "Rubik", sans-serif;
-
-  transition: all 0.15s linear;
 }
 
 body {
-  background-color: var(--bg_colour_black);
-  color: var(--bg_colour_white);
+  background-color: var(--bg_colour_white);
 }

@@ -43,23 +43,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* <div className="section Link">
-            <h3 className="Title">Links</h3>
-            <ul>
-              <li>
-                <a href="#About">About</a>
-              </li>
-              <li>
-                <a href="#Project">Project</a>
-              </li>
-              <li>
-                <a href="#contact">Contact Me</a>
-              </li>
-            </ul>
-          </div> */}
-        </div>
-        <div className="section-group">
-          <p>Copyright © 2024 Adhaghani</p>
         </div>
       </div>
     </div>

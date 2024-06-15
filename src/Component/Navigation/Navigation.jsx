@@ -2,94 +2,102 @@ import React, { useState } from "react";
 
 import "./Navigation.css";
 
-import github from "/github.svg";
-import linkedin from "/link.svg";
-import hackerrank from "/HackerRank.svg";
 const Navigation = () => {
-  const [Sidebar, setSidebar] = useState(false);
-
-  const showSidebar = () => setSidebar(!Sidebar);
   return (
-    <div className="Navigation" id="Navigation">
-      <div className="Navigation-Container">
-        <div className="Logo">
-          <h2>Adhaghani</h2>
-        </div>
-        <ul className="Shortcurt">
-          <li>
-            <a href="#About">About</a>
-          </li>
-          <li>
-            <a href="#Project">Project</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact</a>
-          </li>
-        </ul>
-        <ul className="Link">
-          <li>
-            <a href="https://github.com/adhaghani" target="_BLANK">
-              <img src={github} alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/adhaghani/" target="_BLANK">
-              <img src={linkedin} alt="" />
-            </a>
-          </li>
-        </ul>
-        <button
-          className={Sidebar ? "hamburger active" : "hamburger"}
-          id="hamburger"
-          onClick={showSidebar}
-        >
-          <div className="top"></div>
-          <div className="mid"></div>
-          <div className="bot"></div>
-        </button>
-      </div>
-      <div className={Sidebar ? "SideNav active" : "SideNav"} id="SideNav">
-        <div className="SideNav-Container">
+    <>
+      <div className="Navigation" id="Navigation">
+        <div className="Navigation-Container">
+          <div className="Logo">
+            <h1>
+              AG<span>.</span>
+            </h1>
+          </div>
           <ul className="Shortcurt">
             <li>
-              <a href="#About" onClick={showSidebar}>
-                About
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                >
+                  <path d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
+                </svg>
               </a>
             </li>
             <li>
-              <a href="#Project" onClick={showSidebar}>
-                Project
+              <a href="#About">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                >
+                  <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+                </svg>
               </a>
             </li>
-            <li>
-              <a href="#Contact" onClick={showSidebar}>
-                Contact
-              </a>
-            </li>
-          </ul>
-          <ul className="Link">
-            <li>
-              <a href="https://github.com/adhaghani" target="_BLANK">
-                <img src={github} alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/adhaghani/" target="_BLANK">
-                <img src={linkedin} alt="" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.hackerrank.com/profile/Adhaghani"
-                target="_BLANK"
+            {/* <li>
+            <a href="#Education">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="32px"
+                viewBox="0 -960 960 960"
+                width="32px"
               >
-                <img src={hackerrank} alt="" />
+                <path d="M242-249q-20-11-31-29.5T200-320v-192l-96-53q-11-6-16-15t-5-20q0-11 5-20t16-15l338-184q9-5 18.5-7.5T480-829q10 0 19.5 2.5T518-819l381 208q10 5 15.5 14.5T920-576v256q0 17-11.5 28.5T880-280q-17 0-28.5-11.5T840-320v-236l-80 44v192q0 23-11 41.5T718-249L518-141q-9 5-18.5 7.5T480-131q-10 0-19.5-2.5T442-141L242-249Zm238-203 274-148-274-148-274 148 274 148Zm0 241 200-108v-151l-161 89q-9 5-19 7.5t-20 2.5q-10 0-20-2.5t-19-7.5l-161-89v151l200 108Zm0-241Zm0 121Zm0 0Z" />
+              </svg>
+            </a>
+          </li> */}
+            <li>
+              <a href="#Skills">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                >
+                  <path d="M480-411q-10 0-19.5-2.5T442-421L104-605q-11-6-15.5-15T84-640q0-11 4.5-20t15.5-15l338-184q9-5 18.5-7.5T480-869q10 0 19.5 2.5T518-859l338 184q11 6 15.5 15t4.5 20q0 11-4.5 20T856-605L518-421q-9 5-18.5 7.5T480-411Zm0-80 273-149-273-149-273 149 273 149Zm0-149Zm0 309 314-171q2-1 19-5 17 0 28.5 11.5T853-467q0 11-5 20t-16 15L518-261q-9 5-18.5 7.5T480-251q-10 0-19.5-2.5T442-261L128-432q-11-6-16-15t-5-20q0-17 11.5-28.5T147-507q5 0 9.5 1.5t9.5 3.5l314 171Zm0 160 314-171q2-1 19-5 17 0 28.5 11.5T853-307q0 11-5 20t-16 15L518-101q-9 5-18.5 7.5T480-91q-10 0-19.5-2.5T442-101L128-272q-11-6-16-15t-5-20q0-17 11.5-28.5T147-347q5 0 9.5 1.5t9.5 3.5l314 171Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#Project">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                >
+                  <path d="m193-479 155 155q11 11 11 28t-11 28q-11 11-28 11t-28-11L108-452q-6-6-8.5-13T97-480q0-8 2.5-15t8.5-13l184-184q12-12 28.5-12t28.5 12q12 12 12 28.5T349-635L193-479Zm574-2L612-636q-11-11-11-28t11-28q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L668-268q-12 12-28 11.5T612-269q-12-12-12-28.5t12-28.5l155-155Z" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#Contact">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                >
+                  <path d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67Zm666.66-510L497.67-466.33q-4.34 2.33-8.5 3.83Q485-461 480-461t-9.17-1.5q-4.16-1.5-8.5-3.83L146.67-670v443.33h666.66V-670ZM480-521.33l330.67-212H150l330 212ZM146.67-670v8V-707.88v.82-26.27 26-.78V-662v-8 443.33V-670Z" />
+                </svg>
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+      <div className="SideNav" id="SideNav">
+        SideNav
+      </div>
+      <button className="Hamburger" id="Hamburger">
+        <div className="top"></div>
+        <div className="mid"></div>
+        <div className="bot"></div>
+      </button>
+    </>
   );
 };
 

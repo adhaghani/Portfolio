@@ -19,9 +19,48 @@
         max-width: 750px;
         line-height: 1.4;
         font-size: var(--font_size_20);
-        color: var(--text_colour_white);
+        color: var(--text_colour_black);
+        text-align: justify;
         a {
           color: var(--colour_main_blue);
+        }
+      }
+    }
+    .statistic {
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      align-items: center;
+      gap: 30px;
+      #StatisticCard {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 6px;
+        padding: var(--padding_20);
+        min-width: 300px;
+        .details {
+          .Numbers {
+            margin-bottom: 4px;
+            h1 {
+              letter-spacing: 1px;
+              color: var(--text_colour_black);
+            }
+          }
+          .Title {
+            p {
+              color: #000;
+              letter-spacing: 1px;
+              font-size: var(--font_size_16);
+            }
+          }
+        }
+        .icon {
+          margin-right: 15px;
+          display: grid;
+          place-items: center;
         }
       }
     }

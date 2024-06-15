@@ -5,12 +5,17 @@ import Title from "../../../Component/Title/Title";
 import hello from "/memojiabt.png";
 
 import "./About.css";
+
+import StatisticCard from "./StatisticCard/StatisticCard";
+
+import coffee from "/About/coffee.svg";
+import project from "/About/github.svg";
+import Achievement from "/About/Achievement.svg";
 const About = () => {
   return (
     <div className="About" id="About">
       <div className="About-Container">
         <Title title="About Me" subtitle="Who am I?" />
-
         <div className="About-Content">
           <div className="About-Image">
             <img src={hello} alt="" />
@@ -35,6 +40,15 @@ const About = () => {
             </a>
             .
           </p>
+        </div>
+        <div className="statistic">
+          <StatisticCard img={coffee} title={"Coffee Break"} number="2560" />
+          <StatisticCard img={project} title={"Github Project"} number="12" />
+          <StatisticCard
+            img={Achievement}
+            title={"Competition Joined"}
+            number="3"
+          />
         </div>
       </div>
     </div>

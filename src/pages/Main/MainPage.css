@@ -1,6 +1,11 @@
 .Main-Component {
-  padding-top: var(--nav_height);
+  padding-left: 110px;
   display: flex;
   flex-direction: column;
-  gap: 120px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .Main-Component {
+    padding-left: 0px;
+  }
 }/*# sourceMappingURL=MainPage.css.map */
