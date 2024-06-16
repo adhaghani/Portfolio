@@ -21,6 +21,7 @@
         ul {
           display: flex;
           gap: var(--gap_15);
+
           a {
             display: grid;
             place-items: center;
@@ -29,8 +30,14 @@
         &.Socials {
           ul {
             a {
-              border-radius: 24px;
-              background-color: var(--bg_colour_white);
+              width: 55px;
+              height: 55px;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: var(--box_shadow);
+              img {
+                width: 50%;
+              }
             }
           }
         }

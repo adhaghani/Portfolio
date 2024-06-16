@@ -2,10 +2,10 @@ import React from "react";
 
 import "./Footer.css";
 
-import github from "/github.svg";
-import linkedin from "/link.svg";
-import instagram from "/instagram.svg";
-import hackerrank from "/HackerRank.svg";
+import github from "/Footer/github.svg";
+import linkedin from "/Footer/link.svg";
+import instagram from "/Footer/instagram.svg";
+import hackerrank from "/Footer/HackerRank.svg";
 
 const Footer = () => {
   return (
@@ -42,6 +42,11 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="section-group">
+          <div className="section">
+            <p className="Title">Copyright &copy; 2024 Adhaghani</p>
           </div>
         </div>
       </div>

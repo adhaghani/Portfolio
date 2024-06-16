@@ -29,8 +29,14 @@
   place-items: center;
 }
 #Footer .Footer-Container .section-group .section.Socials ul a {
-  border-radius: 24px;
-  background-color: var(--bg_colour_white);
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--box_shadow);
+}
+#Footer .Footer-Container .section-group .section.Socials ul a img {
+  width: 50%;
 }
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
