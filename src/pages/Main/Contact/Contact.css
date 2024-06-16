@@ -2,4 +2,22 @@
   width: var(--width_container);
   margin: auto;
   padding: var(--padding_020);
+}
+#Contact .Contact-Container .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Contact .Contact-Container .contact-form a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: var(--box_shadow);
+  background-color: var(--colour_pure_white);
+  color: var(--text_colour_black);
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 12px;
 }/*# sourceMappingURL=Contact.css.map */

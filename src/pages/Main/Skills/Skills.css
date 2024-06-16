@@ -26,7 +26,11 @@
   box-shadow: var(--box_shadow);
 }
 #Skills .Skills-Container .SkillCard-Container #SkillCard img {
+  transition: 0.2s all ease-in-out;
   max-width: 60px;
+}
+#Skills .Skills-Container .SkillCard-Container #SkillCard:hover img {
+  scale: 1.1;
 }
 #Skills .Skills-Container .Image-Container {
   width: 50%;
