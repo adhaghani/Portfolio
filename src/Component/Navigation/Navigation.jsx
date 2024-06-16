@@ -8,6 +8,7 @@ const Navigation = () => {
   const handleSideNav = () => {
     setSideNav(!SideNav);
   };
+
   return (
     <>
       <div className="Navigation" id="Navigation">
@@ -92,6 +93,9 @@ const Navigation = () => {
               </a>
             </li>
           </ul>
+          <div className="Resume">
+
+          </div>
         </div>
       </div>
       <div className={SideNav ? "SideNav Active" : "SideNav"} id="SideNav">

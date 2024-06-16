@@ -21,6 +21,57 @@
   max-width: 700px;
   font-size: var(--font_size_25);
 }
+.Hero-Container .greetings-container .resumeLink {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Hero-Container .greetings-container .resumeLink .Resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: 1px;
+  font-size: var(--font_size_20);
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--text_colour_black);
+  box-shadow: var(--box_shadow);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+.Hero-Container .greetings-container .resumeLink .Resume svg {
+  transition: 0.2s ease-in-out all;
+}
+.Hero-Container .greetings-container .resumeLink .Resume:hover {
+  color: var(--colour_main_blue);
+}
+.Hero-Container .greetings-container .resumeLink .Resume:hover svg {
+  fill: var(--colour_main_blue);
+}
+.Hero-Container .greetings-container .resumeLink a {
+  transition: 0.2s ease-in-out all;
+}
+.Hero-Container .greetings-container .resumeLink a:hover {
+  transform: translateY(-3px);
+}
+.Hero-Container .greetings-container .resumeLink .social-link {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+.Hero-Container .greetings-container .resumeLink .social-link .card {
+  height: 55px;
+  aspect-ratio: 1/1;
+  box-shadow: var(--box_shadow);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+.Hero-Container .greetings-container .resumeLink .social-link .card img {
+  width: 50%;
+}
 .Hero-Container .icon-container .image-container {
   width: -moz-fit-content;
   width: fit-content;
