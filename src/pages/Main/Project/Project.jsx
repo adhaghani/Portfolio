@@ -10,6 +10,7 @@ import projectchart from "/project_chart.png";
 import projectportfolio from "/project_portfolio.png";
 import projectstarbuck from "/project_starbuck.png";
 import projectUC from "/project_UC.png";
+import projectSunny from "/project_sunnyside.png";
 const Project = () => {
   return (
     <div className="Project" id="Project">
@@ -29,6 +30,13 @@ const Project = () => {
             image={projectUC}
             livelink="https://adhaghani.github.io/UndanganCinta/"
             githublink="https://github.com/adhaghani/UndanganCinta"
+          />
+          <ProjectCard
+            title="SunnySide Landing Page"
+            subtitle="HTML, Css, js, React.js"
+            image={projectSunny}
+            livelink="https://adhaghani.github.io/SunnySideLandingPage/"
+            githublink="https://github.com/adhaghani/SunnySideLandingPage"
           />
           <ProjectCard
             title="Car Dealership System"
