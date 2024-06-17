@@ -57,13 +57,6 @@ const Project = () => {
             githublink="https://github.com/adhaghani/starbuck-lp.github.io"
           />
           <ProjectCard
-            title="Expense Chart"
-            subtitle="HTML, Css, js, JSON"
-            image={projectchart}
-            livelink="https://adhaghani.github.io/ExpensesChart/"
-            githublink="https://github.com/adhaghani/ExpensesChart"
-          />
-          <ProjectCard
             title="Advice Generator"
             subtitle="HTML, Css, js, React.js, API"
             image={projectAdvice}

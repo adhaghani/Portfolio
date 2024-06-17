@@ -7,17 +7,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-#Contact .Contact-Container .contact-form a {
+#Contact .Contact-Container .contact-form .section {
+  width: calc(50% - 10px);
+}
+#Contact .Contact-Container .contact-form .section.personal-details {
+  width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 20px;
-  box-shadow: var(--box_shadow);
-  background-color: var(--colour_pure_white);
-  color: var(--text_colour_black);
-  font-weight: 500;
-  letter-spacing: 1px;
+  flex-direction: column;
+}
+#Contact .Contact-Container .contact-form .section .detail-card {
+  width: 400px;
+  margin: 10px 0px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  padding: 15px var(--padding_20);
   border-radius: 12px;
+  background-color: var(--colour_pure_white);
+  box-shadow: var(--box_shadow);
+}
+#Contact .Contact-Container .contact-form .section .detail-card .text p,
+#Contact .Contact-Container .contact-form .section .detail-card .text a {
+  color: var(--text_colour_black);
+  font-size: var(--font_size_20);
+}
+#Contact .Contact-Container .contact-form .section .detail-card .text a:hover {
+  color: var(--colour_main_blue);
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Contact .Contact-Container .contact-form .section {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Contact.css.map */

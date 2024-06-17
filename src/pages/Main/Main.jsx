@@ -24,7 +24,7 @@ const Main = () => {
 
         <Services />
         <Project />
-        {/* <Contact /> */}
+        <Contact />
       </div>
       <Footer />
     </div>
