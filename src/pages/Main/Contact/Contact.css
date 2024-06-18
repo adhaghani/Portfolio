@@ -14,19 +14,20 @@
   width: calc(50% - 10px);
 }
 #Contact .Contact-Container .contact-form .section.personal-details {
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 #Contact .Contact-Container .contact-form .section .detail-card {
-  width: 400px;
+  width: 100%;
   margin: 10px 0px;
-  gap: 30px;
+  gap: 20px;
   display: flex;
   align-items: center;
-  padding: 15px var(--padding_20);
+  padding: 15px;
   border-radius: 12px;
   background-color: var(--colour_pure_white);
   box-shadow: var(--box_shadow);
@@ -43,5 +44,9 @@
 @media screen and (min-width: 1px) and (max-width: 768px) {
   #Contact .Contact-Container .contact-form .section {
     width: 100%;
+  }
+  #Contact .Contact-Container .contact-form .section .detail-card {
+    flex-direction: column;
+    gap: 10px;
   }
 }/*# sourceMappingURL=Contact.css.map */

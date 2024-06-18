@@ -11,20 +11,22 @@
       gap: 20px;
       .section {
         width: calc(50% - 10px);
+
         &.personal-details {
-          width: 420px;
+          width: 100%;
+          max-width: 420px;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
         }
         .detail-card {
-          width: 400px;
+          width: 100%;
           margin: 10px 0px;
-          gap: 30px;
+          gap: 20px;
           display: flex;
           align-items: center;
-          padding: 15px var(--padding_20);
+          padding: 15px;
           border-radius: 12px;
           background-color: var(--colour_pure_white);
           box-shadow: var(--box_shadow);
@@ -63,6 +65,11 @@
       .contact-form {
         .section {
           width: 100%;
+
+          .detail-card {
+            flex-direction: column;
+            gap: 10px;
+          }
         }
       }
     }
