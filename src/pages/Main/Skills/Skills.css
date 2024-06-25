@@ -12,22 +12,22 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   padding: var(--padding_20);
   width: 50%;
 }
 #Skills .Skills-Container .SkillCard-Container #SkillCard {
   background-color: var(--colour_pure_white);
   aspect-ratio: 1/1;
-  width: 100px;
-  border-radius: 24px;
+  width: 90px;
+  border-radius: 12px;
   display: grid;
   place-items: center;
   box-shadow: var(--box_shadow);
 }
 #Skills .Skills-Container .SkillCard-Container #SkillCard img {
   transition: 0.2s all ease-in-out;
-  max-width: 60px;
+  max-width: 50px;
 }
 #Skills .Skills-Container .SkillCard-Container #SkillCard:hover img {
   scale: 1.1;

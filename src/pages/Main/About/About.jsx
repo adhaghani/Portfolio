@@ -42,7 +42,7 @@ const About = () => {
           </p>
         </div>
         <div className="statistic">
-          <StatisticCard img={coffee} title={"Coffee Break"} number="2560" />
+          <StatisticCard img={coffee} title={"Coffee Break"} number="9999" />
           <StatisticCard img={project} title={"Github Project"} number="12" />
           <StatisticCard
             img={Achievement}

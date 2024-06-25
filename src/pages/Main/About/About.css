@@ -17,6 +17,10 @@
   width: clamp(250px, 35vw, 350px);
 }
 #About .About-Container .About-Content .About-Text {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--box_shadow);
   max-width: 750px;
   line-height: 1.4;
   font-size: var(--font_size_20);
