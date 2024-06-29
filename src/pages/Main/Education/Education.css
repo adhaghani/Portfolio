@@ -1,1 +1,68 @@
-/*# sourceMappingURL=Education.css.map */
+#Education .Experiece-Container {
+  width: var(--width_container);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding_20);
+  gap: 20px;
+}
+#Education .Experiece-Container .Education-Card {
+  width: clamp(300px, 100%, 700px);
+  background-color: #fff;
+  padding: var(--padding_20);
+  box-shadow: var(--box_shadow);
+  border-radius: 8px;
+}
+#Education .Experiece-Container .Education-Card .Education-Institute {
+  display: flex;
+  gap: 20px;
+}
+#Education .Experiece-Container .Education-Card .Education-Institute .Education-Logo {
+  width: 150px;
+}
+#Education .Experiece-Container .Education-Card .Education-Institute .Education-Logo img {
+  width: 100%;
+}
+#Education .Experiece-Container .Education-Card .Education-Institute .Education-Details .Name {
+  color: var(--text_colour_black);
+  font-size: var(--font_size_20);
+}
+#Education .Experiece-Container .Education-Card .Education-Institute .Education-Details .Degree {
+  color: var(--text_colour_black);
+  font-size: var(--font_size_16);
+}
+#Education .Experiece-Container .Education-Card .Education-Institute .Education-Details .Timeline {
+  color: var(--text_colour_dkgray);
+  font-size: var(--font_size_16);
+}
+#Education .Experiece-Container .Education-Card .Education-Content {
+  margin-top: 20px;
+}
+#Education .Experiece-Container .Education-Card .Education-Content .Section-Experience {
+  margin: 8px 0px;
+}
+#Education .Experiece-Container .Education-Card .Education-Content .Section-Experience .Section-Title h3 span {
+  font-size: var(--font_size_14);
+  color: var(--text_colour_lgray);
+  font-weight: 500;
+}
+#Education .Experiece-Container .Education-Card .Education-Content .Section-Experience .Section-Details {
+  margin-top: 5px;
+}
+#Education .Experiece-Container .Education-Card .Education-Content .Section-Experience .Section-Details ul li {
+  margin-top: 5px;
+  margin-left: 8px;
+}
+#Education .Experiece-Container .Education-Card .Education-Content .Section-Experience .Section-Details ul li a {
+  color: var(--text_colour_dkgray);
+}
+#Education .Experiece-Container .Education-Card .Education-Content .Section-Experience .Section-Details ul li a:hover {
+  color: var(--colour_main_blue_dark);
+}
+#Education .Experiece-Container .Education-Card .Education-Content .Section-Experience .Section-Details p {
+  margin-left: 8px;
+  color: var(--text_colour_black);
+  font-size: var(--font_size_18);
+}/*# sourceMappingURL=Education.css.map */

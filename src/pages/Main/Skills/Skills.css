@@ -39,7 +39,7 @@
   min-width: 300px;
 }
 #Skills .Skills-Container .Image-Container img {
-  width: clamp(300px, 95%, 500px);
+  width: clamp(300px, 100%, 370px);
 }
 
 @media screen and (min-width: 1px) and (max-width: 768px) {

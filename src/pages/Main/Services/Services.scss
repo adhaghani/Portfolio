@@ -24,7 +24,7 @@
           text-align: center;
           margin: 5px 0px;
           h3 {
-            font-size: var(--font_size_25);
+            font-size: var(--font_size_20);
             letter-spacing: 1px;
           }
         }
@@ -32,8 +32,7 @@
         .Content {
           margin: 20px 0px;
           p {
-            text-align: justify;
-            font-size: var(--font_size_20);
+            font-size: var(--font_size_18);
             padding: var(--padding_020);
           }
         }
@@ -44,7 +43,7 @@
       display: grid;
       place-items: center;
       img {
-        width: 60%;
+        width: 50%;
       }
     }
   }

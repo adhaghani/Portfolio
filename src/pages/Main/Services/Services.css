@@ -28,15 +28,14 @@
   margin: 5px 0px;
 }
 #Services .wrapper .ServiceCard-Container #ServiceCard .Title h3 {
-  font-size: var(--font_size_25);
+  font-size: var(--font_size_20);
   letter-spacing: 1px;
 }
 #Services .wrapper .ServiceCard-Container #ServiceCard .Content {
   margin: 20px 0px;
 }
 #Services .wrapper .ServiceCard-Container #ServiceCard .Content p {
-  text-align: justify;
-  font-size: var(--font_size_20);
+  font-size: var(--font_size_18);
   padding: var(--padding_020);
 }
 #Services .wrapper .ServiceImage-Container {
@@ -45,7 +44,7 @@
   place-items: center;
 }
 #Services .wrapper .ServiceImage-Container img {
-  width: 60%;
+  width: 50%;
 }
 
 @media screen and (min-width: 1px) and (max-width: 728px) {

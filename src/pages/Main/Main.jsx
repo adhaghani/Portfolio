@@ -19,10 +19,11 @@ const Main = () => {
       <div className="Main-Component">
         <Hero />
         <About />
-        {/* <Education /> */}
+
         <Skills />
 
         <Services />
+        <Education />
         <Project />
         <Contact />
       </div>

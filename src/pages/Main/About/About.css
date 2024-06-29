@@ -23,9 +23,8 @@
   box-shadow: var(--box_shadow);
   max-width: 750px;
   line-height: 1.4;
-  font-size: var(--font_size_20);
+  font-size: var(--font_size_18);
   color: var(--text_colour_black);
-  text-align: justify;
 }
 #About .About-Container .About-Content .About-Text a {
   color: var(--colour_main_blue);
