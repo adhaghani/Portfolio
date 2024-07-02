@@ -6,11 +6,11 @@ import noImage from "/noimg.svg";
 
 import projectAdvice from "/project_advice.png";
 import projectcalc from "/project_calc.png";
-import projectchart from "/project_chart.png";
 import projectportfolio from "/project_portfolio.png";
 import projectstarbuck from "/project_starbuck.png";
 import projectUC from "/project_UC.png";
 import projectSunny from "/project_sunnyside.png";
+import projectRoom from "/project_room.png";
 const Project = () => {
   return (
     <div className="Project" id="Project">
@@ -23,6 +23,12 @@ const Project = () => {
             image={projectportfolio}
             livelink="https://adhaghani.github.io/eportfolio/"
             githublink="https://github.com/adhaghani/eportfolio"
+          />
+          <ProjectCard
+            title="Room E-Commerce"
+            subtitle="HTML, Css, js, React.js, PHP, MySQL"
+            image={projectRoom}
+            githublink="https://github.com/adhaghani/roomecommerce"
           />
           <ProjectCard
             title="UndanganCinta"

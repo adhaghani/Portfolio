@@ -20,7 +20,7 @@
   --margin_20auto: 20px auto;
   --margoin_auto20: auto 20px;
   --nav_height: 60px;
-  --width_container: clamp(1px, 100%, 1440px);
+  --width_container: clamp(1px, 100%, 1200px);
   --gap_15: 15px;
   --font_size_64: clamp(40px, 6vw, 64px);
   --font_size_48: clamp(32px, 6vw, 48px);
