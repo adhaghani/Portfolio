@@ -1,7 +1,7 @@
 .button {
-  background-color: var(--bg_colour_white);
+  background-color: var(--bg_colour_black);
   padding: var(--padding_1020);
-  color: var(--text_colour_black);
+  color: var(--text_colour_white);
   border-radius: 4px;
   font-size: var(--font_size_14);
   cursor: pointer;
@@ -10,7 +10,7 @@
   gap: 10px;
   &.Contact {
     background-color: transparent;
-    border: 2px solid var(--text_colour_dkgray);
+    border: 2px solid var(--text_colour_white);
     font-weight: 600;
     letter-spacing: 1px;
     &:hover {

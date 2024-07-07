@@ -1,7 +1,6 @@
 #Footer {
   padding-left: 110px;
   width: 100%;
-  background-color: var(--bg_colour_white);
   display: grid;
   place-items: center;
 }
@@ -17,6 +16,7 @@
   gap: 40px;
 }
 #Footer .Footer-Container .section-group .section .Title {
+  color: var(--text_colour_white);
   text-align: center;
   margin-bottom: 10px;
 }
@@ -34,6 +34,7 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--box_shadow);
+  background-color: var(--bg_colour_lblack);
 }
 #Footer .Footer-Container .section-group .section.Socials ul a img {
   width: 50%;

@@ -3,8 +3,8 @@
 :root {
   --colour_pure_white: #fff;
   --bg_colour_white: #f9f7fd;
-  --bg_colour_black: #111111;
-  --bg_colour_lblack: #181818;
+  --bg_colour_black: #181818;
+  --bg_colour_lblack: #202020;
 
   --colour_main_blue_dark: #0076ad;
   --colour_main_blue: #008dcf;
@@ -42,8 +42,8 @@
   --font_size_14: clamp(12px, 6vw, 14px);
   --font_size_10: clamp(10px, 6vw, 10px);
 
-  --box_shadow: rgba(88, 88, 117, 0.05) 0px 4px 16px,
-    rgba(83, 83, 126, 0.05) 0px 8px 32px;
+  --box_shadow: rgba(88, 88, 117, 0.03) 0px 4px 16px,
+    rgba(83, 83, 126, 0.03) 0px 8px 32px;
 }
 
 * {
@@ -62,5 +62,8 @@
 }
 
 body {
-  background-color: var(--bg_colour_white);
+  background-color: var(--bg_colour_black);
+  background-image: radial-gradient(rgb(43, 43, 43) 1px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -19px -19px;
 }

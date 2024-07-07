@@ -5,9 +5,9 @@
 .Title-Container .Title {
   letter-spacing: 2px;
   margin-bottom: 5px;
-  color: var(--text_colour_black);
+  color: var(--colour_main_blue);
 }
 .Title-Container .Subtitle {
   letter-spacing: 1px;
-  color: var(--text_colour_dkgray);
+  color: var(--text_colour_lgray);
 }/*# sourceMappingURL=Title.css.map */

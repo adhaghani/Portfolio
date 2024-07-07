@@ -1,7 +1,7 @@
 #Navigation {
   width: 110px;
   height: 100vh;
-  background-color: var(--bg_colour_white);
+  background-color: var(--bg_colour_lblack);
   position: fixed;
   box-shadow: var(--box_shadow);
   .Navigation-Container {
@@ -16,12 +16,12 @@
       margin: 60px;
       h1 {
         cursor: default;
+        color: var(--text_colour_white);
         span {
           color: var(--colour_main_blue);
         }
       }
     }
-
   }
   .Shortcurt {
     display: flex;
@@ -34,13 +34,11 @@
         flex-direction: column;
         align-items: center;
         gap: 7px;
-        color: var(--text_colour_dkgray);
         padding: var(--padding_1020);
         svg {
-          fill: var(--text_colour_dkgray);
+          fill: var(--text_colour_lgray);
         }
         &:hover {
-          color: var(--colour_main_blue);
           svg {
             fill: var(--colour_main_blue);
           }
@@ -51,7 +49,7 @@
 }
 #SideNav {
   transition: 0.2s ease-in-out all;
-  background-color: var(--bg_colour_white);
+  background-color: var(--bg_colour_lblack);
   height: 100%;
   width: clamp(300px, 100%, 500px);
   right: 0px;
@@ -90,15 +88,15 @@
           flex-direction: column;
           align-items: center;
           gap: 7px;
-          color: var(--text_colour_dkgray);
+          color: var(--text_colour_white);
           padding: var(--padding_1020);
           svg {
-            fill: var(--text_colour_dkgray);
+            fill: var(--colour_main_blue);
           }
           &:hover {
             color: var(--colour_main_blue);
             svg {
-              fill: var(--colour_main_blue);
+              fill: var(--colour_main_blue_dark);
             }
           }
         }
@@ -118,12 +116,12 @@
   align-items: center;
   border-radius: 6px;
   gap: 7px;
-  background-color: var(--colour_pure_white);
+  background-color: var(--bg_colour_lblack);
   box-shadow: var(--box_shadow);
   div {
     width: 35px;
     height: 6px;
-    background-color: var(--bg_colour_black);
+    background-color: var(--bg_colour_white);
     border-radius: 12px;
     transition: 0.2s ease-in-out all;
   }

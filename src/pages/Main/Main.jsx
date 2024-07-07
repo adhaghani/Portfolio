@@ -22,7 +22,7 @@ const Main = () => {
 
         <Skills />
 
-        <Services />
+        {/* <Services /> */}
         <Education />
         <Project />
         <Contact />

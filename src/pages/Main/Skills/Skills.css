@@ -17,7 +17,7 @@
   width: 50%;
 }
 #Skills .Skills-Container .SkillCard-Container #SkillCard {
-  background-color: var(--colour_pure_white);
+  background-color: var(--bg_colour_lblack);
   aspect-ratio: 1/1;
   width: 90px;
   border-radius: 12px;

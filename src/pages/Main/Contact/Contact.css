@@ -29,12 +29,12 @@
   align-items: center;
   padding: 15px;
   border-radius: 12px;
-  background-color: var(--colour_pure_white);
+  background-color: var(--bg_colour_lblack);
   box-shadow: var(--box_shadow);
 }
 #Contact .Contact-Container .contact-form .section .detail-card .text p,
 #Contact .Contact-Container .contact-form .section .detail-card .text a {
-  color: var(--text_colour_black);
+  color: var(--text_colour_white);
   font-size: var(--font_size_20);
 }
 #Contact .Contact-Container .contact-form .section .detail-card .text a:hover {

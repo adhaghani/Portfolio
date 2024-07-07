@@ -15,14 +15,14 @@
         }
       }
       .About-Text {
-        background-color: white;
+        background-color: var(--bg_colour_lblack);
         padding: 20px;
         border-radius: 12px;
         box-shadow: var(--box_shadow);
         max-width: 750px;
         line-height: 1.4;
         font-size: var(--font_size_18);
-        color: var(--text_colour_black);
+        color: var(--text_colour_white);
         a {
           color: var(--colour_main_blue);
         }
@@ -48,12 +48,12 @@
             margin-bottom: 4px;
             h1 {
               letter-spacing: 1px;
-              color: var(--text_colour_black);
+              color: var(--text_colour_white);
             }
           }
           .Title {
             p {
-              color: #000;
+              color: var(--text_colour_dkgray);
               letter-spacing: 1px;
               font-size: var(--font_size_16);
             }

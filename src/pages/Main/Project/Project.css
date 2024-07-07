@@ -15,7 +15,7 @@
   flex-wrap: wrap;
 }
 #Project .Project-Container .Card-Container #projectCard {
-  background-color: var(--colour_pure_white);
+  background-color: var(--bg_colour_lblack);
   box-shadow: var(--box_shadow);
   border-radius: 4px;
   flex: 1 1 0;
@@ -61,16 +61,19 @@
   padding: var(--padding_20);
 }
 #Project .Project-Container .Card-Container #projectCard .project-details .project-title .title {
-  color: var(--text_colour_black);
+  color: var(--text_colour_white);
   font-size: var(--font_size_20);
   margin-bottom: 5px;
 }
 #Project .Project-Container .Card-Container #projectCard .project-details .project-title .techstack {
-  color: var(--text_colour_dkgray);
+  color: var(--text_colour_lgray);
   font-size: var(--font_size_14);
 }
 #Project .Project-Container .Card-Container #projectCard .button-action {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+}
+#Project .Project-Container .Card-Container #projectCard:hover .image-container img {
+  scale: 1.03;
 }/*# sourceMappingURL=Project.css.map */
