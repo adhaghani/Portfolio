@@ -1,12 +1,10 @@
 import React from "react";
 
-import "./Title.css";
-
-const Title = (props) => {
+const Title = ({ TitleText, SubText }) => {
   return (
     <div className="Title-Container">
-      <h1 className="Title">{props.title}</h1>
-      <p className="Subtitle">{props.subtitle}</p>
+      <h1 className="Title">{TitleText}</h1>
+      <p className="SubTitle">{SubText}</p>
     </div>
   );
 };

@@ -1,0 +1,32 @@
+#Footer {
+  padding: var(--padding_l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .Details {
+    .role {
+      margin-top: var(--mg_l);
+      font-size: var(--font_size_m);
+      color: var(--text_colour_dkgray);
+    }
+    .socials {
+      margin-top: var(--mg_s);
+      display: flex;
+      gap: var(--gap_m);
+    }
+  }
+  .Actions {
+    display: flex;
+    gap: var(--gap_l);
+    .List {
+      h4 {
+        margin-bottom: var(--mg_l);
+      }
+      ul {
+        li {
+          margin: var(--mg_m) 0px;
+        }
+      }
+    }
+  }
+}

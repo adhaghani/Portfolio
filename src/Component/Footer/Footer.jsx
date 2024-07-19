@@ -1,53 +1,56 @@
 import React from "react";
+import "../../style/Footer/Footer.css";
 
-import "./Footer.css";
-
-import github from "/Footer/github.svg";
-import linkedin from "/Footer/link.svg";
-import instagram from "/Footer/instagram.svg";
-import hackerrank from "/Footer/HackerRank.svg";
-
+import GithubIcon from "../../assets/GithubIcon";
+import InstagramIcon from "../../assets/InstagramIcon";
+import LinkedinIcon from "../../assets/LinkedinIcon";
 const Footer = () => {
   return (
     <div className="Footer" id="Footer">
-      <div className="Footer-Container">
-        <div className="section-group">
-          <div className="section Socials">
-            <h3 className="Title">Follow me</h3>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/adhaghani" target="_BLANK">
-                  <img src={instagram} alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/adhaghani" target="_BLANK">
-                  <img src={github} alt="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/adhaghani/"
-                  target="_BLANK"
-                >
-                  <img src={linkedin} alt="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.hackerrank.com/profile/Adhaghani"
-                  target="_BLANK"
-                >
-                  <img src={hackerrank} alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div className="Details">
+        <h1 className="Name">Ahmad Adha</h1>
+        <p className="role">Software Developer</p>
+        <ul className="socials">
+          <li>
+            <a href="https://github.com/adhaghani" target="_blank">
+              <GithubIcon />
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/adhaghani/" target="_blank">
+              <LinkedinIcon />
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/adhaghani" target="_blank">
+              <InstagramIcon />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="Actions">
+        <div className="List">
+          <h4>Contact</h4>
+          <ul>
+            <li>Email</li>
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+          </ul>
         </div>
-        <div className="section-group">
-          <div className="section">
-            <p className="Title">Copyright &copy; 2024 Adhaghani</p>
-          </div>
+        <div className="List">
+          <h4>Services</h4>
+          <ul>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>Mock-Up Services</li>
+          </ul>
+        </div>
+        <div className="List">
+          <h4>Services</h4>
+          <ul>
+            <li>Software Development Project</li>
+            <li>Mock-Up Design Project</li>
+          </ul>
         </div>
       </div>
     </div>

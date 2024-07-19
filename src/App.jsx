@@ -1,11 +1,7 @@
-import "./main.css";
-
-import Main from "./pages/Main/Main";
-
 function App() {
   return (
-    <div className="App">
-      <Main />
+    <div className="App" id="App">
+      Hello World
     </div>
   );
 }

@@ -1,0 +1,26 @@
+nav {
+  background-color: #fbfbfb9d;
+  backdrop-filter: blur(5px);
+  height: var(--nav-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding_l);
+  position: fixed;
+  width: var(--width_container);
+  z-index: 2;
+  .List {
+    display: flex;
+    gap: var(--gap_l);
+    li {
+      a {
+        font-size: var(--font_size_s);
+        letter-spacing: 1px;
+        color: var(--text_colour_dkgray);
+        &:hover {
+          color: var(--text_colour_black);
+        }
+      }
+    }
+  }
+}

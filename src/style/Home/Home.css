@@ -1,0 +1,183 @@
+#Home #About .image {
+  margin: var(--mg_auto);
+  width: 60%;
+  min-width: 300px;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border-radius: 100% 60% 60% 25%;
+}
+#Home #About .Section-Card {
+  width: 50%;
+  margin: var(--mg_l) 0px;
+}
+#Home #About .Section-Card p {
+  margin: var(--mg_l) 0px;
+  font-size: var(--font_size_m);
+  color: var(--text_colour_black);
+}
+#Home #About .Section-Card p a {
+  color: var(--text_colour_lgray);
+}
+#Home #About .Section-Card p a:hover {
+  color: var(--text_colour_dkgray);
+}
+#Home #Service .section-Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#Home #Service .Section-Card {
+  background-color: #fff;
+  padding: var(--padding_l);
+  height: 100%;
+}
+#Home #Service .Section-Card .Service-Title {
+  margin-bottom: var(--mg_m);
+  font-size: var(--font_size_m);
+  color: var(--text_colour_black);
+}
+#Home #Service .Section-Card .service-Details {
+  font-size: var(--font_size_s);
+  color: var(--text_colour_lgray);
+}
+#Home #Education .section-Container {
+  justify-content: flex-start;
+}
+#Home #Education .section-Container .Section-Card {
+  background-color: #fff;
+  padding: var(--padding_l);
+}
+#Home #Education .section-Container .Section-Card .Program-Detail {
+  margin-bottom: var(--mg_m);
+  display: flex;
+  gap: var(--gap_m);
+}
+#Home #Education .section-Container .Section-Card .Program-Detail .Name {
+  letter-spacing: 0px;
+  font-size: var(--font_size_m);
+}
+#Home #Education .section-Container .Section-Card .Program-Detail .Program {
+  margin: var(--mg_xs) 0px;
+  font-size: var(--font_size_s);
+}
+#Home #Education .section-Container .Section-Card .Program-Detail .Details .DateGrade {
+  display: flex;
+  gap: var(--gap_s);
+  font-size: var(--font_size_s);
+}
+#Home #Education .section-Container .Section-Card .Experience-Detail .Experience-Card ul li {
+  font-size: var(--font_size_s);
+  margin: var(--mg_xs) 0px;
+}
+#Home #Skills .section-Container .scroller {
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, #000 30%, #000 70%, transparent);
+          mask: linear-gradient(90deg, transparent, #000 30%, #000 70%, transparent);
+}
+#Home #Skills .section-Container .scroller .scroller_inner {
+  padding-block: var(--padding_l);
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  gap: var(--gap_m);
+  animation: scroll 25s linear infinite;
+}
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - var(--gap_m) / 2));
+  }
+}
+#Home #Skills .section-Container .scroller .scroller_inner .Section-Card {
+  padding: var(--padding_m);
+}
+#Home #Skills .section-Container .scroller .scroller_inner .Section-Card svg {
+  width: 70px;
+  height: 70px;
+  transition: var(--transition_f);
+}
+#Home #Skills .section-Container .scroller .scroller_inner .Section-Card:hover svg {
+  scale: 1.2;
+}
+#Home #Projects .section-Container {
+  justify-content: space-between;
+}
+#Home #Projects .section-Container .Section-Card {
+  flex: 1 1 0;
+  background-color: #fff;
+  padding: var(--padding_l);
+}
+#Home #Projects .section-Container .Section-Card .image {
+  aspect-ratio: 16/9;
+  border: 1px solid black;
+  border-radius: var(--border_rad10);
+}
+#Home #Projects .section-Container .Section-Card h3 {
+  margin: var(--mg_l) 0px;
+  font-size: var(--font_size_m);
+}
+#Home #Projects .section-Container .Section-Card p {
+  font-size: var(--font_size_m);
+  color: var(--text_colour_dkgray);
+}
+#Home #Projects .section-Container .Section-Card a {
+  display: block;
+  margin-top: var(--mg_l);
+  background-color: var(--bg_colour_dkgray);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: var(--padding_m);
+  color: var(--text_colour_white);
+  border-radius: var(--border_rad10);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#Home .section-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_l);
+}
+#Home .section-Container .Section-Card {
+  border-radius: var(--border_rad10);
+}
+
+section {
+  margin: 100px 0px;
+}
+
+#Hero {
+  height: calc(100vh - var(--nav-height) - 200px);
+  display: grid;
+  place-items: center;
+}
+#Hero .Title {
+  font-size: var(--font_size_xl);
+  text-align: center;
+  -webkit-mask: linear-gradient(45deg, transparent, #000 50%, #000 30%, transparent);
+          mask: linear-gradient(45deg, transparent, #000 50%, #000 30%, transparent);
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Home #About .Section-Card {
+    width: 100%;
+  }
+  #Home #About .Section-Card .image {
+    width: 300px;
+  }
+  #Home #Service .section-Container {
+    grid-template-columns: 1fr;
+  }
+  #Home #Education .section-Container .Section-Card .Program-Detail {
+    flex-direction: column;
+  }
+  #Home #Education .section-Container .Section-Card .Program-Detail .Logo {
+    display: grid;
+    place-items: center;
+  }
+  #Home .section-Container {
+    flex-direction: column;
+  }
+  #Home .section-Container .Section-Card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Home.css.map */

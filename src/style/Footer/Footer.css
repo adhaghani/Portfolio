@@ -1,0 +1,26 @@
+#Footer {
+  padding: var(--padding_l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Footer .Details .role {
+  margin-top: var(--mg_l);
+  font-size: var(--font_size_m);
+  color: var(--text_colour_dkgray);
+}
+#Footer .Details .socials {
+  margin-top: var(--mg_s);
+  display: flex;
+  gap: var(--gap_m);
+}
+#Footer .Actions {
+  display: flex;
+  gap: var(--gap_l);
+}
+#Footer .Actions .List h4 {
+  margin-bottom: var(--mg_l);
+}
+#Footer .Actions .List ul li {
+  margin: var(--mg_m) 0px;
+}/*# sourceMappingURL=Footer.css.map */
