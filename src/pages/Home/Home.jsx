@@ -22,13 +22,13 @@ const Home = () => {
         </h1>
       </section>
       <AboutHome />
-      <ServiceHome />
       <PromoCard
         MainText="While you're here, let's get to know each other!"
         Link="https://www.linkedin.com/in/adhaghani/"
         LinkText="Connect with me"
         LinkClassName="Button"
       />
+      <ServiceHome />
       <SkillsHome />
       <ProjectsHome />
     </div>

@@ -8,7 +8,7 @@ const ProjectsCard = (props) => {
       id="ProjectCard"
     >
       <div className="image-Container">
-        <img src={props.imgLink} alt="test" />
+        <img loading="eager" src={props.imgLink} alt="test" />
       </div>
       <div className="details-Container">
         <h2 className="Project-Title">

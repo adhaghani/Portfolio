@@ -1,0 +1,63 @@
+#About #Certificates .section-Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap_l);
+}
+#About #Certificates .section-Container #CertificateCard .Card-Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: var(--padding_m);
+  border-radius: var(--border_rad10);
+}
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Name {
+  font-size: var(--font_size_m);
+}
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Organization {
+  font-weight: normal;
+  font-size: var(--font_size_s);
+  margin: 3px 0px;
+}
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Organization span a {
+  display: inline-block;
+  margin-left: var(--mg_xs);
+  font-size: var(--font_size_s);
+  background-color: var(--bg_colour_white);
+  color: var(--text_colour_dkgray);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Action {
+  padding: var(--padding_l);
+  border-radius: var(--border_rad10);
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg_colour_white);
+}
+#About #Certificates .section-Container #CertificateCard .Card-Container {
+  margin: var(--mg_s) 0px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.4s linear;
+  display: grid;
+  place-items: center;
+}
+#About #Certificates .section-Container #CertificateCard .Card-Container img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#About #Certificates .section-Container #CertificateCard .Card-Container.Shown {
+  max-height: 600px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 900px) {
+  #About #Certificates .section-Container {
+    gap: 0px;
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=About.css.map */

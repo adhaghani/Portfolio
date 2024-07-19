@@ -3,6 +3,13 @@ import React from "react";
 import Title from "../../../component/Title/Title";
 import { Link } from "react-router-dom";
 const AboutHome = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant"
+    });
+  };
+
   return (
     <section id="About">
       <Title TitleText="About Me" SubText="a little bit about myself." />
@@ -20,7 +27,10 @@ const AboutHome = () => {
             positive impact on the world through my work.
           </p>
           <p>
-            Want to know more about me? <Link to="/About">Click Here.</Link>
+            Want to know more about me?{" "}
+            <Link to="/About" onClick={scrollToTop}>
+              Click Here.
+            </Link>
           </p>
         </div>
       </div>
