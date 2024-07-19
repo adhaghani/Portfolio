@@ -1,0 +1,55 @@
+[
+  {
+    "imgLink": "/Portfolio/Designs/FPPPolo.png",
+    "title": "Business Society Activity Jersey",
+    "timeline": "April 2024",
+    "technologies": ["PhotoShop, ", "Illustrator, ", "Figma, "],
+    "description": "Transforming from a 2D Mock-Ups given into 3D Mock-Ups."
+  },
+  {
+    "imgLink": "/Portfolio/Designs/MPPLanyard.png",
+    "title": "Programme Lanyard",
+    "timeline": "June 2024",
+    "technologies": [
+      "PhotoShop, ",
+      "Illustrator, ",
+      "Figma, ",
+      "Canva, ",
+      "Google "
+    ],
+    "description": "A Lanyard to be used by Student Representative of UiTM Pahang 2023-2024 Session for an international Programme."
+  },
+  {
+    "imgLink": "/Portfolio/Designs/MYTECCJersey.png",
+    "title": "Mytecc Activity Jersey",
+    "timeline": "March 2024",
+    "technologies": ["Photoshop, ", "Illustrator, ", "Figma, ", "Canva "],
+    "description": "Designed a Retro-Like jersey as a commercial Project to be sold by MYTECC UiTM Raub 2023-2024 Session."
+  },
+  {
+    "imgLink": "/Portfolio/Designs/NFRRunner.png",
+    "title": "NFR Runner Jersey",
+    "timeline": "February 2024",
+    "technologies": [
+      "PhotoShop, ",
+      "Illustrator, ",
+      "Figma, ",
+      "Canva, ",
+      "Google "
+    ],
+    "description": "Runner jersey to be wear by runner during Neon Fun Run: Raya Edition organized by MyAgrosis UiTM Raub and Business Society UiTM Raub."
+  },
+  {
+    "imgLink": "/Portfolio/Designs/NFRCommittee.png",
+    "title": "NFR Committee Jersey",
+    "timeline": "February 2024",
+    "technologies": [
+      "PhotoShop, ",
+      "Illustrator, ",
+      "Figma, ",
+      "Canva, ",
+      "Google "
+    ],
+    "description": "Committee jersey to be wear by Committee during Neon Fun Run: Raya Edition organized by MyAgrosis UiTM Raub and Business Society UiTM Raub."
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "imgLink": "/Portfolio/Projects/Room.png",
+    "title": "Room E-Commerce",
+    "timeline": "April 2024 - July 2024",
+    "technologies": [
+      "HTML, ",
+      "CSS, ",
+      "JavaScript, ",
+      "React.js, ",
+      "PHP, ",
+      "SCSS, ",
+      "MySQL"
+    ],
+    "description": "An E-Commerce platform that showcases basic shopping features like checkout, adding product to card and many mores. Developed during my 4th semester for an assignment.",
+    "RepositoryLink": "https://github.com/adhaghani/roomecommerce"
+  },
+  {
+    "imgLink": "/Portfolio/Projects/SunnySide.png",
+    "title": "SunnySide Landing Page",
+    "timeline": "June 2024",
+    "technologies": ["HTML, ", "CSS, ", "JavaScript, ", "React.js, ", "SCSS "],
+    "description": "A simple landing page completed for task by FrontEnd Mentor. Showcasing my abilities to developed basic Landing Page for companies.",
+    "LiveLink": "https://adhaghani.github.io/SunnySideLandingPage/",
+    "RepositoryLink": "https://github.com/adhaghani/SunnySideLandingPage"
+  },
+  {
+    "imgLink": "/Portfolio/Projects/Social.png",
+    "title": "Social Media Card",
+    "timeline": "June 2024",
+    "technologies": ["HTML, ", "CSS, ", "SCSS "],
+    "description": "A simple Social Media Card useful to share all my social media link in one place.",
+    "LiveLink": "https://adhaghani.github.io/SocialLink/",
+    "RepositoryLink": "https://github.com/adhaghani/SocialLink"
+  },
+  {
+    "imgLink": "/Portfolio/Projects/Bank.png",
+    "title": "Simple Bank System",
+    "timeline": "December 2023",
+    "technologies": [
+      "JAVA, ",
+      "Object Oriented Programming, ",
+      "Data Structure "
+    ],
+    "description": "A simple Banking application developed to demonstrate my abilities with handling Object Oriented Programming using Java. User are able to create account and do basic transaction like deposit, withdraw and transfer.",
+    "RepositoryLink": "https://github.com/adhaghani/SimpleBankingApplication"
+  }
+]

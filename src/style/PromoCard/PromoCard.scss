@@ -1,0 +1,21 @@
+#PromoCard {
+  color: var(--text_colour_white);
+  background-color: var(--bg_colour_black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column !important;
+  gap: var(--gap_m);
+  padding: calc(var(--padding_l) * 3);
+  border-radius: var(--border_rad10);
+  .Text {
+    font-size: var(--font_size_l);
+    text-align: center;
+  }
+  a {
+    margin: 20px auto;
+    margin-bottom: 0px;
+    color: var(--text_colour_black);
+    background-color: var(--bg_colour_white);
+  }
+}

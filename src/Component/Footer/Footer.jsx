@@ -1,6 +1,6 @@
 import React from "react";
 import "../../style/Footer/Footer.css";
-import LinkTo from "../Button/Link";
+import LinkTo from "../Button/LinkTo";
 import GithubIcon from "../../assets/GithubIcon";
 import InstagramIcon from "../../assets/InstagramIcon";
 import LinkedinIcon from "../../assets/LinkedinIcon";

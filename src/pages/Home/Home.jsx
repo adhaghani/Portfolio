@@ -10,6 +10,8 @@ import ProjectsHome from "./Section/ProjectsHome";
 
 import { Link } from "react-router-dom";
 
+import PromoCard from "../../component/PromoCard/PromoCard";
+
 const Home = () => {
   return (
     <div className="Home" id="Home">
@@ -21,6 +23,12 @@ const Home = () => {
       </section>
       <AboutHome />
       <ServiceHome />
+      <PromoCard
+        MainText="While you're here, let's get to know each other!"
+        Link="https://www.linkedin.com/in/adhaghani/"
+        LinkText="Connect with me"
+        LinkClassName="Button"
+      />
       <SkillsHome />
       <ProjectsHome />
     </div>

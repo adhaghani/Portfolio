@@ -1,36 +1,40 @@
 import React from "react";
 
-import LinkTo from "../../component/Button/Link";
-const ProjectsCard = () => {
+import LinkTo from "../../component/Button/LinkTo";
+const ProjectsCard = (props) => {
   return (
-    <div className="ProjectCard" id="ProjectCard">
-      <div className="image-Container">image</div>
+    <div
+      className={props.Design ? "ProjectCard Design" : "ProjectCard"}
+      id="ProjectCard"
+    >
+      <div className="image-Container">
+        <img src={props.imgLink} alt="test" />
+      </div>
       <div className="details-Container">
         <h2 className="Project-Title">
-          Project Title{" "}
-          <span className="Project-Timeline">August 2022 - Present</span>{" "}
+          {props.title}{" "}
+          <span className="Project-Timeline">{props.timeline}</span>
         </h2>
 
-        <p className="Project-technology">
-          HTML, CSS, JavaScript, React.js, PHP, axios
-        </p>
-        <p className="Project-Description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsam
-          officiis laboriosam similique quia porro.
-        </p>
+        <p className="Project-technology">{props.technologies}</p>
+        <p className="Project-Description">{props.description}</p>
         <div className="Button-Container">
-          <LinkTo
-            goOutside
-            Link="/Projects"
-            className="Button"
-            text="Live Server"
-          />
-          <LinkTo
-            goOutside
-            Link="/Projects"
-            className="Button"
-            text="Repository"
-          />
+          {props.LiveLink && (
+            <LinkTo
+              goOutside
+              Link={props.LiveLink}
+              className="Button"
+              text="Live View"
+            />
+          )}
+          {props.RepositoryLink && (
+            <LinkTo
+              goOutside
+              Link={props.RepositoryLink}
+              className="Button"
+              text="Repository"
+            />
+          )}
         </div>
       </div>
     </div>

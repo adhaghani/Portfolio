@@ -3,16 +3,19 @@ import React from "react";
 import Title from "../../../component/Title/Title";
 
 import ProjectsCard from "../ProjectsCard";
+
+import DesignData from "../../../assets/DesignProject.json";
 const DesignProjects = () => {
   return (
     <section id="Design">
       <Title
         TitleText="Design Projects"
-        SubText="Design projects that i have taken part in."
+        SubText="all of my past design projects."
       />
       <div className="section-Container">
-        <ProjectsCard />
-        <ProjectsCard />
+        {DesignData.map((Data) => (
+          <ProjectsCard Design key={Data.id} {...Data} />
+        ))}
       </div>
     </section>
   );

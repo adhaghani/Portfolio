@@ -3,6 +3,8 @@ import React from "react";
 import Title from "../../../component/Title/Title";
 
 import ProjectsCard from "../ProjectsCard";
+
+import DevelopmentData from "../../../assets/DevelopmentProject.json";
 const DevelopmentProjects = () => {
   return (
     <section id="Development">
@@ -11,8 +13,9 @@ const DevelopmentProjects = () => {
         SubText="all of my development projects using various languages."
       />
       <div className="section-Container">
-        <ProjectsCard />
-        <ProjectsCard />
+        {DevelopmentData.map((Data) => (
+          <ProjectsCard key={Data.id} {...Data} />
+        ))}
       </div>
     </section>
   );

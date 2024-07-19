@@ -5,6 +5,7 @@ import DesignProjects from "./Section/DesignProjects";
 import DevelopmentProjects from "./Section/DevelopmentProjects";
 
 import "../../style/Projects/Projects.css";
+import PromoCard from "../../component/PromoCard/PromoCard";
 const Projects = () => {
   return (
     <div className="Projects" id="Projects">
@@ -15,6 +16,12 @@ const Projects = () => {
         </h1>
       </section>
       <DesignProjects />
+      <PromoCard
+        MainText="Want me to design for you?"
+        Link="Mailto:adhaahmadwork@gmail.com"
+        LinkText="Email me"
+        LinkClassName="Button"
+      />
       <DevelopmentProjects />
     </div>
   );

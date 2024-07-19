@@ -105,9 +105,10 @@
   flex: 1 1 0;
 }
 #Home #Projects .section-Container .Section-Card .image {
+  width: 100%;
   aspect-ratio: 16/9;
-  border: 1px solid black;
   border-radius: var(--border_rad10);
+  transition: var(--transition_f);
 }
 #Home #Projects .section-Container .Section-Card h3 {
   margin: var(--mg_l) 0px;
@@ -116,6 +117,9 @@
 #Home #Projects .section-Container .Section-Card p {
   font-size: var(--font_size_m);
   color: var(--text_colour_dkgray);
+}
+#Home #Projects .section-Container .Section-Card:hover .image {
+  scale: 1.02;
 }
 #Home .section-Container {
   display: flex;
