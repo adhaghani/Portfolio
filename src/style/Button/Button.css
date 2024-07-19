@@ -1,5 +1,7 @@
 .Button {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: var(--gap_s);
   width: -moz-fit-content;
   width: fit-content;
   margin-top: var(--gap_m);
@@ -13,7 +15,9 @@
 }
 
 .Link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: var(--gap_s);
   color: var(--text_colour_dkgray);
 }
 .Link:hover {

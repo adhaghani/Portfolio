@@ -27,6 +27,7 @@ const Home = () => {
         Link="https://www.linkedin.com/in/adhaghani/"
         LinkText="Connect with me"
         LinkClassName="Button"
+        LinkIcon="Connect"
       />
       <ServiceHome />
       <SkillsHome />

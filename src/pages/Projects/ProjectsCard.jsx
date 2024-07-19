@@ -1,6 +1,7 @@
 import React from "react";
 
 import LinkTo from "../../component/Button/LinkTo";
+
 const ProjectsCard = (props) => {
   return (
     <div
@@ -25,6 +26,7 @@ const ProjectsCard = (props) => {
               Link={props.LiveLink}
               className="Button"
               text="Live View"
+              icon="Display"
             />
           )}
           {props.RepositoryLink && (
@@ -33,6 +35,7 @@ const ProjectsCard = (props) => {
               Link={props.RepositoryLink}
               className="Button"
               text="Repository"
+              icon="Code"
             />
           )}
         </div>

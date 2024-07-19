@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "../../style/Button/Button.css";
+
+import Code from "../../assets/Icon/Code";
+import Display from "../../assets/Icon/Display";
+import Email from "../../assets/Icon/Email";
+import Connect from "../../assets/Icon/Connect";
 const LinkTo = (props) => {
   return (
     <>
@@ -13,6 +18,11 @@ const LinkTo = (props) => {
           onClick={props.onclick}
         >
           {props.text}
+
+          {props.icon === "Code" && <Code />}
+          {props.icon === "Display" && <Display />}
+          {props.icon === "Email" && <Email />}
+          {props.icon === "Connect" && <Connect />}
         </a>
       ) : (
         <Link

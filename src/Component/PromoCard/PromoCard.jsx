@@ -12,6 +12,7 @@ const PromoCard = (props) => {
         Link={props.Link}
         text={props.LinkText}
         className={props.LinkClassName}
+        icon={props.LinkIcon}
       />
     </div>
   );

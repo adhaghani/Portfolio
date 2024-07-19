@@ -17,10 +17,11 @@ const Projects = () => {
       </section>
       <DesignProjects />
       <PromoCard
-        MainText="Want me to design for you?"
+        MainText="Want me to work with you?"
         Link="Mailto:adhaahmadwork@gmail.com"
         LinkText="Email me"
         LinkClassName="Button"
+        LinkIcon="Email"
       />
       <DevelopmentProjects />
     </div>
