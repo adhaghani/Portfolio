@@ -23,10 +23,27 @@
         margin-bottom: var(--mg_l);
       }
       ul {
-        li {
+        a {
           margin: var(--mg_m) 0px;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Footer {
+    flex-direction: column;
+    gap: var(--gap_l);
+    .Details {
+      .socials {
+        justify-content: center;
+      }
+    }
+    .Actions {
+      justify-content: center;
+
+      flex-wrap: wrap;
     }
   }
 }

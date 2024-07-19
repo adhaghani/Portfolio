@@ -2,6 +2,8 @@
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
   padding: 0;
+  outline: none;
+  border: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
   list-style: none;
@@ -29,6 +31,9 @@
   --padding_l: 20px;
   --padding_m: 15px;
   --padding_s: 10px;
+
+  --padding_btn_s: 10px 20px;
+  --padding_btn_m: 15px 30px;
 
   --gap_l: 20px;
   --gap_m: 15px;

@@ -1,0 +1,19 @@
+.Button {
+  display: block;
+  width: fit-content;
+  margin-top: var(--gap_m);
+  padding: var(--padding_btn_m);
+  background-color: var(--bg_colour_dkgray);
+  color: var(--text_colour_white);
+  font-weight: bold;
+  font-size: var(--font_size_s);
+  cursor: pointer;
+  border-radius: var(--border_rad10);
+}
+.Link {
+  display: block;
+  color: var(--text_colour_dkgray);
+  &:hover {
+    color: var(--text_colour_black);
+  }
+}

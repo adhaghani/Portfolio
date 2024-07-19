@@ -103,8 +103,6 @@
 }
 #Home #Projects .section-Container .Section-Card {
   flex: 1 1 0;
-  background-color: #fff;
-  padding: var(--padding_l);
 }
 #Home #Projects .section-Container .Section-Card .image {
   aspect-ratio: 16/9;
@@ -118,18 +116,6 @@
 #Home #Projects .section-Container .Section-Card p {
   font-size: var(--font_size_m);
   color: var(--text_colour_dkgray);
-}
-#Home #Projects .section-Container .Section-Card a {
-  display: block;
-  margin-top: var(--mg_l);
-  background-color: var(--bg_colour_dkgray);
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: var(--padding_m);
-  color: var(--text_colour_white);
-  border-radius: var(--border_rad10);
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 #Home .section-Container {
   display: flex;

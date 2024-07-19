@@ -1,0 +1,79 @@
+#Projects {
+  section {
+    .section-Container {
+      #ProjectCard {
+        margin: calc(var(--mg_l) * 3) 0px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: var(--gap_l);
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+        .image-Container {
+          aspect-ratio: 16/9;
+          background-color: #fff;
+          border-radius: var(--border_rad10);
+          width: 50%;
+        }
+        .details-Container {
+          width: 50%;
+          .Project-Title {
+            font-size: var(--font_size_l);
+            color: var(--text_colour_black);
+            .Project-Timeline {
+              color: var(--text_colour_dkgray);
+              font-size: var(--font_size_s);
+            }
+          }
+          .Project-technology {
+            margin-top: var(--mg_xs);
+            font-size: var(--font_size_s);
+            color: var(--text_colour_lgray);
+          }
+          .Project-Description {
+            margin-top: var(--mg_l);
+            font-size: var(--font_size_m);
+          }
+          .Button-Container {
+            margin-top: calc(var(--mg_l) * 2);
+            align-content: flex-end;
+            display: flex;
+            gap: var(--gap_l);
+            button {
+              padding: var(--padding_btn_m);
+              background-color: var(--bg_colour_dkgray);
+              color: var(--text_colour_white);
+              font-weight: bold;
+              font-size: var(--font_size_s);
+              cursor: pointer;
+              border-radius: var(--border_rad10);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 890px) {
+  #Projects {
+    section {
+      .section-Container {
+        #ProjectCard {
+          flex-direction: column;
+          &:nth-child(even) {
+            flex-direction: column;
+          }
+          .image-Container {
+            width: 100%;
+          }
+          .details-Container {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

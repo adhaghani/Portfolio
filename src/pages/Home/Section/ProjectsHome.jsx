@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
 import Title from "../../../component/Title/Title";
+
+import LinkTo from "../../../component/Button/Link";
 const ProjectsHome = () => {
   return (
     <section id="Projects">
@@ -14,7 +15,7 @@ const ProjectsHome = () => {
             List of work that i have done professionally. This include mockups,
             poster, designs.
           </p>
-          <Link to="/Projects/Design">View Projects</Link>
+          <LinkTo Link="/Projects" className="Button" text="View Projects" />
         </div>
         <div className="Section-Card">
           <div className="image"></div>
@@ -23,7 +24,7 @@ const ProjectsHome = () => {
             My development Projects. This may include landing page, projects,
             learning projects, final year project, etc.
           </p>
-          <Link to="/Projects/Development">View Projects</Link>
+          <LinkTo Link="/Projects" className="Button" text="View Projects" />
         </div>
       </div>
     </section>

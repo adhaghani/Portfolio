@@ -130,8 +130,6 @@
       justify-content: space-between;
       .Section-Card {
         flex: 1 1 0;
-        background-color: #fff;
-        padding: var(--padding_l);
         .image {
           aspect-ratio: 16/9;
           border: 1px solid black;
@@ -144,17 +142,6 @@
         p {
           font-size: var(--font_size_m);
           color: var(--text_colour_dkgray);
-        }
-        a {
-          display: block;
-          margin-top: var(--mg_l);
-          background-color: var(--bg_colour_dkgray);
-          width: fit-content;
-          padding: var(--padding_m);
-          color: var(--text_colour_white);
-          border-radius: var(--border_rad10);
-          font-weight: bold;
-          letter-spacing: 1px;
         }
       }
     }
