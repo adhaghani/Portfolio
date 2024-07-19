@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import LinkTo from "../../../component/Button/LinkTo";
+
+import Link from "../../../assets/Icon/Link";
+import ArrowUp from "../../../assets/Icon/ArrowUp";
 const CertificateCard = (props) => {
   const [IsOpened, setIsOpened] = useState(false);
 
@@ -16,17 +19,18 @@ const CertificateCard = (props) => {
           <h4 className="Organization">
             {props.Organization}{" "}
             <span>
-              <LinkTo
-                goOutside
-                Link={props.CredentialLink}
-                text="Credentials"
-              />
+              <a href={props.CredentialLink} target="_blank">
+                Credentials <Link />
+              </a>
             </span>
           </h4>
           <p className="Date">{props.Date}</p>
         </div>
-        <button className="Card-Action" onClick={handleOpen}>
-          open
+        <button
+          className={IsOpened ? "Card-Action Active" : "Card-Action"}
+          onClick={handleOpen}
+        >
+          <ArrowUp />
         </button>
       </div>
       <div

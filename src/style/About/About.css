@@ -19,22 +19,31 @@
   font-size: var(--font_size_s);
   margin: 3px 0px;
 }
-#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Organization span a {
-  display: inline-block;
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Organization a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap_s);
   margin-left: var(--mg_xs);
-  font-size: var(--font_size_s);
-  background-color: var(--bg_colour_white);
-  color: var(--text_colour_dkgray);
   padding: 5px 10px;
+  background-color: var(--bg_colour_white);
+  font-size: var(--font_size_s);
+  color: var(--text_colour_dkgray);
   border-radius: 4px;
 }
 #About #Certificates .section-Container #CertificateCard .Card-Header .Card-Action {
-  padding: var(--padding_l);
+  padding: var(--padding_m);
   border-radius: var(--border_rad10);
   aspect-ratio: 1/1;
   display: grid;
   place-items: center;
   background-color: var(--bg_colour_white);
+}
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Action svg {
+  transition: 0.3s all linear;
+  transform: rotate(180deg);
+}
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Action.Active svg {
+  transform: rotate(0deg);
 }
 #About #Certificates .section-Container #CertificateCard .Card-Container {
   margin: var(--mg_s) 0px;

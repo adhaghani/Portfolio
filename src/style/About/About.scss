@@ -20,26 +20,35 @@
               font-weight: normal;
               font-size: var(--font_size_s);
               margin: 3px 0px;
-              span {
-                a {
-                  display: inline-block;
-                  margin-left: var(--mg_xs);
-                  font-size: var(--font_size_s);
-                  background-color: var(--bg_colour_white);
-                  color: var(--text_colour_dkgray);
-                  padding: 5px 10px;
-                  border-radius: 4px;
-                }
+              a {
+                display: inline-flex;
+                align-items: center;
+                gap: var(--gap_s);
+                margin-left: var(--mg_xs);
+                padding: 5px 10px;
+                background-color: var(--bg_colour_white);
+                font-size: var(--font_size_s);
+                color: var(--text_colour_dkgray);
+                border-radius: 4px;
               }
             }
           }
           .Card-Action {
-            padding: var(--padding_l);
+            padding: var(--padding_m);
             border-radius: var(--border_rad10);
             aspect-ratio: 1/1;
             display: grid;
             place-items: center;
             background-color: var(--bg_colour_white);
+            svg {
+              transition: 0.3s all linear;
+              transform: rotate(180deg);
+            }
+            &.Active {
+              svg {
+                transform: rotate(0deg);
+              }
+            }
           }
         }
         .Card-Container {

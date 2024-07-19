@@ -74,4 +74,8 @@ body {
 a,
 button {
   cursor: pointer;
+}
+
+svg {
+  pointer-events: none;
 }/*# sourceMappingURL=Index.css.map */
