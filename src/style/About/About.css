@@ -63,10 +63,57 @@
 #About #Certificates .section-Container #CertificateCard .Card-Container.Shown {
   max-height: 600px;
 }
+#About #EducationExperience .section-Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap_l);
+}
+#About #EducationExperience .section-Container .Section-Card {
+  background-color: #fff;
+  padding: var(--padding_l);
+  border-radius: var(--border_rad10);
+}
+#About #EducationExperience .section-Container .Section-Card .Header {
+  display: flex;
+  gap: var(--gap_l);
+}
+#About #EducationExperience .section-Container .Section-Card .Header .Details .Name {
+  font-size: var(--font_size_m);
+  color: var(--text_colour_black);
+}
+#About #EducationExperience .section-Container .Section-Card .Header .Details .Course {
+  font-size: var(--font_size_s);
+  color: var(--text_colour_black);
+  margin: var(--mg_xs) 0px;
+}
+#About #EducationExperience .section-Container .Section-Card .Header .Details .Date {
+  color: var(--text_colour_dkgray);
+}
+#About #EducationExperience .section-Container .Section-Card .Body {
+  margin-top: var(--mg_m);
+}
+#About #EducationExperience .section-Container .Section-Card .Body .Detail-Card .Card-Title {
+  font-size: var(--font_size_s);
+  color: var(--text_colour_dkgray);
+}
+#About #EducationExperience .section-Container .Section-Card .Body .Detail-Card .List li {
+  padding: 3px 0px;
+}
+#About #EducationExperience .section-Container .Section-Card .Body .Detail-Card .List li a {
+  display: block;
+  font-size: var(--font_size_s);
+  color: var(--text_colour_lgray);
+}
+#About #EducationExperience .section-Container .Section-Card .Body .Detail-Card .List li a:hover {
+  color: var(--text_colour_dkgray);
+}
 
 @media screen and (min-width: 1px) and (max-width: 900px) {
   #About #Certificates .section-Container {
     gap: 0px;
+    grid-template-columns: 1fr;
+  }
+  #About #EducationExperience .section-Container {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=About.css.map */

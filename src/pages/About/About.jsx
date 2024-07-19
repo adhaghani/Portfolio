@@ -4,10 +4,9 @@ import Title from "../../component/Title/Title";
 
 import "../../style/About/About.css";
 
-import Experience from "./Sections/Experience";
 import AboutMe from "./Sections/AboutMe";
 import Certificates from "./Sections/Certificates";
-import Education from "./Sections/Education";
+import EducationExperience from "./Sections/EducationExperience";
 import Involvement from "./Sections/Involvement";
 import Contact from "./Sections/Contact";
 const About = () => {
@@ -21,9 +20,8 @@ const About = () => {
         </h1>
       </section>
       <AboutMe />
-      <Education />
+      <EducationExperience />
       <Involvement />
-      <Experience />
       <Certificates />
       <Contact />
     </div>

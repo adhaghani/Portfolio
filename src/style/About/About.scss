@@ -71,6 +71,60 @@
       }
     }
   }
+  #EducationExperience {
+    .section-Container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gap_l);
+      .Section-Card {
+        background-color: #fff;
+        padding: var(--padding_l);
+        border-radius: var(--border_rad10);
+        .Header {
+          display: flex;
+          gap: var(--gap_l);
+
+          .Details {
+            .Name {
+              font-size: var(--font_size_m);
+              color: var(--text_colour_black);
+            }
+            .Course {
+              font-size: var(--font_size_s);
+              color: var(--text_colour_black);
+              margin: var(--mg_xs) 0px;
+            }
+            .Date {
+              color: var(--text_colour_dkgray);
+            }
+          }
+        }
+        .Body {
+          margin-top: var(--mg_m);
+          .Detail-Card {
+            .Card-Title {
+              font-size: var(--font_size_s);
+              color: var(--text_colour_dkgray);
+            }
+            .List {
+              li {
+                padding: 3px 0px;
+                a {
+                  display: block;
+                  font-size: var(--font_size_s);
+
+                  color: var(--text_colour_lgray);
+                  &:hover {
+                    color: var(--text_colour_dkgray);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1px) and (max-width: 900px) {
@@ -78,6 +132,11 @@
     #Certificates {
       .section-Container {
         gap: 0px;
+        grid-template-columns: 1fr;
+      }
+    }
+    #EducationExperience {
+      .section-Container {
         grid-template-columns: 1fr;
       }
     }
