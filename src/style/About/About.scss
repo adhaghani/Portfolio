@@ -198,6 +198,16 @@
     #EducationExperience {
       .section-Container {
         grid-template-columns: 1fr;
+        .Section-Card {
+          .Header {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .Details {
+              width: 100%;
+            }
+          }
+        }
       }
     }
     #Involvement {

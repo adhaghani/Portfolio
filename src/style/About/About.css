@@ -165,6 +165,14 @@
   #About #EducationExperience .section-Container {
     grid-template-columns: 1fr;
   }
+  #About #EducationExperience .section-Container .Section-Card .Header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #About #EducationExperience .section-Container .Section-Card .Header .Details {
+    width: 100%;
+  }
   #About #Involvement .section-Container #InvolvementCard .Header .Main {
     flex-direction: column;
   }
