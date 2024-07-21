@@ -12,7 +12,7 @@ const Certificates = () => {
     <section id="Certificates">
       <Title
         TitleText={"Certificates"}
-        SubText={"List of Certification i have accumulated."}
+        SubText={"We must continously learn new things."}
       />
       <div className="section-Container">
         <div className="Group">

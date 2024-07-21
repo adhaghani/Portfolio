@@ -1,0 +1,106 @@
+[
+  {
+    "imgLink": "/Portfolio/Clubs/MYTECC.png",
+    "Name": "MARA Youth Technology Computer Club (MYTECC)",
+    "Time": "October 2023 - Present",
+    "Role": "Multimedia and Publicity Exco",
+    "Involvement": [
+      {
+        "Title": "Committee In",
+        "Details": [
+          {
+            "ProgramName": "MYTECC Codevortex: C++ & Java",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "MYTECC Amalgamation of Courses",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "MYTECC Fitness Frenzy",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "Unveiling MYTECC",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "MYTECC TechTalk: Career Map",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "2024-2025 Presidential election",
+            "Position": "Multimedia Bureau"
+          }
+        ]
+      }
+    ],
+    "ExperienceSummary": "Overall, The experience at MYTECC has provided me with valuable soft skills like Communication and team-work."
+  },
+  {
+    "imgLink": "/Portfolio/Clubs/MyAgrosis.png",
+    "Name": "Malaysian Agroentrepreneurial Club for University Student (MyAgrosis)",
+    "Time": "October 2023 - Present",
+    "Role": "Lead Graphic Designer, Multimedia Division",
+    "Involvement": [
+      {
+        "Title": "Committee In",
+        "Details": [
+          {
+            "ProgramName": "MyAgrosis Neon Fun Run",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "MyAgrosis Neon Fun Run: Raya Edition",
+            "Position": "Lead Graphic, Multimedia Bureau"
+          }
+        ]
+      }
+    ],
+    "ExperienceSummary": "The skills i got from leading 2 Graphic Designer Team in MyAgrosis Programs are truly valuable. Spearheading a team of up to 5 people has developed my leadership skill and greatly enhanced my communcation skill. This, undoubtedly resulted in a very successfull marketing campaign and we are able to exceed our expectation of 200 students for both programs."
+  },
+  {
+    "imgLink": "/Portfolio/Clubs/pmc.png",
+    "Name": "PhotoMedia Club (PMC)",
+    "Time": "October 2023 - Present",
+    "Role": "PhotoVideo Division, PVD",
+    "Involvement": [
+      {
+        "Title": "Committee In",
+        "Details": [
+          {
+            "ProgramName": "PMC Water Festival",
+            "Position": "Videographer"
+          }
+        ]
+      },
+      {
+        "Title": "Participated In",
+        "Details": [
+          {
+            "ProgramName": "PMC Artistic on Display",
+            "Position": "First Runner-Up"
+          }
+        ]
+      }
+    ],
+    "ExperienceSummary": "Overall, The experience at MYTECC has provided me with valuable soft skills like Communication and team-work."
+  },
+  {
+    "imgLink": "/Portfolio/Clubs/JPJPP.png",
+    "Name": "JawatanKuasa PilihanRaya JawatanKuasa Perwakilan Pelajar (JPJPP) 23-24",
+    "Time": "January 2024",
+    "Role": "Infostructure and Infrastructure Bureau, Lead Multimedia Raub Campus",
+    "ExperienceSummary": "Overall, The experience at MYTECC has provided me with valuable soft skills like Communication and team-work.",
+    "Involvement": [
+      {
+        "Title": "Experience ",
+        "Details": [
+          {
+            "ProgramName": "PMC Water Festival"
+          }
+        ]
+      }
+    ]
+  }
+]

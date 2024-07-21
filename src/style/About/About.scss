@@ -1,76 +1,4 @@
 #About {
-  #Certificates {
-    .section-Container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--gap_l);
-      #CertificateCard {
-        .Card-Header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          background-color: #fff;
-          padding: var(--padding_m);
-          border-radius: var(--border_rad10);
-          .Card-Title {
-            .Name {
-              font-size: var(--font_size_m);
-            }
-            .Organization {
-              font-weight: normal;
-              font-size: var(--font_size_s);
-              margin: 3px 0px;
-              a {
-                display: inline-flex;
-                align-items: center;
-                gap: var(--gap_s);
-                margin-left: var(--mg_xs);
-                padding: 5px 10px;
-                background-color: var(--bg_colour_white);
-                font-size: var(--font_size_s);
-                color: var(--text_colour_dkgray);
-                border-radius: 4px;
-              }
-            }
-          }
-          .Card-Action {
-            padding: var(--padding_m);
-            border-radius: var(--border_rad10);
-            aspect-ratio: 1/1;
-            display: grid;
-            place-items: center;
-            background-color: var(--bg_colour_white);
-            svg {
-              transition: 0.3s all linear;
-              transform: rotate(180deg);
-            }
-            &.Active {
-              svg {
-                transform: rotate(0deg);
-              }
-            }
-          }
-        }
-        .Card-Container {
-          margin: var(--mg_s) 0px;
-          width: 100%;
-          background-color: #fff;
-          overflow: hidden;
-          max-height: 0px;
-          transition: max-height 0.4s linear;
-          display: grid;
-          place-items: center;
-          img {
-            width: 100%;
-            object-fit: contain;
-          }
-          &.Shown {
-            max-height: 600px;
-          }
-        }
-      }
-    }
-  }
   #EducationExperience {
     .section-Container {
       display: grid;
@@ -123,6 +51,136 @@
           }
         }
       }
+    }
+  }
+  #Involvement {
+    .section-Container {
+      #InvolvementCard {
+        .Header {
+          background-color: #fff;
+          border-radius: var(--border_rad10);
+          padding: var(--padding_l);
+          .Main {
+            display: flex;
+            align-items: center;
+            gap: var(--gap_l);
+            .Logo {
+              height: 65px;
+            }
+            .Details {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+              .Name-Position {
+                .Name {
+                  font-size: var(--font_size_m);
+                  .Date {
+                    font-size: var(--font_size_s);
+                    color: var(--text_colour_lgray);
+                    font-weight: normal;
+                  }
+                }
+                .Position {
+                  margin-top: var(--mg_xs);
+                  color: var(--text_colour_dkgray);
+                }
+              }
+              .Action {
+                aspect-ratio: 1/1;
+                border: 1px solid black;
+                height: 60px;
+              }
+            }
+          }
+        }
+        .Card-Container {
+          .Detail-Container {
+            padding: var(--padding_l);
+            .Experience-Topic {
+              margin-bottom: var(--mg_s);
+            }
+            .Experience-Detail {
+              li {
+                margin: var(--mg_xs);
+                font-size: var(--font_size_s);
+                color: var(--text_colour_black);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #Certificates {
+    .section-Container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gap_l);
+      #CertificateCard {
+        .Card-Header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #fff;
+          padding: var(--padding_m);
+          border-radius: var(--border_rad10);
+          .Card-Title {
+            .Name {
+              font-size: var(--font_size_m);
+            }
+            .Organization {
+              font-weight: normal;
+              font-size: var(--font_size_s);
+              margin: 3px 0px;
+              a {
+                display: inline-flex;
+                align-items: center;
+                gap: var(--gap_s);
+                margin-left: var(--mg_xs);
+                padding: 5px 10px;
+                background-color: var(--bg_colour_white);
+                font-size: var(--font_size_s);
+                color: var(--text_colour_dkgray);
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Card-Action {
+    padding: var(--padding_m);
+    border-radius: var(--border_rad10);
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    background-color: var(--bg_colour_white);
+    svg {
+      transition: 0.3s all linear;
+      transform: rotate(180deg);
+    }
+    &.Active {
+      svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .Card-Container {
+    border-radius: var(--border_rad10);
+    margin: var(--mg_s) 0px;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.4s linear;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+    &.Shown {
+      max-height: 600px;
     }
   }
 }

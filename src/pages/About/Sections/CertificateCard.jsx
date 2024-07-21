@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import LinkTo from "../../../component/Button/LinkTo";
 
 import Link from "../../../assets/Icon/Link";

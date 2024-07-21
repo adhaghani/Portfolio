@@ -50,8 +50,8 @@ const Education = () => {
                 effectively.
               </li>
               <li>
-                - Volunteered as College Election Committee (CEC) for Student
-                Representative 2023-2024 Session
+                - Represented Computer Science student to 2 (TWO) programming
+                competition.
               </li>
             </ul>
           </div>
