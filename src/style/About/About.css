@@ -53,6 +53,9 @@
   gap: var(--gap_l);
 }
 #About #Involvement .section-Container #InvolvementCard .Header .Main .Logo {
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 65px;
 }
 #About #Involvement .section-Container #InvolvementCard .Header .Main .Details {
@@ -161,5 +164,8 @@
   }
   #About #EducationExperience .section-Container {
     grid-template-columns: 1fr;
+  }
+  #About #Involvement .section-Container #InvolvementCard .Header .Main {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=About.css.map */

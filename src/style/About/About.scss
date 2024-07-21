@@ -65,6 +65,8 @@
             align-items: center;
             gap: var(--gap_l);
             .Logo {
+              width: 100px;
+              object-fit: contain;
               height: 65px;
             }
             .Details {
@@ -196,6 +198,17 @@
     #EducationExperience {
       .section-Container {
         grid-template-columns: 1fr;
+      }
+    }
+    #Involvement {
+      .section-Container {
+        #InvolvementCard {
+          .Header {
+            .Main {
+              flex-direction: column;
+            }
+          }
+        }
       }
     }
   }
