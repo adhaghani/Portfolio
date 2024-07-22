@@ -35,5 +35,5 @@ const routes = [
 ];
 
 export const router = createBrowserRouter(routes, {
-  basename: "/Portfolio"
+  basename: ""
 });

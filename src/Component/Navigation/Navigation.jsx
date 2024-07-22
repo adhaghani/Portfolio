@@ -43,7 +43,7 @@ const Navigation = () => {
           <li>
             <LinkTo
               goOutside
-              Link="/Portfolio/Resume.pdf"
+              Link="/Resume.pdf"
               text="My Resume"
               className="Link"
             />
@@ -82,7 +82,7 @@ const Navigation = () => {
               goOutside
               Link="/Portfolio/Resume.pdf"
               text="My Resume"
-              className="Link"  
+              className="Link"
             />
           </li>
         </ul>

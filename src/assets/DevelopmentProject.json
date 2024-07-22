@@ -1,6 +1,6 @@
 [
   {
-    "imgLink": "/Portfolio/Projects/Room.png",
+    "imgLink": "/Projects/Room.png",
     "title": "Room E-Commerce",
     "timeline": "April 2024 - July 2024",
     "technologies": [
@@ -16,7 +16,7 @@
     "RepositoryLink": "https://github.com/adhaghani/roomecommerce"
   },
   {
-    "imgLink": "/Portfolio/Projects/Bank.png",
+    "imgLink": "/Projects/Bank.png",
     "title": "Simple Bank System",
     "timeline": "December 2023",
     "technologies": [
@@ -28,7 +28,7 @@
     "RepositoryLink": "https://github.com/adhaghani/SimpleBankingApplication"
   },
   {
-    "imgLink": "/Portfolio/Projects/SunnySide.png",
+    "imgLink": "/Projects/SunnySide.png",
     "title": "SunnySide Landing Page",
     "timeline": "June 2024",
     "technologies": ["HTML, ", "CSS, ", "JavaScript, ", "React.js, ", "SCSS "],
@@ -37,7 +37,7 @@
     "RepositoryLink": "https://github.com/adhaghani/SunnySideLandingPage"
   },
   {
-    "imgLink": "/Portfolio/Projects/Social.png",
+    "imgLink": "/Projects/Social.png",
     "title": "Social Media Card",
     "timeline": "June 2024",
     "technologies": ["HTML, ", "CSS, ", "SCSS "],
@@ -46,7 +46,7 @@
     "RepositoryLink": "https://github.com/adhaghani/SocialLink"
   },
   {
-    "imgLink": "/Portfolio/Projects/starbucks.png",
+    "imgLink": "/Projects/starbucks.png",
     "title": "Starbucks Landing Page",
     "timeline": "December 2022",
     "technologies": ["HTML, ", "CSS, ", "JavaScript "],

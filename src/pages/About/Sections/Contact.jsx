@@ -77,7 +77,7 @@ const Contact = () => {
           </div>
           <LinkTo
             goOutside
-            Link="/Portfolio/Resume.pdf"
+            Link="/Resume.pdf"
             text="My Resume"
             className="Button"
           />
