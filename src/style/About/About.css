@@ -196,6 +196,7 @@
   padding: var(--padding_l);
   font-size: var(--font_size_s);
   border: 1px solid var(--bg_colour_lgray);
+  cursor: text;
 }
 #About #Contact .section-Container .Section-Card form .Input-Card input:hover, #About #Contact .section-Container .Section-Card form .Input-Card input:focus {
   border: 1px solid var(--text_colour_black);
@@ -211,6 +212,7 @@
   border: none;
 }
 #About #Contact .section-Container .Section-Card form .Input-Card textarea {
+  cursor: text;
   width: 100%;
   height: 200px;
   padding: var(--padding_l);

@@ -4,10 +4,7 @@ import LinkTo from "../../component/Button/LinkTo";
 
 const ProjectsCard = (props) => {
   return (
-    <div
-      className={props.Design ? "ProjectCard Design" : "ProjectCard"}
-      id="ProjectCard"
-    >
+    <div className="ProjectCard">
       <div className="image-Container">
         <img loading="eager" src={props.imgLink} alt="test" />
       </div>

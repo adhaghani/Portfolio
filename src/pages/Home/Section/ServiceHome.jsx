@@ -1,6 +1,7 @@
 import React from "react";
 
 import Title from "../../../component/Title/Title";
+
 const ServiceHome = () => {
   return (
     <section id="Service">

@@ -2,6 +2,7 @@ import React from "react";
 
 import Title from "../../../component/Title/Title";
 import { Link } from "react-router-dom";
+import me from "/me_Home.png";
 const AboutHome = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -15,7 +16,9 @@ const AboutHome = () => {
       <Title TitleText="About Me" SubText="a little bit about myself." />
       <div className="section-Container">
         <div className="Section-Card">
-          <div className="image"></div>
+          <div className="image">
+            <img src={me} alt="" />
+          </div>
         </div>
         <div className="Section-Card">
           {" "}

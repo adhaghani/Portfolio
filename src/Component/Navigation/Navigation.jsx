@@ -3,6 +3,7 @@ import "../../style/Navigation/Navigation.css";
 import { Link } from "react-router-dom";
 
 import Logo from "/icon.svg";
+import LinkTo from "../Button/LinkTo";
 const Navigation = () => {
   const [Sidebar, setSidebar] = useState(false);
 
@@ -39,6 +40,14 @@ const Navigation = () => {
               Projects
             </Link>
           </li>
+          <li>
+            <LinkTo
+              goOutside
+              Link="/Portfolio/Resume.pdf"
+              text="My Resume"
+              className="Link"
+            />
+          </li>
         </ul>
         <button
           className={Sidebar ? "Hamburger Active" : "Hamburger"}
@@ -67,6 +76,14 @@ const Navigation = () => {
             <Link to="/Projects" onClick={(scrollToTop, handleSideNav)}>
               Projects
             </Link>
+          </li>
+          <li>
+            <LinkTo
+              goOutside
+              Link="/Portfolio/Resume.pdf"
+              text="My Resume"
+              className="Link"  
+            />
           </li>
         </ul>
       </div>

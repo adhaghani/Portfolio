@@ -1,19 +1,18 @@
 #Projects {
   section {
     .section-Container {
-      #ProjectCard {
-        margin: calc(var(--mg_l) * 5) 0px;
-
+      .ProjectCard {
+        margin: calc(var(--mg_l) * 2) 0px;
+        padding: var(--padding_l);
+        border-radius: var(--border_rad10);
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         gap: var(--gap_l);
-        &:nth-child(even) {
-          flex-direction: row-reverse;
-        }
+        background-color: #fff;
         .image-Container {
           aspect-ratio: 16/9;
-          background-color: #fff;
+
           border-radius: var(--border_rad10);
           width: 50%;
           overflow: hidden;

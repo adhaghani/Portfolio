@@ -90,6 +90,7 @@ const SkillsHome = () => {
       icon: <MysqlIcon />
     }
   ];
+
   return (
     <section id="Skills">
       <Title

@@ -118,3 +118,18 @@ svg {
 ::-webkit-selection {
   background-color: transparent;
 }
+
+section {
+  margin: 200px 0px;
+}
+
+#Hero {
+  height: calc(100vh - var(--nav-height) - 400px);
+  display: grid;
+  place-items: center;
+  .Title {
+    font-size: var(--font_size_xl);
+    text-align: center;
+    mask: linear-gradient(45deg, transparent, #000 50%, #000 30%, transparent);
+  }
+}

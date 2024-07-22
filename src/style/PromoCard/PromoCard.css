@@ -1,4 +1,4 @@
-#PromoCard {
+.PromoCard {
   color: var(--text_colour_white);
   background-color: var(--bg_colour_black);
   display: flex;
@@ -9,11 +9,11 @@
   padding: calc(var(--padding_l) * 3);
   border-radius: var(--border_rad10);
 }
-#PromoCard .Text {
+.PromoCard .Text {
   font-size: var(--font_size_l);
   text-align: center;
 }
-#PromoCard a {
+.PromoCard a {
   margin: 20px auto;
   margin-bottom: 0px;
   color: var(--text_colour_black);

@@ -54,14 +54,26 @@ nav .List {
   display: flex;
   gap: var(--gap_l);
 }
+nav .List li {
+  display: grid;
+  place-items: center;
+}
 nav .List li a {
   font-size: var(--font_size_s);
   letter-spacing: 1px;
   color: var(--text_colour_lgray);
   font-weight: bold;
+  margin-top: 0px;
 }
 nav .List li a:hover {
   color: var(--text_colour_black);
+}
+nav .List li a.Link {
+  background-color: var(--bg_colour_black);
+  padding: 8px 15px;
+  color: var(--text_colour_white);
+  border-radius: 6px;
+  font-weight: normal;
 }
 nav .SideNav {
   position: fixed;
@@ -82,14 +94,21 @@ nav .SideNav .List {
   flex-direction: column;
 }
 nav .SideNav .List li a {
+  margin-top: 0px;
   display: block;
   padding: var(--padding_l);
   display: grid;
   place-items: center;
   font-size: var(--font_size_m);
 }
+nav .SideNav .List li a.Link {
+  background-color: var(--bg_colour_black);
+  padding: 12px 25px;
+  color: var(--text_colour_white);
+  border-radius: 6px;
+}
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   nav .Nav-Container .List {
     display: none;
   }
