@@ -9,6 +9,7 @@
   list-style: none;
   text-decoration: none;
   cursor: default;
+  transition: var(--transition_f);
 }
 
 :root {
@@ -56,6 +57,7 @@
   --border_rad10: 10px;
 
   --transition_f: 0.1s;
+  --transition_mf: 0.2s;
 }
 
 body {

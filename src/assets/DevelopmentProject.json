@@ -49,8 +49,8 @@
     "imgLink": "/Portfolio/Projects/starbucks.png",
     "title": "Starbucks Landing Page",
     "timeline": "December 2022",
-    "technologies": ["HTML, ", "CSS, ", "JavaScript, "],
-    "description": "My first ever Landing Page project, a copy of starbucks landing page.",
+    "technologies": ["HTML, ", "CSS, ", "JavaScript "],
+    "description": "My first ever Landing Page project, a copy of starbucks landing page. Developed to learn and understand the basics and fundamental of HTML, CSS and Javasript languages, which greatly helps me in the long run.",
     "LiveLink": "https://adhaghani.github.io/starbuck-lp.github.io/",
     "RepositoryLink": "https://github.com/adhaghani/starbuck-lp.github.io"
   }

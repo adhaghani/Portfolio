@@ -9,6 +9,7 @@
   list-style: none;
   text-decoration: none;
   cursor: default;
+  transition: var(--transition_f);
 }
 
 :root {
@@ -43,6 +44,7 @@
   --font_size_xs: clamp(0.6rem, 1vw, 0.8rem);
   --border_rad10: 10px;
   --transition_f: 0.1s;
+  --transition_mf: 0.2s;
 }
 
 body {

@@ -1,25 +1,101 @@
 nav {
-  background-color: rgba(251, 251, 251, 0.6156862745);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  width: 100%;
+  left: 0px;
+  position: fixed;
+  z-index: 2;
+  background-color: var(--bg_colour_white);
+}
+nav .Nav-Container {
   height: var(--nav-height);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: var(--padding_l);
-  position: fixed;
   width: var(--width_container);
-  z-index: 2;
+  margin: auto;
+}
+nav .Logo_Container {
+  display: flex;
+  align-items: center;
+  gap: var(--gap_m);
+}
+nav .Logo_Container .logo {
+  width: 40px;
+}
+nav #Hamburger {
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav #Hamburger div {
+  pointer-events: none;
+  width: 30px;
+  height: 5px;
+  background-color: var(--bg_colour_dkgray);
+  border-radius: 2px;
+  transition: var(--transition_mf);
+}
+nav #Hamburger.Active div.Top {
+  transform: translate(0px, 12px) rotate(45deg);
+}
+nav #Hamburger.Active div.Mid {
+  width: 0px;
+  opacity: 0;
+}
+nav #Hamburger.Active div.Bot {
+  transform: translate(0px, -11px) rotate(-45deg);
 }
 nav .List {
   display: flex;
   gap: var(--gap_l);
 }
 nav .List li a {
-  font-size: var(--font_size_s);
+  font-size: var(--font_size_m);
   letter-spacing: 1px;
-  color: var(--text_colour_dkgray);
+  color: var(--text_colour_lgray);
+  font-weight: bold;
 }
 nav .List li a:hover {
   color: var(--text_colour_black);
+}
+nav .SideNav {
+  position: fixed;
+  right: 0;
+  top: var(--nav-height);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg_colour_white);
+  transform: translateX(100%);
+  transition: var(--transition_mf);
+}
+nav .SideNav.Active {
+  transform: translateX(0px);
+}
+nav .SideNav .List {
+  margin-top: 20vh;
+  width: 100%;
+  flex-direction: column;
+}
+nav .SideNav .List li a {
+  display: block;
+  padding: var(--padding_l);
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  nav .Nav-Container .List {
+    display: none;
+  }
+  nav #Hamburger {
+    display: flex;
+  }
+  .SideNav .List {
+    display: flex;
+  }
 }/*# sourceMappingURL=Navigation.css.map */
