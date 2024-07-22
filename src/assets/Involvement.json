@@ -9,6 +9,18 @@
         "Title": "Committee In",
         "Details": [
           {
+            "ProgramName": "MYTECC Assembly: Together We Bind",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "CodeCulus Hunt",
+            "Position": "Mutlimedia Bureau"
+          },
+          {
+            "ProgramName": "MYSharing Session: Computer Hardware",
+            "Position": "Protocol Bureau"
+          },
+          {
             "ProgramName": "MYTECC Codevortex: C++ & Java",
             "Position": "Multimedia Bureau"
           },
@@ -25,12 +37,37 @@
             "Position": "Multimedia Bureau"
           },
           {
-            "ProgramName": "MYTECC TechTalk: Career Map",
+            "ProgramName": "MYTALK: Career Map",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "TECHSPEAK: Season 1",
+            "Position": "Multimedia Bureau"
+          },
+          {
+            "ProgramName": "Tech Experience: PUBG Mobile League",
             "Position": "Multimedia Bureau"
           },
           {
             "ProgramName": "2024-2025 Presidential election",
             "Position": "Multimedia Bureau"
+          }
+        ]
+      },
+      {
+        "Title": "Experience ",
+        "Details": [
+          {
+            "ProgramName": "- Involved in Multiple programs organised by MYTECC and College of Computing, Informatic and Mathematics as committee."
+          },
+          {
+            "ProgramName": "- Clearly communicated with bureau leader and high council ensuring all work exceed quality expectations."
+          },
+          {
+            "ProgramName": "- Produced Graphical Poster to be used on Instagram Story, Instagram Post and Facebook Post which resulted in increase user traffic."
+          },
+          {
+            "ProgramName": "- Produced marketing Mock-Up for products like metal nametag and jersey which increases consumer expectation for the product."
           }
         ]
       }
@@ -53,6 +90,20 @@
           {
             "ProgramName": "MyAgrosis Neon Fun Run: Raya Edition",
             "Position": "Lead Graphic, Multimedia Bureau"
+          }
+        ]
+      },
+      {
+        "Title": "Experience ",
+        "Details": [
+          {
+            "ProgramName": "- Developed and brainstormed Idea for all programs resulting in more efficient workflow."
+          },
+          {
+            "ProgramName": "- Communicated well with Club and program High council ensuring all work are delivered on-time and error-free."
+          },
+          {
+            "ProgramName": "- Produced Instagram Poster for the official Instagram account @myagrosisuitmraub which lead to increased user traffic."
           }
         ]
       }
@@ -91,7 +142,7 @@
     "Name": "JawatanKuasa PilihanRaya JawatanKuasa Perwakilan Pelajar (JPJPP) 23-24",
     "Time": "January 2024",
     "Role": "Infostructure and Infrastructure Bureau, Lead Multimedia Raub Campus",
-    "ExperienceSummary": "Overall, The experience at MYTECC has provided me with valuable soft skills like Communication and team-work.",
+    "ExperienceSummary": "Moving forward as a team is crucial for a smooth election. Soft Skills like communication, contributing idea, stress management, time management is crucial to maintain and improve efficiency. What I learn from being a CEC (Campus Election Committee) is that being punctual is an underrated soft-skills one should have, Especially in a time-sensitive environment. For example, I am responsible to create updates on an hourly basis for voters turnout for both Jengka and Raub Campus. This test my communication with protocol bureau and efficiency in producing quality posters.",
     "Involvement": [
       {
         "Title": "Experience ",

@@ -8,6 +8,12 @@ import Display from "../../assets/Icon/Display";
 import Email from "../../assets/Icon/Email";
 import Connect from "../../assets/Icon/Connect";
 const LinkTo = (props) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant"
+    });
+  };
   return (
     <>
       {props.goOutside ? (
@@ -28,7 +34,7 @@ const LinkTo = (props) => {
         <Link
           to={props.Link}
           className={props.className}
-          onClick={props.onclick}
+          onClick={(props.onclick, scrollToTop)}
         >
           {props.text}
         </Link>

@@ -21,37 +21,41 @@ const Education = () => {
         </div>
         <div className="Body">
           <div className="Detail-Card">
-            <h4 className="Card-Title">Organization Joined :</h4>
+            <h4 className="Card-Title">Organization Joined:</h4>
+            <ul className="List">
+              <li>- MARA Youth Technology Computer Club (MYTECC)</li>
+              <li>
+                - Malaysia Agroentrepreneurial Club for University Student
+                (MyAgrosis)
+              </li>
+              <li>- PhotoMedia Club (PMC)</li>
+            </ul>
+          </div>
+          <div className="Detail-Card">
+            <h4 className="Card-Title">Experience: </h4>
             <ul className="List">
               <li>
-                <a href="">- MARA Youth Technology Computer Club (MYTECC)</a>
+                - Actively Involved in various programs and competitions held
+                inside and outside of campus.
               </li>
               <li>
-                <a href="">
-                  - Malaysia Agroentrepreneurial Club for University Student
-                  (MyAgrosis)
-                </a>
-              </li>
-              <li>
-                <a href="">- PhotoMedia Club (PMC)</a>
+                - Contributed well to all group assginments, Communicated
+                effectively between groupmates ensuring work are assigned
+                effectively and equally.
               </li>
             </ul>
           </div>
           <div className="Detail-Card">
-            <h4 className="Card-Title">Experience : </h4>
+            <h4 className="Card-Title">Competition Joined: </h4>
             <ul className="List">
+              <li>- MYTECC Codevortex: C++ & Java, First Place.</li>
               <li>
-                - Actively Involved in Various Programs and Competitions.
-                garning reputation for being an active student.
+                - CodeAthon UiTM Se-Malaysia 2024, Third-Runner Up, honorary
+                mention of having fastest time taken for every solved problem.
               </li>
               <li>
-                - Contributed well to all group assginments, Communiaced
-                effectively between groupmates ensuring work are assigned
-                effectively.
-              </li>
-              <li>
-                - Represented Computer Science student to 2 (TWO) programming
-                competition.
+                - International Competition for Programming and Multimedia 2023
+                (i-CPROM), Programming category, Runner Up.
               </li>
             </ul>
           </div>

@@ -68,4 +68,9 @@
   #Projects section .section-Container #ProjectCard .details-Container {
     width: 100%;
   }
+  #Projects section .section-Container #ProjectCard .details-Container .Button-Container .Button {
+    max-width: 300px;
+    justify-content: center;
+    flex: 1 1 0;
+  }
 }/*# sourceMappingURL=Projects.css.map */

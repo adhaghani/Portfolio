@@ -30,7 +30,7 @@ const ProjectsHome = () => {
             onclick={scrollToTop}
             Link="/Projects"
             className="Button"
-            text="> View Projects"
+            text="View Projects"
           />
         </div>
         <div className="Section-Card">
@@ -45,7 +45,7 @@ const ProjectsHome = () => {
             onclick={scrollToTop}
             Link="/Projects"
             className="Button"
-            text="> View Projects"
+            text="View Projects"
           />
         </div>
       </div>

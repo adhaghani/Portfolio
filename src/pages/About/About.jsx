@@ -9,6 +9,7 @@ import Certificates from "./Sections/Certificates";
 import EducationExperience from "./Sections/EducationExperience";
 import Involvement from "./Sections/Involvement";
 import Contact from "./Sections/Contact";
+import PromoCard from "../../component/PromoCard/PromoCard";
 const About = () => {
   return (
     <div className="About" id="About">
@@ -21,8 +22,17 @@ const About = () => {
       </section>
       <AboutMe />
       <EducationExperience />
+      <PromoCard
+        GoInside
+        MainText="Want to see my projects?"
+        Link="/Projects"
+        LinkText="View Projects"
+        LinkClassName="Button"
+        LinkIcon="Projects"
+      />
       <Involvement />
       <Certificates />
+
       <Contact />
     </div>
   );

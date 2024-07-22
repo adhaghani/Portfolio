@@ -7,13 +7,26 @@ const PromoCard = (props) => {
   return (
     <div id="PromoCard">
       <h1 className="Text">{props.MainText}</h1>
-      <LinkTo
-        goOutside
-        Link={props.Link}
-        text={props.LinkText}
-        className={props.LinkClassName}
-        icon={props.LinkIcon}
-      />
+      {props.GoInside ? (
+        <>
+          <LinkTo
+            Link={props.Link}
+            text={props.LinkText}
+            className={props.LinkClassName}
+            icon={props.LinkIcon}
+          />
+        </>
+      ) : (
+        <>
+          <LinkTo
+            goOutside
+            Link={props.Link}
+            text={props.LinkText}
+            className={props.LinkClassName}
+            icon={props.LinkIcon}
+          />
+        </>
+      )}
     </div>
   );
 };

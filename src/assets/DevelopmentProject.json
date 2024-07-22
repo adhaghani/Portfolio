@@ -16,6 +16,18 @@
     "RepositoryLink": "https://github.com/adhaghani/roomecommerce"
   },
   {
+    "imgLink": "/Portfolio/Projects/Bank.png",
+    "title": "Simple Bank System",
+    "timeline": "December 2023",
+    "technologies": [
+      "JAVA, ",
+      "Object Oriented Programming, ",
+      "Data Structure "
+    ],
+    "description": "A simple Banking application developed to demonstrate my abilities with handling Object Oriented Programming using Java. User are able to create account and do basic transaction like deposit, withdraw and transfer.",
+    "RepositoryLink": "https://github.com/adhaghani/SimpleBankingApplication"
+  },
+  {
     "imgLink": "/Portfolio/Projects/SunnySide.png",
     "title": "SunnySide Landing Page",
     "timeline": "June 2024",
@@ -34,15 +46,12 @@
     "RepositoryLink": "https://github.com/adhaghani/SocialLink"
   },
   {
-    "imgLink": "/Portfolio/Projects/Bank.png",
-    "title": "Simple Bank System",
-    "timeline": "December 2023",
-    "technologies": [
-      "JAVA, ",
-      "Object Oriented Programming, ",
-      "Data Structure "
-    ],
-    "description": "A simple Banking application developed to demonstrate my abilities with handling Object Oriented Programming using Java. User are able to create account and do basic transaction like deposit, withdraw and transfer.",
-    "RepositoryLink": "https://github.com/adhaghani/SimpleBankingApplication"
+    "imgLink": "/Portfolio/Projects/starbucks.png",
+    "title": "Starbucks Landing Page",
+    "timeline": "December 2022",
+    "technologies": ["HTML, ", "CSS, ", "JavaScript, "],
+    "description": "My first ever Landing Page project, a copy of starbucks landing page.",
+    "LiveLink": "https://adhaghani.github.io/starbuck-lp.github.io/",
+    "RepositoryLink": "https://github.com/adhaghani/starbuck-lp.github.io"
   }
 ]

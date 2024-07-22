@@ -5,7 +5,10 @@ import Title from "../../../component/Title/Title";
 const Experience = () => {
   return (
     <>
-      <Title TitleText={"Experience"} SubText={"My past work experience."} />
+      <Title
+        TitleText={"Work Experience"}
+        SubText={"My past work experience."}
+      />
       <div className="Section-Card">
         <div className="Header">
           <div className="Logo">

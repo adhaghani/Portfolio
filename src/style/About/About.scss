@@ -1,4 +1,34 @@
 #About {
+  #Me {
+    .section-Container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .image {
+      margin: var(--mg_auto);
+      width: 60%;
+      min-width: 300px;
+      aspect-ratio: 1/1;
+      background-color: #fff;
+      border-radius: 25% 35% 045% 100%;
+    }
+    .Section-Card {
+      width: 50%;
+      margin: var(--mg_l) 0px;
+      p {
+        margin: var(--mg_l) 0px;
+        font-size: var(--font_size_m);
+        color: var(--text_colour_black);
+        a {
+          color: var(--text_colour_lgray);
+          &:hover {
+            color: var(--text_colour_dkgray);
+          }
+        }
+      }
+    }
+  }
   #EducationExperience {
     .section-Container {
       display: grid;
@@ -37,15 +67,6 @@
             .List {
               li {
                 padding: 3px 0px;
-                a {
-                  display: block;
-                  font-size: var(--font_size_s);
-
-                  color: var(--text_colour_lgray);
-                  &:hover {
-                    color: var(--text_colour_dkgray);
-                  }
-                }
               }
             }
           }
@@ -107,6 +128,11 @@
                 margin: var(--mg_xs);
                 font-size: var(--font_size_s);
                 color: var(--text_colour_black);
+              }
+            }
+            .Experience-Summary {
+              p {
+                font-size: var(--font_size_s);
               }
             }
           }
@@ -182,7 +208,7 @@
       object-fit: contain;
     }
     &.Shown {
-      max-height: 600px;
+      max-height: 800px;
     }
   }
 }
@@ -198,6 +224,23 @@
     #EducationExperience {
       .section-Container {
         grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #About {
+    #Me {
+      .section-Container {
+        flex-direction: column-reverse;
+        .Section-Card {
+          width: 100%;
+        }
+      }
+    }
+    #EducationExperience {
+      .section-Container {
         .Section-Card {
           .Header {
             flex-direction: column;

@@ -1,3 +1,31 @@
+#About #Me .section-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#About #Me .image {
+  margin: var(--mg_auto);
+  width: 60%;
+  min-width: 300px;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border-radius: 25% 35% 45% 100%;
+}
+#About #Me .Section-Card {
+  width: 50%;
+  margin: var(--mg_l) 0px;
+}
+#About #Me .Section-Card p {
+  margin: var(--mg_l) 0px;
+  font-size: var(--font_size_m);
+  color: var(--text_colour_black);
+}
+#About #Me .Section-Card p a {
+  color: var(--text_colour_lgray);
+}
+#About #Me .Section-Card p a:hover {
+  color: var(--text_colour_dkgray);
+}
 #About #EducationExperience .section-Container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -33,14 +61,6 @@
 }
 #About #EducationExperience .section-Container .Section-Card .Body .Detail-Card .List li {
   padding: 3px 0px;
-}
-#About #EducationExperience .section-Container .Section-Card .Body .Detail-Card .List li a {
-  display: block;
-  font-size: var(--font_size_s);
-  color: var(--text_colour_lgray);
-}
-#About #EducationExperience .section-Container .Section-Card .Body .Detail-Card .List li a:hover {
-  color: var(--text_colour_dkgray);
 }
 #About #Involvement .section-Container #InvolvementCard .Header {
   background-color: #fff;
@@ -91,6 +111,9 @@
   margin: var(--mg_xs);
   font-size: var(--font_size_s);
   color: var(--text_colour_black);
+}
+#About #Involvement .section-Container #InvolvementCard .Card-Container .Detail-Container .Experience-Summary p {
+  font-size: var(--font_size_s);
 }
 #About #Certificates .section-Container {
   display: grid;
@@ -154,7 +177,7 @@
      object-fit: contain;
 }
 #About .Card-Container.Shown {
-  max-height: 600px;
+  max-height: 800px;
 }
 
 @media screen and (min-width: 1px) and (max-width: 900px) {
@@ -164,6 +187,14 @@
   }
   #About #EducationExperience .section-Container {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  #About #Me .section-Container {
+    flex-direction: column-reverse;
+  }
+  #About #Me .section-Container .Section-Card {
+    width: 100%;
   }
   #About #EducationExperience .section-Container .Section-Card .Header {
     flex-direction: column;

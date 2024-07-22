@@ -47,11 +47,11 @@
   --mg_s: 10px;
   --mg_xs: 5px;
 
-  --font_size_xl: 4rem;
-  --font_size_l: 1.8rem;
-  --font_size_m: 1.3rem;
-  --font_size_s: 1rem;
-  --font_size_xs: 0.8rem;
+  --font_size_xl: clamp(2.6rem, 5vw, 5rem);
+  --font_size_l: clamp(1.5rem, 3vw, 1.8rem);
+  --font_size_m: clamp(1.1rem, 2vw, 1.3rem);
+  --font_size_s: clamp(0.8rem, 1.5vw, 1rem);
+  --font_size_xs: clamp(0.6rem, 1vw, 0.8rem);
 
   --border_rad10: 10px;
 

@@ -76,6 +76,13 @@
           }
           .details-Container {
             width: 100%;
+            .Button-Container {
+              .Button {
+                max-width: 300px;
+                justify-content: center;
+                flex: 1 1 0;
+              }
+            }
           }
         }
       }
