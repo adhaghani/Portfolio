@@ -51,7 +51,7 @@
   --font_size_xl: clamp(2.6rem, 5vw, 5rem);
   --font_size_l: clamp(1.5rem, 3vw, 1.8rem);
   --font_size_m: clamp(1.1rem, 2vw, 1.3rem);
-  --font_size_s: clamp(0.8rem, 1.5vw, 1rem);
+  --font_size_s: clamp(0.95rem, 1.5vw, 1rem);
   --font_size_xs: clamp(0.6rem, 1vw, 0.8rem);
 
   --border_rad10: 10px;
@@ -93,4 +93,28 @@ button {
 
 svg {
   pointer-events: none;
+}
+
+/*** Works on common browsers ***/
+::selection {
+  background-color: transparent;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: transparent;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: transparent;
+}
+
+::-ms-selection {
+  background-color: transparent;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: transparent;
 }

@@ -211,9 +211,93 @@
       max-height: 800px;
     }
   }
+  #Contact {
+    .section-Container {
+      display: flex;
+      gap: var(--gap_l);
+      .Section-Card {
+        flex: 1 1 0;
+        form {
+          .Input-Card {
+            margin-bottom: calc(1.4 * var(--mg_l));
+
+            input {
+              width: 100%;
+              height: 60px;
+              border-radius: 6px;
+              padding: var(--padding_l);
+              font-size: var(--font_size_s);
+              border: 1px solid var(--bg_colour_lgray);
+              &:hover,
+              &:focus {
+                border: 1px solid var(--text_colour_black);
+              }
+              &.Submit {
+                background-color: var(--bg_colour_dkgray);
+                color: var(--text_colour_white);
+                font-weight: bold;
+                border: none;
+                &:hover {
+                  border: none;
+                }
+                cursor: pointer;
+              }
+            }
+            textarea {
+              width: 100%;
+              height: 200px;
+              padding: var(--padding_l);
+              font-size: var(--font_size_s);
+              border: 1px solid var(--bg_colour_lgray);
+              border-radius: 6px;
+              resize: none;
+              &:hover,
+              &:focus {
+                border: 1px solid var(--text_colour_black);
+              }
+            }
+            label {
+              color: var(--text_colour_dkgray);
+              background-color: var(--bg_colour_white);
+              width: fit-content;
+              padding: 4px 10px;
+              border-radius: 6px;
+              display: block;
+              position: absolute;
+              transform: translate(12px, -13px);
+              font-size: var(--font_size_s);
+            }
+          }
+        }
+        .Info-Card {
+          background-color: #fff;
+          margin-bottom: var(--mg_l);
+          padding: var(--padding_m);
+          display: flex;
+          align-items: center;
+          gap: var(--gap_l);
+          border-radius: var(--border_rad10);
+          .icon {
+            aspect-ratio: 1/1;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            svg {
+              width: 80%;
+              height: 80%;
+            }
+          }
+          .text {
+            color: var(--text_colour_black);
+            font-size: var(--font_size_s);
+          }
+        }
+      }
+    }
+  }
 }
 
-@media screen and (min-width: 1px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   #About {
     #Certificates {
       .section-Container {
@@ -228,8 +312,17 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  #About {
+    #Contact {
+      .section-Container {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   #About {
     #Me {
       .section-Container {

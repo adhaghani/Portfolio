@@ -55,7 +55,7 @@ nav .List {
   gap: var(--gap_l);
 }
 nav .List li a {
-  font-size: var(--font_size_m);
+  font-size: var(--font_size_s);
   letter-spacing: 1px;
   color: var(--text_colour_lgray);
   font-weight: bold;
@@ -86,6 +86,7 @@ nav .SideNav .List li a {
   padding: var(--padding_l);
   display: grid;
   place-items: center;
+  font-size: var(--font_size_m);
 }
 
 @media screen and (max-width: 450px) {

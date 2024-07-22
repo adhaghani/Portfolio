@@ -17,19 +17,38 @@ const LinkTo = (props) => {
   return (
     <>
       {props.goOutside ? (
-        <a
-          href={props.Link}
-          target="_BLANK"
-          className={props.className}
-          onClick={props.onclick}
-        >
-          {props.text}
+        <>
+          {props.download ? (
+            <a
+              href={props.Link}
+              target="_BLANK"
+              className={props.className}
+              onClick={props.onclick}
+              download={props.download}
+            >
+              {props.text}
 
-          {props.icon === "Code" && <Code />}
-          {props.icon === "Display" && <Display />}
-          {props.icon === "Email" && <Email />}
-          {props.icon === "Connect" && <Connect />}
-        </a>
+              {props.icon === "Code" && <Code />}
+              {props.icon === "Display" && <Display />}
+              {props.icon === "Email" && <Email />}
+              {props.icon === "Connect" && <Connect />}
+            </a>
+          ) : (
+            <a
+              href={props.Link}
+              target="_BLANK"
+              className={props.className}
+              onClick={props.onclick}
+            >
+              {props.text}
+
+              {props.icon === "Code" && <Code />}
+              {props.icon === "Display" && <Display />}
+              {props.icon === "Email" && <Email />}
+              {props.icon === "Connect" && <Connect />}
+            </a>
+          )}
+        </>
       ) : (
         <Link
           to={props.Link}
