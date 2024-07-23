@@ -80,7 +80,7 @@ const Navigation = () => {
           <li>
             <LinkTo
               goOutside
-              Link="/Portfolio/Resume.pdf"
+              Link="/Resume.pdf"
               text="My Resume"
               className="Link"
             />
