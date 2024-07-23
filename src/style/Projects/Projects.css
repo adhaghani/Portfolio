@@ -44,8 +44,8 @@
   display: flex;
   gap: var(--gap_l);
 }
-#Projects section .section-Container .ProjectCard .details-Container .Button-Container button {
-  padding: var(--padding_btn_m);
+#Projects section .section-Container .ProjectCard .details-Container .Button-Container .Button {
+  padding: var(--padding_btn_s);
   background-color: var(--bg_colour_dkgray);
   color: var(--text_colour_white);
   font-weight: bold;
@@ -55,21 +55,29 @@
 }
 
 @media screen and (min-width: 1px) and (max-width: 890px) {
-  #Projects section .section-Container #ProjectCard {
+  #Projects section .section-Container .ProjectCard {
     flex-direction: column;
   }
-  #Projects section .section-Container #ProjectCard:nth-child(even) {
+  #Projects section .section-Container .ProjectCard:nth-child(even) {
     flex-direction: column;
   }
-  #Projects section .section-Container #ProjectCard .image-Container {
+  #Projects section .section-Container .ProjectCard .image-Container {
     width: 100%;
   }
-  #Projects section .section-Container #ProjectCard .details-Container {
+  #Projects section .section-Container .ProjectCard .details-Container {
     width: 100%;
   }
-  #Projects section .section-Container #ProjectCard .details-Container .Button-Container .Button {
-    max-width: 300px;
+}
+@media screen and (max-width: 425px) {
+  #Projects section .section-Container .ProjectCard .details-Container .Button-Container {
+    flex-direction: column;
+    margin-top: var(--mg_l);
+    gap: var(--gap_s);
+  }
+  #Projects section .section-Container .ProjectCard .details-Container .Button-Container .Button {
+    width: 100%;
     justify-content: center;
     flex: 1 1 0;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=Projects.css.map */

@@ -11,7 +11,13 @@
       min-width: 300px;
       aspect-ratio: 1/1;
       background-color: #fff;
-      border-radius: 25% 35% 045% 100%;
+      border-radius: 100% 100% 0% 0%;
+      overflow: hidden;
+      img {
+        transform: translateY(20px);
+        height: 100%;
+        scale: 1.2;
+      }
     }
     .Section-Card {
       width: 50%;
@@ -35,6 +41,7 @@
       grid-template-columns: 1fr 1fr;
       gap: var(--gap_l);
       .Section-Card {
+        margin: var(--mg_l) 0px;
         background-color: #fff;
         padding: var(--padding_l);
         border-radius: var(--border_rad10);
@@ -54,6 +61,13 @@
             }
             .Date {
               color: var(--text_colour_dkgray);
+              a {
+                color: var(--text_colour_dkgray);
+                text-decoration: underline;
+                &:hover {
+                  color: var(--text_colour_black);
+                }
+              }
             }
           }
         }

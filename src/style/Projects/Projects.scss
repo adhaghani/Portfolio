@@ -45,8 +45,8 @@
             margin-top: auto;
             display: flex;
             gap: var(--gap_l);
-            button {
-              padding: var(--padding_btn_m);
+            .Button {
+              padding: var(--padding_btn_s);
               background-color: var(--bg_colour_dkgray);
               color: var(--text_colour_white);
               font-weight: bold;
@@ -65,7 +65,7 @@
   #Projects {
     section {
       .section-Container {
-        #ProjectCard {
+        .ProjectCard {
           flex-direction: column;
           &:nth-child(even) {
             flex-direction: column;
@@ -75,11 +75,28 @@
           }
           .details-Container {
             width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #Projects {
+    section {
+      .section-Container {
+        .ProjectCard {
+          .details-Container {
             .Button-Container {
+              flex-direction: column;
+              margin-top: var(--mg_l);
+              gap: var(--gap_s);
               .Button {
-                max-width: 300px;
+                width: 100%;
                 justify-content: center;
                 flex: 1 1 0;
+                margin-top: 0px;
               }
             }
           }

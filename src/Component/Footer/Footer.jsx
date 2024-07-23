@@ -30,7 +30,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="Actions">
-        <div className="List">
+        <div iv className="List">
           <h4>Contact</h4>
           <ul>
             <LinkTo

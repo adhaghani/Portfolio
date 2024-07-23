@@ -9,7 +9,13 @@
   min-width: 300px;
   aspect-ratio: 1/1;
   background-color: #fff;
-  border-radius: 25% 35% 45% 100%;
+  border-radius: 100% 100% 0% 0%;
+  overflow: hidden;
+}
+#About #Me .image img {
+  transform: translateY(20px);
+  height: 100%;
+  scale: 1.2;
 }
 #About #Me .Section-Card {
   width: 50%;
@@ -32,6 +38,7 @@
   gap: var(--gap_l);
 }
 #About #EducationExperience .section-Container .Section-Card {
+  margin: var(--mg_l) 0px;
   background-color: #fff;
   padding: var(--padding_l);
   border-radius: var(--border_rad10);
@@ -51,6 +58,13 @@
 }
 #About #EducationExperience .section-Container .Section-Card .Header .Details .Date {
   color: var(--text_colour_dkgray);
+}
+#About #EducationExperience .section-Container .Section-Card .Header .Details .Date a {
+  color: var(--text_colour_dkgray);
+  text-decoration: underline;
+}
+#About #EducationExperience .section-Container .Section-Card .Header .Details .Date a:hover {
+  color: var(--text_colour_black);
 }
 #About #EducationExperience .section-Container .Section-Card .Body {
   margin-top: var(--mg_m);

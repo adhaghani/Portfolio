@@ -11,6 +11,22 @@ const Experience = () => {
       />
       <div className="Section-Card">
         <div className="Header">
+          <div className="Details">
+            <h3 className="Name">Seeking for Internship Opportunity.</h3>
+            <p className="Course">
+              Software Developer, Front-End Developer, Java Developer, etc.
+            </p>
+            <p className="Date">
+              any opportunity?{" "}
+              <a href="Mailto:adhaahmadwork@gmail.com" target="_blank">
+                Contact Me
+              </a>{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="Section-Card">
+        <div className="Header">
           <div className="Logo">
             <DiY />
           </div>

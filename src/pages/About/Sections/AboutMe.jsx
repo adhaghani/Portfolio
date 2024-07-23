@@ -1,6 +1,8 @@
 import React from "react";
 import Title from "../../../component/Title/Title";
 import { Link } from "react-router-dom";
+
+import me from "/me_Home.png";
 const AboutMe = () => {
   const ScrolltoTop = () => {
     window.scrollTo({
@@ -31,7 +33,9 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="Section-Card">
-          <div className="image"></div>
+          <div className="image">
+            <img src={me} alt="" />
+          </div>
         </div>
       </div>
     </section>
