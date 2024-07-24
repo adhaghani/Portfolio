@@ -168,9 +168,6 @@
           padding: var(--padding_m);
           border-radius: var(--border_rad10);
           .Card-Title {
-            .Name {
-              font-size: var(--font_size_m);
-            }
             .Organization {
               font-weight: normal;
               font-size: var(--font_size_s);
@@ -188,6 +185,11 @@
               }
             }
           }
+        }
+        .Card-Container {
+          border-radius: 0px;
+          display: grid;
+          place-items: center;
         }
       }
     }
@@ -222,7 +224,7 @@
       object-fit: contain;
     }
     &.Shown {
-      max-height: 800px;
+      max-height: 1200px;
     }
   }
   #Contact {
@@ -368,6 +370,15 @@
           .Header {
             .Main {
               flex-direction: column;
+              .Details {
+                .Name-Position {
+                  .Name {
+                    .Date {
+                      display: block;
+                    }
+                  }
+                }
+              }
             }
           }
         }

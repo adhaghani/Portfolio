@@ -18,7 +18,7 @@ const Home = () => {
       <section id="Hero">
         <h1 className="Title">
           I'm Ahmad Adha,
-          <br />A Software Developer
+          <br />A Full-Time Student
         </h1>
       </section>
       <AboutHome />

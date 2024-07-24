@@ -13,8 +13,8 @@ const Involvement = () => {
         SubText={"My Involvement, including clubs and volunteers."}
       />
       <div className="section-Container">
-        {InvolvementData.map((Data) => (
-          <InvolvementCard key={Data.id} {...Data} />
+        {InvolvementData.map((Data, id) => (
+          <InvolvementCard key={id} {...Data} />
         ))}
       </div>
     </section>

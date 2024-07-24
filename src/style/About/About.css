@@ -142,9 +142,6 @@
   padding: var(--padding_m);
   border-radius: var(--border_rad10);
 }
-#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Name {
-  font-size: var(--font_size_m);
-}
 #About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Organization {
   font-weight: normal;
   font-size: var(--font_size_s);
@@ -160,6 +157,11 @@
   font-size: var(--font_size_s);
   color: var(--text_colour_dkgray);
   border-radius: 4px;
+}
+#About #Certificates .section-Container #CertificateCard .Card-Container {
+  border-radius: 0px;
+  display: grid;
+  place-items: center;
 }
 #About .Card-Action {
   padding: var(--padding_m);
@@ -191,7 +193,7 @@
      object-fit: contain;
 }
 #About .Card-Container.Shown {
-  max-height: 800px;
+  max-height: 1200px;
 }
 #About #Contact .section-Container {
   display: flex;
@@ -305,5 +307,8 @@
   }
   #About #Involvement .section-Container #InvolvementCard .Header .Main {
     flex-direction: column;
+  }
+  #About #Involvement .section-Container #InvolvementCard .Header .Main .Details .Name-Position .Name .Date {
+    display: block;
   }
 }/*# sourceMappingURL=About.css.map */

@@ -15,7 +15,7 @@ const routes = [
     element: <Default />,
     children: [
       {
-        path: "/",
+        path: "*",
         element: <Navigate to="/Home" />
       },
       {

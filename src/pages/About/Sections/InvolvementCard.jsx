@@ -34,17 +34,19 @@ const InvolvementCard = (props) => {
         className={IsOpened ? "Card-Container Shown" : "Card-Container Hidden"}
       >
         <div className="Detail-Container">
-          {props.Involvement.map((Data) => (
+          {props.Involvement.map((Data, id) => (
             <>
-              <h4 className="Experience-Topic">{Data.Title}</h4>
-              <ul className="Experience-Detail">
-                {Data.Details.map((Detail) => (
-                  <li>
-                    {Detail.ProgramName}
-                    {Detail.Position && <span> , {Detail.Position}</span>}
-                  </li>
-                ))}
-              </ul>
+              <div key={id}>
+                <h4 className="Experience-Topic">{Data.Title}</h4>
+                <ul className="Experience-Detail">
+                  {Data.Details.map((Detail, id) => (
+                    <li key={id}>
+                      {Detail.ProgramName}
+                      {Detail.Position && <span> , {Detail.Position}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </>
           ))}
           <div className="Experience-Summary">
