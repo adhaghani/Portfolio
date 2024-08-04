@@ -114,6 +114,9 @@
   #Home #About .Section-Card .image {
     width: 300px;
   }
+  #Home #About .Section-Card .image img {
+    width: 350px;
+  }
   #Home #Service .section-Container {
     grid-template-columns: 1fr;
   }

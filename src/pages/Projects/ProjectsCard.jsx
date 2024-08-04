@@ -1,10 +1,13 @@
 import React from "react";
 
 import LinkTo from "../../component/Button/LinkTo";
+import { motion } from "framer-motion";
+
+
 
 const ProjectsCard = (props) => {
   return (
-    <div className="ProjectCard">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="ProjectCard">
       <div className="image-Container">
         <img loading="eager" src={props.imgLink} alt="test" />
       </div>
@@ -37,7 +40,7 @@ const ProjectsCard = (props) => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

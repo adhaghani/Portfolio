@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../style/Navigation/Navigation.css";
 import { Link } from "react-router-dom";
 
 import Logo from "/icon.svg";
 import LinkTo from "../Button/LinkTo";
+
 const Navigation = () => {
   const [Sidebar, setSidebar] = useState(false);
 
@@ -14,8 +15,21 @@ const Navigation = () => {
     });
   };
 
+  useEffect(() => {
+    if (Sidebar === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [Sidebar]);
+
   const handleSideNav = () => {
     setSidebar(!Sidebar);
+  };
+
+  const handleNavLinkClick = () => {
+    scrollToTop();
+    handleSideNav();
   };
   return (
     <nav>
@@ -26,7 +40,7 @@ const Navigation = () => {
 
         <ul className="List">
           <li>
-            <Link to="/Home" onClick={scrollToTop}>
+            <Link to="/" onClick={scrollToTop}>
               Home
             </Link>
           </li>
@@ -63,17 +77,17 @@ const Navigation = () => {
       <div className={Sidebar ? "SideNav Active" : "SideNav"}>
         <ul className="List">
           <li>
-            <Link to="/Home" onClick={(scrollToTop, handleSideNav)}>
+            <Link to="/" onClick={handleNavLinkClick}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/About" onClick={(scrollToTop, handleSideNav)}>
+            <Link to="/About" onClick={handleNavLinkClick}>
               About Me
             </Link>
           </li>
           <li>
-            <Link to="/Projects" onClick={(scrollToTop, handleSideNav)}>
+            <Link to="/Projects" onClick={handleNavLinkClick}>
               Projects
             </Link>
           </li>

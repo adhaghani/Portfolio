@@ -1,14 +1,13 @@
 import React from "react";
 
 import "../../style/Home/Home.css";
-import Title from "../../component/Title/Title";
 
 import AboutHome from "./Section/AboutHome";
 import ServiceHome from "./Section/ServiceHome";
 import SkillsHome from "./Section/SkillsHome";
 import ProjectsHome from "./Section/ProjectsHome";
 
-import { Link } from "react-router-dom";
+import TypewriterComponent from "typewriter-effect";
 
 import PromoCard from "../../component/PromoCard/PromoCard";
 
@@ -18,7 +17,17 @@ const Home = () => {
       <section id="Hero">
         <h1 className="Title">
           I'm Ahmad Adha,
-          <br />A Full-Time Student
+          <br />
+          <span>
+            <TypewriterComponent
+              options={{
+                strings: ["Software Developer.", "Full-Time Student."],
+                autoStart: true,
+                loop: true,
+                delay: 100
+              }}
+            />
+          </span>
         </h1>
       </section>
       <AboutHome />
