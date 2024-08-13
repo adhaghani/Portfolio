@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import ArrowUp from "../../../assets/Icon/ArrowUp";
+import { motion } from "framer-motion";
 const InvolvementCard = (props) => {
   const [IsOpened, setIsOpened] = useState(false);
 
@@ -30,17 +31,21 @@ const InvolvementCard = (props) => {
           </div>
         </div>
       </div>
-      <div
-        className={IsOpened ? "Card-Container Shown" : "Card-Container Hidden"}
+      <motion.div
+        className={"Card-Container"}
+        initial={{ height: 0 }}
+        animate={{ height: IsOpened ? "auto" : 0 }}
+        transition={{ duration: 0.5 }}
+        exit={{ opacity: 0 }}
       >
         <div className="Detail-Container">
-          {props.Involvement.map((Data, id) => (
+          {props.Involvement.map((Data, index) => (
             <>
-              <div key={id}>
+              <div key={index}>
                 <h4 className="Experience-Topic">{Data.Title}</h4>
                 <ul className="Experience-Detail">
-                  {Data.Details.map((Detail, id) => (
-                    <li key={id}>
+                  {Data.Details.map((Detail, index) => (
+                    <li key={index}>
                       {Detail.ProgramName}
                       {Detail.Position && <span> , {Detail.Position}</span>}
                     </li>
@@ -54,7 +59,7 @@ const InvolvementCard = (props) => {
             <p>{props.ExperienceSummary}</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -9,6 +9,7 @@
         color: var(--text_colour_black);
         a {
           color: var(--text_colour_lgray);
+          text-decoration: underline;
           &:hover {
             color: var(--text_colour_dkgray);
           }

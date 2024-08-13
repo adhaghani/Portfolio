@@ -6,6 +6,7 @@ import DevelopmentProjects from "./Section/DevelopmentProjects";
 
 import "../../style/Projects/Projects.css";
 import PromoCard from "../../component/PromoCard/PromoCard";
+
 const Projects = () => {
   return (
     <div className="Projects" id="Projects">

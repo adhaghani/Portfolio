@@ -3,6 +3,7 @@ import LinkTo from "../../../component/Button/LinkTo";
 
 import Link from "../../../assets/Icon/Link";
 import ArrowUp from "../../../assets/Icon/ArrowUp";
+import { motion } from "framer-motion";
 const CertificateCard = (props) => {
   const [IsOpened, setIsOpened] = useState(false);
 
@@ -33,11 +34,15 @@ const CertificateCard = (props) => {
           <ArrowUp />
         </button>
       </div>
-      <div
-        className={IsOpened ? "Card-Container Shown" : "Card-Container Hidden"}
+      <motion.div
+        className={"Card-Container"}
+        initial={{ height: 0 }}
+        animate={{ height: IsOpened ? "auto" : 0 }}
+        transition={{ duration: 0.5 }}
+        exit={{ opacity: 0 }}
       >
         <img src={props.imgLink} alt={props.Name} />
-      </div>
+      </motion.div>
     </div>
   );
 };

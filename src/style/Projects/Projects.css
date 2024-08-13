@@ -1,80 +1,76 @@
+#Projects section .section-Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap_l);
+}
 #Projects section .section-Container .ProjectCard {
-  margin: calc(var(--mg_l) * 2) 0px;
-  padding: var(--padding_l);
-  border-radius: var(--border_rad10);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-direction: row;
   gap: var(--gap_l);
   background-color: #fff;
+  border-radius: var(--border_rad10);
 }
 #Projects section .section-Container .ProjectCard .image-Container {
   aspect-ratio: 16/9;
-  border-radius: var(--border_rad10);
-  width: 50%;
   overflow: hidden;
+  padding: var(--padding_s);
 }
 #Projects section .section-Container .ProjectCard .image-Container img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
 }
 #Projects section .section-Container .ProjectCard .details-Container {
-  width: 50%;
   display: flex;
   flex-direction: column;
+  padding: var(--padding_l);
 }
-#Projects section .section-Container .ProjectCard .details-Container .Project-Title {
-  font-size: var(--font_size_l);
+#Projects section .section-Container .ProjectCard .details-Container .Project__Details .Project-Title {
+  font-size: var(--font_size_m);
   color: var(--text_colour_black);
 }
-#Projects section .section-Container .ProjectCard .details-Container .Project-Title .Project-Timeline {
+#Projects section .section-Container .ProjectCard .details-Container .Project__Details .Project-Title .Project-Timeline {
   color: var(--text_colour_dkgray);
   font-size: var(--font_size_s);
 }
-#Projects section .section-Container .ProjectCard .details-Container .Project-technology {
-  margin-top: var(--mg_xs);
+#Projects section .section-Container .ProjectCard .details-Container .Project__Details .Project-technology {
   font-size: var(--font_size_s);
   color: var(--text_colour_lgray);
 }
-#Projects section .section-Container .ProjectCard .details-Container .Project-Description {
-  margin-top: var(--mg_l);
-  font-size: var(--font_size_m);
+#Projects section .section-Container .ProjectCard .details-Container .Project__Details .Project-Description {
+  margin-top: var(--mg_s);
+  font-size: var(--font_size_s);
 }
-#Projects section .section-Container .ProjectCard .details-Container .Button-Container {
-  margin-top: auto;
+#Projects section .section-Container .ProjectCard .Button-Container {
   display: flex;
   gap: var(--gap_l);
+  padding: var(--padding_l);
 }
-#Projects section .section-Container .ProjectCard .details-Container .Button-Container .Button {
+#Projects section .section-Container .ProjectCard .Button-Container .Button {
   padding: var(--padding_btn_s);
   background-color: var(--bg_colour_dkgray);
   color: var(--text_colour_white);
   font-weight: bold;
-  font-size: var(--font_size_s);
+  font-size: var(--font_size_ss);
   cursor: pointer;
   border-radius: var(--border_rad10);
 }
 
-@media screen and (min-width: 1px) and (max-width: 890px) {
-  #Projects section .section-Container .ProjectCard {
-    flex-direction: column;
-  }
-  #Projects section .section-Container .ProjectCard:nth-child(even) {
-    flex-direction: column;
-  }
-  #Projects section .section-Container .ProjectCard .image-Container {
-    width: 100%;
-  }
-  #Projects section .section-Container .ProjectCard .details-Container {
-    width: 100%;
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Projects section .section-Container {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 425px) {
-  #Projects section .section-Container .ProjectCard .details-Container .Button-Container {
+  #Projects section .section-Container .ProjectCard .Button-Container {
     flex-direction: column;
     margin-top: var(--mg_l);
     gap: var(--gap_s);
   }
-  #Projects section .section-Container .ProjectCard .details-Container .Button-Container .Button {
+  #Projects section .section-Container .ProjectCard .Button-Container .Button {
     width: 100%;
     justify-content: center;
     flex: 1 1 0;

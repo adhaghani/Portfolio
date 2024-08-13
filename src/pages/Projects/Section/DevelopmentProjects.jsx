@@ -13,8 +13,8 @@ const DevelopmentProjects = () => {
         SubText="all of my development projects using various languages."
       />
       <div className="section-Container">
-        {DevelopmentData.map((Data) => (
-          <ProjectsCard key={Data.id} {...Data} />
+        {DevelopmentData.map((Data, index) => (
+          <ProjectsCard key={index} {...Data} />
         ))}
       </div>
     </section>

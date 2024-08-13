@@ -1,29 +1,45 @@
 [
   {
+    "imgLink": "/Projects/Qrcode.png",
+    "title": "QR Code Generator",
+    "timeline": "August 2024",
+    "technologies": ["React.js, ", "SCSS, ", "QRcode.react, ", "HTML2Canvas"],
+    "description": "A simple QR Code generated that generate a link to a given url. User's are able to download the QR code generated. Simple, fast, efficient, and no ads.",
+    "LiveLink": "https://adhaghani.github.io/qrcodegen/",
+    "RepositoryLink": "https://github.com/adhaghani/qrcodegen"
+  },
+  {
+    "imgLink": "/Projects/Todo.png",
+    "title": "To-Do List Application",
+    "timeline": "August 2024",
+    "technologies": ["React.js, ", "SCSS "],
+    "description": "A simple Todo-List utilizing localstorage to store data. User's are able to keep track of the progress in Todo-List",
+    "LiveLink": "https://adhaghani.github.io/todo-list/",
+    "RepositoryLink": "https://github.com/adhaghani/todo-list"
+  },
+  {
     "imgLink": "/Projects/Room.png",
     "title": "Room E-Commerce",
-    "timeline": "April 2024 - July 2024",
-    "technologies": [
-      "HTML, ",
-      "CSS, ",
-      "JavaScript, ",
-      "React.js, ",
-      "PHP, ",
-      "SCSS, ",
-      "MySQL"
-    ],
+    "timeline": "July 2024",
+    "technologies": ["React.js, ", "PHP, ", "SCSS, ", "MySQL, ", "Chart.JS"],
     "description": "An E-Commerce platform that showcases basic shopping features like checkout, adding product to card and many mores. Developed during my 4th semester for an assignment.",
     "RepositoryLink": "https://github.com/adhaghani/roomecommerce"
   },
   {
+    "imgLink": "/Projects/Portfolio.png",
+    "title": "Personal Portfolio Website",
+    "timeline": "July 2024",
+    "technologies": ["React.js, ", "Framer Motion, ", "SCSS "],
+    "description": "personal portfolio websites to showcase my front-end development skills. The site also contains all my previous projects either in design or development.",
+    "LiveLink": "https://www.adhaghani.com/",
+    "RepositoryLink": "https://github.com/adhaghani/Portfolio"
+  },
+
+  {
     "imgLink": "/Projects/Bank.png",
     "title": "Simple Bank System",
     "timeline": "December 2023",
-    "technologies": [
-      "JAVA, ",
-      "Object Oriented Programming, ",
-      "Data Structure "
-    ],
+    "technologies": ["Java, ", "OOP, ", "Data Structure "],
     "description": "A simple Banking application developed to demonstrate my abilities with handling Object Oriented Programming using Java. User are able to create account and do basic transaction like deposit, withdraw and transfer.",
     "RepositoryLink": "https://github.com/adhaghani/SimpleBankingApplication"
   },

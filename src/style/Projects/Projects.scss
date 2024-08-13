@@ -1,59 +1,62 @@
 #Projects {
   section {
     .section-Container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gap_l);
       .ProjectCard {
-        margin: calc(var(--mg_l) * 2) 0px;
-        padding: var(--padding_l);
-        border-radius: var(--border_rad10);
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        flex-direction: row;
         gap: var(--gap_l);
         background-color: #fff;
+        border-radius: var(--border_rad10);
         .image-Container {
           aspect-ratio: 16/9;
-
-          border-radius: var(--border_rad10);
-          width: 50%;
           overflow: hidden;
+          padding: var(--padding_s);
           img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
           }
         }
         .details-Container {
-          width: 50%;
           display: flex;
           flex-direction: column;
-          .Project-Title {
-            font-size: var(--font_size_l);
-            color: var(--text_colour_black);
-            .Project-Timeline {
-              color: var(--text_colour_dkgray);
+          padding: var(--padding_l);
+          .Project__Details {
+            .Project-Title {
+              font-size: var(--font_size_m);
+              color: var(--text_colour_black);
+              .Project-Timeline {
+                color: var(--text_colour_dkgray);
+                font-size: var(--font_size_s);
+              }
+            }
+            .Project-technology {
+              font-size: var(--font_size_s);
+              color: var(--text_colour_lgray);
+            }
+            .Project-Description {
+              margin-top: var(--mg_s);
               font-size: var(--font_size_s);
             }
           }
-          .Project-technology {
-            margin-top: var(--mg_xs);
-            font-size: var(--font_size_s);
-            color: var(--text_colour_lgray);
-          }
-          .Project-Description {
-            margin-top: var(--mg_l);
-            font-size: var(--font_size_m);
-          }
-          .Button-Container {
-            margin-top: auto;
-            display: flex;
-            gap: var(--gap_l);
-            .Button {
-              padding: var(--padding_btn_s);
-              background-color: var(--bg_colour_dkgray);
-              color: var(--text_colour_white);
-              font-weight: bold;
-              font-size: var(--font_size_s);
-              cursor: pointer;
-              border-radius: var(--border_rad10);
-            }
+        }
+        .Button-Container {
+          display: flex;
+          gap: var(--gap_l);
+          padding: var(--padding_l);
+          .Button {
+            padding: var(--padding_btn_s);
+            background-color: var(--bg_colour_dkgray);
+            color: var(--text_colour_white);
+            font-weight: bold;
+            font-size: var(--font_size_ss);
+            cursor: pointer;
+            border-radius: var(--border_rad10);
           }
         }
       }
@@ -61,22 +64,11 @@
   }
 }
 
-@media screen and (min-width: 1px) and (max-width: 890px) {
+@media screen and (min-width: 1px) and (max-width: 768px) {
   #Projects {
     section {
       .section-Container {
-        .ProjectCard {
-          flex-direction: column;
-          &:nth-child(even) {
-            flex-direction: column;
-          }
-          .image-Container {
-            width: 100%;
-          }
-          .details-Container {
-            width: 100%;
-          }
-        }
+        grid-template-columns: 1fr;
       }
     }
   }
@@ -87,17 +79,15 @@
     section {
       .section-Container {
         .ProjectCard {
-          .details-Container {
-            .Button-Container {
-              flex-direction: column;
-              margin-top: var(--mg_l);
-              gap: var(--gap_s);
-              .Button {
-                width: 100%;
-                justify-content: center;
-                flex: 1 1 0;
-                margin-top: 0px;
-              }
+          .Button-Container {
+            flex-direction: column;
+            margin-top: var(--mg_l);
+            gap: var(--gap_s);
+            .Button {
+              width: 100%;
+              justify-content: center;
+              flex: 1 1 0;
+              margin-top: 0px;
             }
           }
         }

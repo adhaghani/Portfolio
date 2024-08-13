@@ -217,14 +217,10 @@
     width: 100%;
     background-color: #fff;
     overflow: hidden;
-    max-height: 0px;
     transition: max-height 0.4s linear;
     img {
       width: 100%;
       object-fit: contain;
-    }
-    &.Shown {
-      max-height: 1200px;
     }
   }
   #Contact {

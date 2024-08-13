@@ -10,13 +10,7 @@
     "imgLink": "/Designs/MPPLanyard.png",
     "title": "Programme Lanyard",
     "timeline": "June 2024",
-    "technologies": [
-      "PhotoShop, ",
-      "Illustrator, ",
-      "Figma, ",
-      "Canva, ",
-      "Google "
-    ],
+    "technologies": ["PhotoShop, ", "Illustrator, ", "Figma, ", "Canva, "],
     "description": "A Lanyard to be used by Student Representative of UiTM Pahang 2023-2024 Session for an international Programme."
   },
   {
@@ -30,26 +24,14 @@
     "imgLink": "/Designs/NFRRunner.png",
     "title": "NFR Runner Jersey",
     "timeline": "February 2024",
-    "technologies": [
-      "PhotoShop, ",
-      "Illustrator, ",
-      "Figma, ",
-      "Canva, ",
-      "Google "
-    ],
+    "technologies": ["PhotoShop, ", "Illustrator, ", "Figma, ", "Canva, "],
     "description": "Runner jersey to be wear by runner during Neon Fun Run: Raya Edition organized by MyAgrosis UiTM Raub and Business Society UiTM Raub."
   },
   {
     "imgLink": "/Designs/NFRCommittee.png",
     "title": "NFR Committee Jersey",
     "timeline": "February 2024",
-    "technologies": [
-      "PhotoShop, ",
-      "Illustrator, ",
-      "Figma, ",
-      "Canva, ",
-      "Google "
-    ],
+    "technologies": ["PhotoShop, ", "Illustrator, ", "Figma, ", "Canva, "],
     "description": "Committee jersey to be wear by Committee during Neon Fun Run: Raya Edition organized by MyAgrosis UiTM Raub and Business Society UiTM Raub."
   }
 ]

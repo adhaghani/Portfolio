@@ -8,12 +8,7 @@ import { motion, useScroll } from "framer-motion";
 const Default = () => {
   const { scrollYProgress } = useScroll();
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.25 }}
-      className="Container "
-    >
+    <>
       <Navigation />
       <motion.div
         className="Scroller"
@@ -22,9 +17,8 @@ const Default = () => {
       <div className="Container P-Top">
         <Outlet />
       </div>
-
       <Footer />
-    </motion.div>
+    </>
   );
 };
 

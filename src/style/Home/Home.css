@@ -9,6 +9,7 @@
 }
 #Home #About .Section-Card p a {
   color: var(--text_colour_lgray);
+  text-decoration: underline;
 }
 #Home #About .Section-Card p a:hover {
   color: var(--text_colour_dkgray);
