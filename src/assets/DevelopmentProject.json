@@ -1,6 +1,7 @@
 [
   {
     "imgLink": "/Projects/Qrcode.png",
+    "type": "Front-End",
     "title": "QR Code Generator",
     "timeline": "August 2024",
     "technologies": ["React.js, ", "SCSS, ", "QRcode.react, ", "HTML2Canvas"],
@@ -10,6 +11,7 @@
   },
   {
     "imgLink": "/Projects/Todo.png",
+    "type": "Front-End",
     "title": "To-Do List Application",
     "timeline": "August 2024",
     "technologies": ["React.js, ", "SCSS "],
@@ -18,7 +20,38 @@
     "RepositoryLink": "https://github.com/adhaghani/todo-list"
   },
   {
+    "imgLink": "/Projects/notification.png",
+    "type": "Front-End",
+    "title": "Notification Page",
+    "timeline": "August 2024",
+    "technologies": ["React.js, ", "SCSS, ", "framer-motion"],
+    "description": "A Simple notification page showcasing various types of notification in a resuable react component with smooth animation.",
+    "LiveLink": "https://adhaghani.github.io/notificationpage/",
+    "RepositoryLink": "https://github.com/adhaghani/notificationpage"
+  },
+  {
+    "imgLink": "/Projects/newsletter.png",
+    "type": "Front-End",
+    "title": "NewsLetter Subscription Form",
+    "timeline": "August 2024",
+    "technologies": ["React.js, ", "SCSS, ", "framer-motion"],
+    "description": "A Newsletter subscription form that verifies the given email and update the users when subscribed.",
+    "LiveLink": "https://adhaghani.github.io/newslettersubs/",
+    "RepositoryLink": "https://github.com/adhaghani/newslettersubs"
+  },
+  {
+    "imgLink": "/Projects/faq.png",
+    "type": "Front-End",
+    "title": "FAQs Accordion",
+    "timeline": "August 2024",
+    "technologies": ["React.js, ", "SCSS, ", "framer-motion"],
+    "description": "A Frequently Asked Question Accordion Using reusable react component and framer motion for smooth animation.",
+    "LiveLink": "https://adhaghani.github.io/faqaccordion/",
+    "RepositoryLink": "https://github.com/adhaghani/faqaccordion"
+  },
+  {
     "imgLink": "/Projects/Room.png",
+    "type": "Full-Stack",
     "title": "Room E-Commerce",
     "timeline": "July 2024",
     "technologies": ["React.js, ", "PHP, ", "SCSS, ", "MySQL, ", "Chart.JS"],
@@ -27,6 +60,7 @@
   },
   {
     "imgLink": "/Projects/Portfolio.png",
+    "type": "Front-End",
     "title": "Personal Portfolio Website",
     "timeline": "July 2024",
     "technologies": ["React.js, ", "Framer Motion, ", "SCSS "],
@@ -37,6 +71,7 @@
 
   {
     "imgLink": "/Projects/Bank.png",
+    "type": "Others",
     "title": "Simple Bank System",
     "timeline": "December 2023",
     "technologies": ["Java, ", "OOP, ", "Data Structure "],
@@ -45,6 +80,7 @@
   },
   {
     "imgLink": "/Projects/SunnySide.png",
+    "type": "Front-End",
     "title": "SunnySide Landing Page",
     "timeline": "June 2024",
     "technologies": ["HTML, ", "CSS, ", "JavaScript, ", "React.js, ", "SCSS "],
@@ -54,6 +90,7 @@
   },
   {
     "imgLink": "/Projects/Social.png",
+    "type": "Front-End",
     "title": "Social Media Card",
     "timeline": "June 2024",
     "technologies": ["HTML, ", "CSS, ", "SCSS "],
@@ -63,11 +100,20 @@
   },
   {
     "imgLink": "/Projects/starbucks.png",
+    "type": "Front-End",
     "title": "Starbucks Landing Page",
     "timeline": "December 2022",
     "technologies": ["HTML, ", "CSS, ", "JavaScript "],
     "description": "My first ever Landing Page project, a copy of starbucks landing page. Developed to learn and understand the basics and fundamental of HTML, CSS and Javasript languages, which greatly helps me in the long run.",
     "LiveLink": "https://adhaghani.github.io/starbuck-lp.github.io/",
     "RepositoryLink": "https://github.com/adhaghani/starbuck-lp.github.io"
+  },
+  {
+    "type": "Others",
+    "title": "Car DealerShip Application",
+    "timeline": "June 2023",
+    "technologies": ["Java, ", "OOP "],
+    "description": "A Car Dealership Application developed to increase understanding of OOP concepts. Contain objects like car, dealership and buyer.",
+    "RepositoryLink": "https://github.com/adhaghani/SimpleCarDealershipApplication"
   }
 ]

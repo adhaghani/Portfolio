@@ -1,9 +1,56 @@
 #Projects {
   section {
+    .Filter-Text {
+      font-size: var(--font_size_s);
+      margin-bottom: var(--mg_m);
+    }
+    .option-Tab {
+      display: flex;
+      gap: var(--gap_l);
+      margin-bottom: var(--mg_l);
+      .Tab {
+        border-radius: var(--border_rad10);
+        padding: var(--padding_btn_m);
+        background-color: var(--bg_colour_absoluteWhite);
+        color: var(--text_colour_black);
+        font-size: var(--font_size_s);
+        cursor: pointer;
+        &.active {
+          background-color: var(--bg_colour_dkgray);
+          color: var(--text_colour_white);
+        }
+      }
+      &.Desktop {
+      }
+      &.Mobile {
+        display: none;
+        position: relative;
+        .Filter {
+          .Tab {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+        .Option {
+          overflow: hidden;
+          background-color: var(--bg_colour_white);
+          padding: var(--padding_m);
+          border-radius: var(--border_rad10);
+          margin-top: var(--mg_l);
+          position: absolute;
+          width: 100%;
+          .Tab {
+            margin-bottom: var(--mg_xs);
+          }
+        }
+      }
+    }
     .section-Container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: var(--gap_l);
+      min-height: 570px;
       .ProjectCard {
         display: flex;
         flex-direction: column;
@@ -20,6 +67,11 @@
             height: 100%;
             object-fit: cover;
             border-radius: 8px;
+          }
+          .NoImage {
+            height: 100%;
+            display: grid;
+            place-items: center;
           }
         }
         .details-Container {
@@ -60,6 +112,9 @@
           }
         }
       }
+      .Empty_Pages {
+        margin-top: var(--mg_l);
+      }
     }
   }
 }
@@ -69,6 +124,15 @@
     section {
       .section-Container {
         grid-template-columns: 1fr;
+      }
+
+      .option-Tab {
+        &.Desktop {
+          display: none;
+        }
+        &.Mobile {
+          display: block;
+        }
       }
     }
   }

@@ -8,11 +8,18 @@ const ProjectsCard = (props) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      whileHover={{
+        scale: 1.03
+      }}
       className="ProjectCard"
     >
       <div className="Project-Details">
         <div className="image-Container">
-          <img loading="eager" src={props.imgLink} alt="test" />
+          {props.imgLink ? (
+            <img loading="eager" src={props.imgLink} alt="test" />
+          ) : (
+            <div className="NoImage">No Image Available</div>
+          )}
         </div>
         <div className="details-Container">
           <div className="Project__Details">

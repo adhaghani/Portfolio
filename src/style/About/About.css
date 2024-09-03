@@ -28,6 +28,7 @@
 }
 #About #Me .Section-Card p a {
   color: var(--text_colour_lgray);
+  text-decoration: underline;
 }
 #About #Me .Section-Card p a:hover {
   color: var(--text_colour_dkgray);

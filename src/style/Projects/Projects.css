@@ -1,7 +1,50 @@
+#Projects section .Filter-Text {
+  font-size: var(--font_size_s);
+  margin-bottom: var(--mg_m);
+}
+#Projects section .option-Tab {
+  display: flex;
+  gap: var(--gap_l);
+  margin-bottom: var(--mg_l);
+}
+#Projects section .option-Tab .Tab {
+  border-radius: var(--border_rad10);
+  padding: var(--padding_btn_m);
+  background-color: var(--bg_colour_absoluteWhite);
+  color: var(--text_colour_black);
+  font-size: var(--font_size_s);
+  cursor: pointer;
+}
+#Projects section .option-Tab .Tab.active {
+  background-color: var(--bg_colour_dkgray);
+  color: var(--text_colour_white);
+}
+#Projects section .option-Tab.Mobile {
+  display: none;
+  position: relative;
+}
+#Projects section .option-Tab.Mobile .Filter .Tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Projects section .option-Tab.Mobile .Option {
+  overflow: hidden;
+  background-color: var(--bg_colour_white);
+  padding: var(--padding_m);
+  border-radius: var(--border_rad10);
+  margin-top: var(--mg_l);
+  position: absolute;
+  width: 100%;
+}
+#Projects section .option-Tab.Mobile .Option .Tab {
+  margin-bottom: var(--mg_xs);
+}
 #Projects section .section-Container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap_l);
+  min-height: 570px;
 }
 #Projects section .section-Container .ProjectCard {
   display: flex;
@@ -22,6 +65,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
+}
+#Projects section .section-Container .ProjectCard .image-Container .NoImage {
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 #Projects section .section-Container .ProjectCard .details-Container {
   display: flex;
@@ -58,10 +106,19 @@
   cursor: pointer;
   border-radius: var(--border_rad10);
 }
+#Projects section .section-Container .Empty_Pages {
+  margin-top: var(--mg_l);
+}
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
   #Projects section .section-Container {
     grid-template-columns: 1fr;
+  }
+  #Projects section .option-Tab.Desktop {
+    display: none;
+  }
+  #Projects section .option-Tab.Mobile {
+    display: block;
   }
 }
 @media screen and (max-width: 425px) {

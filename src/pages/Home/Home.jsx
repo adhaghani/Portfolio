@@ -14,22 +14,22 @@ import PromoCard from "../../component/PromoCard/PromoCard";
 const Home = () => {
   return (
     <div className="Home" id="Home">
-      <section id="Hero">
+      <div id="Hero">
         <h1 className="Title">
           I'm Ahmad Adha,
           <br />
           <span>
             <TypewriterComponent
               options={{
-                strings: ["Software Developer.", "Full-Time Student."],
+                strings: ["Tech Enthusiast.", "Full-Time Student."],
                 autoStart: true,
                 loop: true,
-                delay: 100
+                delay: 125
               }}
             />
           </span>
         </h1>
-      </section>
+      </div>
       <AboutHome />
       <PromoCard
         MainText="While you're here, let's get to know each other!"

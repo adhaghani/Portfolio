@@ -14,6 +14,7 @@
 }
 
 :root {
+  --bg_colour_absoluteWhite: #fff;
   --bg_colour_white: #fbfbfb;
   --bg_colour_black: #1a1a1a;
   --bg_colour_dkgray: #252525;
@@ -38,7 +39,7 @@
   --mg_m: 15px;
   --mg_s: 10px;
   --mg_xs: 5px;
-  --font_size_xl: clamp(2.2rem, 5vw, 5rem);
+  --font_size_xl: clamp(2rem, 5vw, 5rem);
   --font_size_l: clamp(1.5rem, 3vw, 1.8rem);
   --font_size_m: clamp(1.1rem, 2vw, 1.3rem);
   --font_size_s: clamp(0.95rem, 1.5vw, 1rem);
@@ -111,11 +112,11 @@ svg {
 }
 
 section {
-  margin: 200px 0px;
+  margin: 100px 0px;
 }
 
 #Hero {
-  height: calc(100vh - var(--nav-height) - 400px);
+  height: calc(100vh - var(--nav-height));
   display: grid;
   place-items: center;
 }

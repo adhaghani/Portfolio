@@ -7,7 +7,7 @@ import LinkedinIcon from "../../assets/LinkedinIcon";
 
 const Footer = () => {
   return (
-    <div className="Footer" id="Footer">
+    <div className="Container Footer" id="Footer">
       <div className="Details">
         <h1 className="Name">Ahmad Adha</h1>
         <p className="role">Software Developer</p>

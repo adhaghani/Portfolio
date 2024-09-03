@@ -10,12 +10,12 @@ import PromoCard from "../../component/PromoCard/PromoCard";
 const Projects = () => {
   return (
     <div className="Projects" id="Projects">
-      <section id="Hero">
+      <div id="Hero">
         <h1 className="Title">
           My Projects,
           <br /> Enjoy :)
         </h1>
-      </section>
+      </div>
       <DesignProjects />
       <PromoCard
         MainText="Want me to work with you?"
