@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import ArrowUp from "../../../assets/Icon/ArrowUp";
 import { motion } from "framer-motion";
+import { ArrowUpIcon } from "../../../assets/Icon/FunctionIcon";
 const InvolvementCard = (props) => {
   const [IsOpened, setIsOpened] = useState(false);
 
@@ -26,7 +26,7 @@ const InvolvementCard = (props) => {
               className={IsOpened ? "Card-Action Active" : "Card-Action"}
               onClick={handleOpen}
             >
-              <ArrowUp />
+              <ArrowUpIcon />
             </button>
           </div>
         </div>

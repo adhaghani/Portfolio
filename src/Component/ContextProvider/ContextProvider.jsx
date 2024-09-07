@@ -1,32 +1,38 @@
-import { createContext, useContext, useState } from "react";
-
+import { createContext, useContext, useEffect, useState } from "react";
+import { saveThemeToLocalStorage } from "../../Function/saveThemeToLocalStorage";
 const StateContext = createContext({
-  currentUser: null,
-  token: null,
-  setUser: () => {},
-  setToken: () => {}
+  isDarkMode: false,
+  setIsDarkMode: () => {}
 });
 
-export const ContextProvider = ({ children }) => {
-  const [user, setUser] = useState({});
-  const [token, _setToken] = useState("123");
+window.matchMedia("(prefers-color-scheme: dark)").matches;
+const determineBroserTheme = () => {
+  if (localStorage.getItem("theme") === null) {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? true
+      : false;
+  } else {
+    return localStorage.getItem("theme") === "true" ? true : false;
+  }
+};
 
-  const setToken = (token) => {
-    _setToken(token);
-    if (token) {
-      localStorage.setItem("ACCESS_TOKEN", token);
+export const ContextProvider = ({ children }) => {
+  const [isDarkMode, setIsDarkMode] = useState(determineBroserTheme());
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add("dark");
     } else {
-      localStorage.removeItem("ACCESS_TOKEN");
+      document.body.classList.remove("dark");
     }
-  };
+    saveThemeToLocalStorage(isDarkMode);
+  }, [isDarkMode]);
 
   return (
     <StateContext.Provider
       value={{
-        user,
-        setUser,
-        token,
-        setToken
+        isDarkMode,
+        setIsDarkMode
       }}
     >
       {children}

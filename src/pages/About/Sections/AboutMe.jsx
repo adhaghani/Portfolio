@@ -14,7 +14,7 @@ const AboutMe = () => {
   return (
     <section id="Me">
       <Title TitleText="About Me" SubText="a little bit about myself." />
-      <div className="section-Container">
+      <div className="Container section-Container">
         <div className="Section-Card">
           {" "}
           <p>I'm Ahmad Adha, a proud Malaysian. nice to meet you.</p>

@@ -1,6 +1,6 @@
 .PromoCard {
   color: var(--text_colour_white);
-  background-color: var(--bg_colour_black);
+  background-color: var(--bg_colour_dkgray);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,7 @@
   border-radius: var(--border_rad10);
 }
 .PromoCard .Text {
+  color: var(--text_colour_white);
   font-size: var(--font_size_l);
   text-align: center;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import UiTM from "../../../assets/Icon/UiTM";
 import Title from "../../../component/Title/Title";
+import { UiTMLogo } from "../../../assets/Icon/LogoIcon";
 const Education = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const Education = () => {
       <div className="Section-Card">
         <div className="Header">
           <div className="Logo">
-            <UiTM />
+            <UiTMLogo />
           </div>
           <div className="Details">
             <h3 className="Name">Universiti Teknologi MARA (UiTM)</h3>

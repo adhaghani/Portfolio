@@ -10,16 +10,11 @@ import EducationExperience from "./Sections/EducationExperience";
 import Involvement from "./Sections/Involvement";
 import Contact from "./Sections/Contact";
 import PromoCard from "../../component/PromoCard/PromoCard";
+import Hero from "../../component/Hero/Hero";
 const About = () => {
   return (
     <div className="About" id="About">
-      <div id="Hero">
-        <h1 className="Title">
-          A little bit about me,
-          <br />
-          If that interest you.
-        </h1>
-      </div>
+      <Hero mainText="A little bit about me," subText="If that interest you." />
       <AboutMe />
       <EducationExperience />
       <PromoCard
@@ -28,7 +23,7 @@ const About = () => {
         Link="/Projects"
         LinkText="View Projects"
         LinkClassName="Button"
-        LinkIcon="Projects"
+        LinkIcon="Code"
       />
       <Involvement />
       <Certificates />

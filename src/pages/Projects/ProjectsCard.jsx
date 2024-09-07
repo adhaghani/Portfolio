@@ -9,7 +9,7 @@ const ProjectsCard = (props) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       whileHover={{
-        scale: 1.03
+        transform: "translateY(-10px)"
       }}
       className="ProjectCard"
     >

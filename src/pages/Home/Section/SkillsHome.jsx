@@ -2,18 +2,21 @@ import React from "react";
 
 import Title from "../../../component/Title/Title";
 
-import CppIcon from "../../../assets/Skills/cppIcon";
-import CssIcon from "../../../assets/Skills/cssIcon";
-import FigmaIcon from "../../../assets/Skills/figmaIcon";
-import GitIcon from "../../../assets/Skills/gitIcon";
-import HtmlIcon from "../../../assets/Skills/html5Icon";
-import JavaIcon from "../../../assets/Skills/javaIcon";
-import JsIcon from "../../../assets/Skills/jsIcon";
-import NpmIcon from "../../../assets/Skills/npmIcon";
-import PhpIcon from "../../../assets/Skills/phpIcon";
-import ReactIcon from "../../../assets/Skills/reactIcon";
-import VscIcon from "../../../assets/Skills/vscIcon";
-import MysqlIcon from "../../../assets/Skills/MysqlIcon";
+import {
+  CppIcon,
+  CssIcon,
+  FigmaIcon,
+  GitIcon,
+  HtmlIcon,
+  JavaIcon,
+  JsIcon,
+  MysqlIcon,
+  NpmIcon,
+  PhpIcon,
+  ReactIcon,
+  VscIcon
+} from "../../../assets/Skills/SkillsIcon";
+import { motion } from "framer-motion";
 
 const SkillsHome = () => {
   const skills = [
@@ -97,11 +100,13 @@ const SkillsHome = () => {
         TitleText="Technology Stack"
         SubText="Technology that i have been exposed with."
       />
-      <div className="section-Container">
+      <div className="Container section-Container">
         <div className="scroller">
           <div className="scroller_inner">
             {skills.map((skill) => (
-              <div className="Section-Card">{skill.icon}</div>
+              <motion.div className="Section-Card" whileHover={{ scale: 1.2 }}>
+                {skill.icon}
+              </motion.div>
             ))}
           </div>
         </div>

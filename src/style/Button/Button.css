@@ -4,12 +4,11 @@
   gap: var(--gap_s);
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: var(--gap_m);
   padding: var(--padding_btn_m);
   background-color: var(--bg_colour_dkgray);
   color: var(--text_colour_white);
-  font-weight: bold;
-  font-size: var(--font_size_s);
+  font-weight: var(--font_bold);
+  font-size: var(--font_size_);
   cursor: pointer;
   border-radius: var(--border_rad10);
 }

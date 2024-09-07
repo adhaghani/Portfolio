@@ -12,7 +12,7 @@ const Involvement = () => {
         TitleText={"Involvement"}
         SubText={"My Involvement, including clubs and volunteers."}
       />
-      <div className="section-Container">
+      <div className="Container section-Container">
         {InvolvementData.map((Data, index) => (
           <InvolvementCard key={index} {...Data} />
         ))}

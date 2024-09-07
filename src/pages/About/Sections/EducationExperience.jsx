@@ -5,7 +5,7 @@ import Experience from "./Experience";
 const EducationExperience = () => {
   return (
     <section id="EducationExperience">
-      <div className="section-Container">
+      <div className="Container section-Container">
         <div className="Group">
           <Education />
         </div>

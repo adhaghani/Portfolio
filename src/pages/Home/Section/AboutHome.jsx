@@ -14,7 +14,7 @@ const AboutHome = () => {
   return (
     <section id="About">
       <Title TitleText="About Me" SubText="a little bit about myself." />
-      <div className="section-Container">
+      <div className="Container section-Container">
         <div className="Section-Card">
           <div className="image">
             <img src={me} alt="" />

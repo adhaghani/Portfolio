@@ -1,4 +1,5 @@
 #Projects section .Filter-Text {
+  color: var(--text_colour_dkgray);
   font-size: var(--font_size_s);
   margin-bottom: var(--mg_m);
 }
@@ -13,6 +14,7 @@
   background-color: var(--bg_colour_absoluteWhite);
   color: var(--text_colour_black);
   font-size: var(--font_size_s);
+  box-shadow: var(--shadow_box);
   cursor: pointer;
 }
 #Projects section .option-Tab .Tab.active {
@@ -50,14 +52,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: var(--gap_l);
-  background-color: #fff;
+  background-color: var(--bg_colour_absoluteWhite);
   border-radius: var(--border_rad10);
+  box-shadow: var(--shadow_box);
 }
 #Projects section .section-Container .ProjectCard .image-Container {
-  aspect-ratio: 16/9;
+  aspect-ratio: 1/1;
   overflow: hidden;
-  padding: var(--padding_s);
 }
 #Projects section .section-Container .ProjectCard .image-Container img {
   width: 100%;
@@ -70,6 +71,7 @@
   height: 100%;
   display: grid;
   place-items: center;
+  color: var(--text_colour_black);
 }
 #Projects section .section-Container .ProjectCard .details-Container {
   display: flex;
@@ -91,28 +93,36 @@
 #Projects section .section-Container .ProjectCard .details-Container .Project__Details .Project-Description {
   margin-top: var(--mg_s);
   font-size: var(--font_size_s);
+  color: var(--text_colour_dkgray);
 }
 #Projects section .section-Container .ProjectCard .Button-Container {
   display: flex;
-  gap: var(--gap_l);
-  padding: var(--padding_l);
+  gap: var(--gap_s);
+  padding: var(--padding_s);
 }
 #Projects section .section-Container .ProjectCard .Button-Container .Button {
   padding: var(--padding_btn_s);
-  background-color: var(--bg_colour_dkgray);
-  color: var(--text_colour_white);
-  font-weight: bold;
-  font-size: var(--font_size_ss);
-  cursor: pointer;
-  border-radius: var(--border_rad10);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Projects section .section-Container .ProjectCard .Button-Container .Button svg {
+  fill: var(--bg_colour_white);
 }
 #Projects section .section-Container .Empty_Pages {
   margin-top: var(--mg_l);
+}
+#Projects section .section-Container .Empty_Pages h1 {
+  color: var(--text_colour_black);
 }
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
   #Projects section .section-Container {
     grid-template-columns: 1fr;
+  }
+  #Projects section .section-Container .ProjectCard .image-Container {
+    aspect-ratio: 16/9;
   }
   #Projects section .option-Tab.Desktop {
     display: none;
@@ -122,9 +132,12 @@
   }
 }
 @media screen and (max-width: 425px) {
+  #Projects section .section-Container .ProjectCard .image-Container {
+    aspect-ratio: 16/9;
+  }
   #Projects section .section-Container .ProjectCard .Button-Container {
     flex-direction: column;
-    margin-top: var(--mg_l);
+    padding-top: 0px;
     gap: var(--gap_s);
   }
   #Projects section .section-Container .ProjectCard .Button-Container .Button {

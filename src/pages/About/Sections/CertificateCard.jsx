@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import LinkTo from "../../../component/Button/LinkTo";
 
-import Link from "../../../assets/Icon/Link";
-import ArrowUp from "../../../assets/Icon/ArrowUp";
 import { motion } from "framer-motion";
+
+import { LinkIcon, ArrowUpIcon } from "../../../assets/Icon/FunctionIcon";
 const CertificateCard = (props) => {
   const [IsOpened, setIsOpened] = useState(false);
 
@@ -21,7 +20,7 @@ const CertificateCard = (props) => {
             {props.Organization}{" "}
             <span>
               <a href={props.CredentialLink} target="_blank">
-                Credentials <Link />
+                Credentials <LinkIcon />
               </a>
             </span>
           </h4>
@@ -31,7 +30,7 @@ const CertificateCard = (props) => {
           className={IsOpened ? "Card-Action Active" : "Card-Action"}
           onClick={handleOpen}
         >
-          <ArrowUp />
+          <ArrowUpIcon />
         </button>
       </div>
       <motion.div

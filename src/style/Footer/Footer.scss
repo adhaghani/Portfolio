@@ -1,11 +1,13 @@
 #Footer {
-  padding: var(--padding_l);
+  padding: 100px var(--padding_l);
   display: flex;
   justify-content: space-between;
   align-items: center;
   .Details {
+    .Name {
+      color: var(--text_colour_black);
+    }
     .role {
-      margin-top: var(--mg_l);
       font-size: var(--font_size_m);
       color: var(--text_colour_dkgray);
     }
@@ -13,6 +15,11 @@
       margin-top: var(--mg_s);
       display: flex;
       gap: var(--gap_m);
+      svg {
+        path {
+          fill: var(--bg_colour_dkgray);
+        }
+      }
     }
   }
   .Actions {
@@ -20,11 +27,17 @@
     gap: var(--gap_l);
     .List {
       h4 {
+        color: var(--text_colour_black);
+        font-weight: var(--font_bold);
         margin-bottom: var(--mg_l);
       }
       ul {
         a {
+          color: var(--text_colour_lgray);
           margin: var(--mg_m) 0px;
+          &:hover {
+            color: var(--text_colour_black);
+          }
         }
       }
     }
@@ -42,8 +55,22 @@
     }
     .Actions {
       justify-content: center;
-
       flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  #Footer {
+    .Actions {
+      text-align: center;
+      .List {
+        ul {
+          .Link {
+            justify-content: center;
+          }
+        }
+      }
     }
   }
 }

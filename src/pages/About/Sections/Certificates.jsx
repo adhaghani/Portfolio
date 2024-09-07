@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Title from "../../../component/Title/Title";
 
 import CertificateCard from "./CertificateCard";
@@ -14,7 +14,7 @@ const Certificates = () => {
         TitleText={"Certificates"}
         SubText={"We must continously learn new things."}
       />
-      <div className="section-Container">
+      <div className="Container section-Container">
         <div className="Group">
           {firstHalf.map((Certificate, index) => (
             <CertificateCard key={index} {...Certificate} />

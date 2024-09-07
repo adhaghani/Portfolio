@@ -2,9 +2,9 @@ import React from "react";
 
 const Title = ({ TitleText, SubText }) => {
   return (
-    <div className="Title-Container">
+    <div className="Container Title-Container">
       <h1 className="Title">{TitleText}</h1>
-      <p className="SubTitle">{SubText}</p>
+      {SubText && <p className="SubTitle">{SubText}</p>}
     </div>
   );
 };

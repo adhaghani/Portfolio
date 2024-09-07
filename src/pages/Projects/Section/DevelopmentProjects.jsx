@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import Title from "../../../component/Title/Title";
 
 import ProjectsCard from "../ProjectsCard";
-import ArrowUp from "../../../assets/Icon/ArrowUp";
+
+import { ArrowUpIcon } from "../../../assets/Icon/FunctionIcon";
 import { delay, motion } from "framer-motion";
 import DevelopmentData from "../../../assets/DevelopmentProject.json";
 const DevelopmentProjects = () => {
@@ -33,7 +34,7 @@ const DevelopmentProjects = () => {
     hidden: { opacity: 0, x: -100 }
   };
   return (
-    <section id="Development">
+    <section className="Container" id="Development">
       <Title
         TitleText="Development Projects"
         SubText="all of my development projects using various languages."
@@ -76,7 +77,7 @@ const DevelopmentProjects = () => {
           <div className="Tab" onClick={() => setOpenSelect(!OpenSelect)}>
             {pagesType[page]}
             <motion.div animate={{ rotate: OpenSelect ? 180 : 0 }}>
-              <ArrowUp />
+              <ArrowUpIcon />
             </motion.div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import ProjectsCard from "../ProjectsCard";
 import DesignData from "../../../assets/DesignProject.json";
 const DesignProjects = () => {
   return (
-    <section id="Design">
+    <section className="Container" id="Design">
       <Title
         TitleText="Design Projects"
         SubText="all of my past design projects."

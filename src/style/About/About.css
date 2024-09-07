@@ -8,7 +8,7 @@
   width: 60%;
   min-width: 300px;
   aspect-ratio: 1/1;
-  background-color: #fff;
+  background-color: var(--bg_colour_absoluteWhite);
   border-radius: 100% 100% 0% 0%;
   overflow: hidden;
 }
@@ -40,7 +40,7 @@
 }
 #About #EducationExperience .section-Container .Section-Card {
   margin: var(--mg_l) 0px;
-  background-color: #fff;
+  background-color: var(--bg_colour_absoluteWhite);
   padding: var(--padding_l);
   border-radius: var(--border_rad10);
 }
@@ -49,6 +49,7 @@
   gap: var(--gap_l);
 }
 #About #EducationExperience .section-Container .Section-Card .Header .Details .Name {
+  font-weight: var(--font_bold);
   font-size: var(--font_size_m);
   color: var(--text_colour_black);
 }
@@ -75,10 +76,11 @@
   color: var(--text_colour_dkgray);
 }
 #About #EducationExperience .section-Container .Section-Card .Body .Detail-Card .List li {
-  padding: 3px 0px;
+  color: var(--text_colour_dkgray);
+  padding: 2px 0px;
 }
 #About #Involvement .section-Container #InvolvementCard .Header {
-  background-color: #fff;
+  background-color: var(--bg_colour_absoluteWhite);
   border-radius: var(--border_rad10);
   padding: var(--padding_l);
 }
@@ -100,12 +102,14 @@
   align-items: center;
 }
 #About #Involvement .section-Container #InvolvementCard .Header .Main .Details .Name-Position .Name {
+  color: var(--text_colour_black);
+  font-weight: var(--font_bold);
   font-size: var(--font_size_m);
 }
 #About #Involvement .section-Container #InvolvementCard .Header .Main .Details .Name-Position .Name .Date {
   font-size: var(--font_size_s);
   color: var(--text_colour_lgray);
-  font-weight: normal;
+  font-weight: var(--font_normal);
 }
 #About #Involvement .section-Container #InvolvementCard .Header .Main .Details .Name-Position .Position {
   margin-top: var(--mg_xs);
@@ -117,17 +121,20 @@
   height: 60px;
 }
 #About #Involvement .section-Container #InvolvementCard .Card-Container .Detail-Container {
+  background-color: var(--bg_colour_absoluteWhite);
   padding: var(--padding_l);
 }
 #About #Involvement .section-Container #InvolvementCard .Card-Container .Detail-Container .Experience-Topic {
+  color: var(--text_colour_black);
   margin-bottom: var(--mg_s);
 }
 #About #Involvement .section-Container #InvolvementCard .Card-Container .Detail-Container .Experience-Detail li {
   margin: var(--mg_xs);
   font-size: var(--font_size_s);
-  color: var(--text_colour_black);
+  color: var(--text_colour_dkgray);
 }
 #About #Involvement .section-Container #InvolvementCard .Card-Container .Detail-Container .Experience-Summary p {
+  color: var(--text_colour_black);
   font-size: var(--font_size_s);
 }
 #About #Certificates .section-Container {
@@ -139,11 +146,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: var(--bg_colour_absoluteWhite);
   padding: var(--padding_m);
   border-radius: var(--border_rad10);
 }
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Name {
+  color: var(--text_colour_black);
+}
 #About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Organization {
+  color: var(--text_colour_dkgray);
   font-weight: normal;
   font-size: var(--font_size_s);
   margin: 3px 0px;
@@ -158,6 +169,9 @@
   font-size: var(--font_size_s);
   color: var(--text_colour_dkgray);
   border-radius: 4px;
+}
+#About #Certificates .section-Container #CertificateCard .Card-Header .Card-Title .Date {
+  color: var(--text_colour_lgray);
 }
 #About #Certificates .section-Container #CertificateCard .Card-Container {
   border-radius: 0px;
@@ -199,58 +213,8 @@
 #About #Contact .section-Container .Section-Card {
   flex: 1 1 0;
 }
-#About #Contact .section-Container .Section-Card form .Input-Card {
-  margin-bottom: calc(1.4 * var(--mg_l));
-}
-#About #Contact .section-Container .Section-Card form .Input-Card input {
-  width: 100%;
-  height: 60px;
-  border-radius: 6px;
-  padding: var(--padding_l);
-  font-size: var(--font_size_s);
-  border: 1px solid var(--bg_colour_lgray);
-  cursor: text;
-}
-#About #Contact .section-Container .Section-Card form .Input-Card input:hover, #About #Contact .section-Container .Section-Card form .Input-Card input:focus {
-  border: 1px solid var(--text_colour_black);
-}
-#About #Contact .section-Container .Section-Card form .Input-Card input.Submit {
-  background-color: var(--bg_colour_dkgray);
-  color: var(--text_colour_white);
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-#About #Contact .section-Container .Section-Card form .Input-Card input.Submit:hover {
-  border: none;
-}
-#About #Contact .section-Container .Section-Card form .Input-Card textarea {
-  cursor: text;
-  width: 100%;
-  height: 200px;
-  padding: var(--padding_l);
-  font-size: var(--font_size_s);
-  border: 1px solid var(--bg_colour_lgray);
-  border-radius: 6px;
-  resize: none;
-}
-#About #Contact .section-Container .Section-Card form .Input-Card textarea:hover, #About #Contact .section-Container .Section-Card form .Input-Card textarea:focus {
-  border: 1px solid var(--text_colour_black);
-}
-#About #Contact .section-Container .Section-Card form .Input-Card label {
-  color: var(--text_colour_dkgray);
-  background-color: var(--bg_colour_white);
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 4px 10px;
-  border-radius: 6px;
-  display: block;
-  position: absolute;
-  transform: translate(12px, -13px);
-  font-size: var(--font_size_s);
-}
 #About #Contact .section-Container .Section-Card .Info-Card {
-  background-color: #fff;
+  background-color: var(--bg_colour_absoluteWhite);
   margin-bottom: var(--mg_l);
   padding: var(--padding_m);
   display: flex;

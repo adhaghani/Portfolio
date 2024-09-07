@@ -1,45 +1,49 @@
-#Home #About .Section-Card {
+#Home #About .section-Container .Section-Card {
   width: 50%;
   margin: var(--mg_l) 0px;
 }
-#Home #About .Section-Card p {
+#Home #About .section-Container .Section-Card p {
   margin: var(--mg_l) 0px;
   font-size: var(--font_size_m);
   color: var(--text_colour_black);
 }
-#Home #About .Section-Card p a {
+#Home #About .section-Container .Section-Card p a {
   color: var(--text_colour_lgray);
   text-decoration: underline;
 }
-#Home #About .Section-Card p a:hover {
+#Home #About .section-Container .Section-Card p a:hover {
   color: var(--text_colour_dkgray);
 }
-#Home #About .Section-Card .image {
+#Home #About .section-Container .Section-Card .image {
   margin: var(--mg_auto);
   width: 60%;
   min-width: 300px;
   aspect-ratio: 1/1;
-  background-color: #fff;
+  background-color: var(--bg_colour_absoluteWhite);
   border-radius: 100% 60% 60% 25%;
   overflow: hidden;
 }
-#Home #About .Section-Card img {
-  transform: translateX(-5%);
-  width: 450px;
+#Home #About .section-Container .Section-Card img {
+  transform: translateX(-4%) translateY(5%);
+  width: 350px;
 }
 #Home #Service .section-Container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 #Home #Service .Section-Card {
-  background-color: #fff;
+  background-color: var(--bg_colour_absoluteWhite);
   padding: var(--padding_l);
   height: 100%;
+  box-shadow: var(--shadow_box);
 }
 #Home #Service .Section-Card .Service-Title {
   margin-bottom: var(--mg_m);
   font-size: var(--font_size_m);
   color: var(--text_colour_black);
+  display: flex;
+  align-items: center;
+  gap: var(--gap_m);
 }
 #Home #Service .Section-Card .service-Details {
   font-size: var(--font_size_s);
@@ -72,14 +76,16 @@
   height: 70px;
   transition: var(--transition_f);
 }
-#Home #Skills .section-Container .scroller .scroller_inner .Section-Card:hover svg {
-  scale: 1.2;
-}
 #Home #Projects .section-Container {
   justify-content: space-between;
 }
 #Home #Projects .section-Container .Section-Card {
   flex: 1 1 0;
+  background-color: var(--bg_colour_absoluteWhite);
+  border-radius: var(--border_rad10);
+}
+#Home #Projects .section-Container .Section-Card .Details {
+  padding: var(--padding_l);
 }
 #Home #Projects .section-Container .Section-Card .image {
   width: 100%;
@@ -88,15 +94,21 @@
   transition: var(--transition_f);
 }
 #Home #Projects .section-Container .Section-Card h3 {
+  color: var(--text_colour_black);
   margin: var(--mg_l) 0px;
   font-size: var(--font_size_m);
 }
 #Home #Projects .section-Container .Section-Card p {
+  margin: var(--mg_l) 0px;
   font-size: var(--font_size_m);
   color: var(--text_colour_dkgray);
 }
-#Home #Projects .section-Container .Section-Card:hover .image {
-  scale: 1.02;
+#Home #Projects .section-Container .Section-Card .Button {
+  width: 100%;
+  justify-content: center;
+}
+#Home #Projects .section-Container .Section-Card .Button svg {
+  fill: var(--bg_colour_white);
 }
 #Home .section-Container {
   display: flex;
@@ -108,15 +120,16 @@
   border-radius: var(--border_rad10);
 }
 
-@media screen and (min-width: 1px) and (max-width: 768px) {
-  #Home #About .Section-Card {
+@media screen and (max-width: 768px) {
+  #Home #About .section-Container .Section-Card {
     width: 100%;
   }
-  #Home #About .Section-Card .image {
-    width: 300px;
+  #Home #About .section-Container .Section-Card .image {
+    min-width: 250px;
+    width: 250px;
   }
-  #Home #About .Section-Card .image img {
-    width: 350px;
+  #Home #About .section-Container .Section-Card .image img {
+    width: 300px;
   }
   #Home #Service .section-Container {
     grid-template-columns: 1fr;

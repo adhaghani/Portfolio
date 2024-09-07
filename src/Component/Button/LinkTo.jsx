@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 
 import "../../style/Button/Button.css";
 
-import Code from "../../assets/Icon/Code";
-import Display from "../../assets/Icon/Display";
-import Email from "../../assets/Icon/Email";
-import Connect from "../../assets/Icon/Connect";
+import {
+  CodeIcon,
+  EmailIcon,
+  ConnectIcon,
+  ViewIcon
+} from "../../assets/Icon/FunctionIcon";
 const LinkTo = (props) => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -28,10 +30,10 @@ const LinkTo = (props) => {
             >
               {props.text}
 
-              {props.icon === "Code" && <Code />}
-              {props.icon === "Display" && <Display />}
-              {props.icon === "Email" && <Email />}
-              {props.icon === "Connect" && <Connect />}
+              {props.icon === "Code" && <CodeIcon />}
+              {props.icon === "Display" && <ViewIcon />}
+              {props.icon === "Email" && <EmailIcon />}
+              {props.icon === "Connect" && <ConnectIcon />}
             </a>
           ) : (
             <a
@@ -41,11 +43,10 @@ const LinkTo = (props) => {
               onClick={props.onclick}
             >
               {props.text}
-
-              {props.icon === "Code" && <Code />}
-              {props.icon === "Display" && <Display />}
-              {props.icon === "Email" && <Email />}
-              {props.icon === "Connect" && <Connect />}
+              {props.icon === "Code" && <CodeIcon />}
+              {props.icon === "Display" && <ViewIcon />}
+              {props.icon === "Email" && <EmailIcon />}
+              {props.icon === "Connect" && <ConnectIcon />}
             </a>
           )}
         </>
@@ -56,6 +57,10 @@ const LinkTo = (props) => {
           onClick={(props.onclick, scrollToTop)}
         >
           {props.text}
+          {props.icon === "Code" && <CodeIcon />}
+          {props.icon === "Display" && <ViewIcon />}
+          {props.icon === "Email" && <EmailIcon />}
+          {props.icon === "Connect" && <ConnectIcon />}
         </Link>
       )}
     </>

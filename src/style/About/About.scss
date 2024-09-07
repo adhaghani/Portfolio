@@ -10,7 +10,7 @@
       width: 60%;
       min-width: 300px;
       aspect-ratio: 1/1;
-      background-color: #fff;
+      background-color: var(--bg_colour_absoluteWhite);
       border-radius: 100% 100% 0% 0%;
       overflow: hidden;
       img {
@@ -43,7 +43,7 @@
       gap: var(--gap_l);
       .Section-Card {
         margin: var(--mg_l) 0px;
-        background-color: #fff;
+        background-color: var(--bg_colour_absoluteWhite);
         padding: var(--padding_l);
         border-radius: var(--border_rad10);
         .Header {
@@ -52,6 +52,7 @@
 
           .Details {
             .Name {
+              font-weight: var(--font_bold);
               font-size: var(--font_size_m);
               color: var(--text_colour_black);
             }
@@ -81,7 +82,8 @@
             }
             .List {
               li {
-                padding: 3px 0px;
+                color: var(--text_colour_dkgray);
+                padding: 2px 0px;
               }
             }
           }
@@ -93,7 +95,7 @@
     .section-Container {
       #InvolvementCard {
         .Header {
-          background-color: #fff;
+          background-color: var(--bg_colour_absoluteWhite);
           border-radius: var(--border_rad10);
           padding: var(--padding_l);
           .Main {
@@ -112,11 +114,13 @@
               align-items: center;
               .Name-Position {
                 .Name {
+                  color: var(--text_colour_black);
+                  font-weight: var(--font_bold);
                   font-size: var(--font_size_m);
                   .Date {
                     font-size: var(--font_size_s);
                     color: var(--text_colour_lgray);
-                    font-weight: normal;
+                    font-weight: var(--font_normal);
                   }
                 }
                 .Position {
@@ -134,19 +138,22 @@
         }
         .Card-Container {
           .Detail-Container {
+            background-color: var(--bg_colour_absoluteWhite);
             padding: var(--padding_l);
             .Experience-Topic {
+              color: var(--text_colour_black);
               margin-bottom: var(--mg_s);
             }
             .Experience-Detail {
               li {
                 margin: var(--mg_xs);
                 font-size: var(--font_size_s);
-                color: var(--text_colour_black);
+                color: var(--text_colour_dkgray);
               }
             }
             .Experience-Summary {
               p {
+                color: var(--text_colour_black);
                 font-size: var(--font_size_s);
               }
             }
@@ -165,11 +172,15 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          background-color: #fff;
+          background-color: var(--bg_colour_absoluteWhite);
           padding: var(--padding_m);
           border-radius: var(--border_rad10);
           .Card-Title {
+            .Name {
+              color: var(--text_colour_black);
+            }
             .Organization {
+              color: var(--text_colour_dkgray);
               font-weight: normal;
               font-size: var(--font_size_s);
               margin: 3px 0px;
@@ -184,6 +195,9 @@
                 color: var(--text_colour_dkgray);
                 border-radius: 4px;
               }
+            }
+            .Date {
+              color: var(--text_colour_lgray);
             }
           }
         }
@@ -230,62 +244,9 @@
       gap: var(--gap_l);
       .Section-Card {
         flex: 1 1 0;
-        form {
-          .Input-Card {
-            margin-bottom: calc(1.4 * var(--mg_l));
 
-            input {
-              width: 100%;
-              height: 60px;
-              border-radius: 6px;
-              padding: var(--padding_l);
-              font-size: var(--font_size_s);
-              border: 1px solid var(--bg_colour_lgray);
-              cursor: text;
-              &:hover,
-              &:focus {
-                border: 1px solid var(--text_colour_black);
-              }
-              &.Submit {
-                background-color: var(--bg_colour_dkgray);
-                color: var(--text_colour_white);
-                font-weight: bold;
-                border: none;
-                &:hover {
-                  border: none;
-                }
-                cursor: pointer;
-              }
-            }
-            textarea {
-              cursor: text;
-              width: 100%;
-              height: 200px;
-              padding: var(--padding_l);
-              font-size: var(--font_size_s);
-              border: 1px solid var(--bg_colour_lgray);
-              border-radius: 6px;
-              resize: none;
-              &:hover,
-              &:focus {
-                border: 1px solid var(--text_colour_black);
-              }
-            }
-            label {
-              color: var(--text_colour_dkgray);
-              background-color: var(--bg_colour_white);
-              width: fit-content;
-              padding: 4px 10px;
-              border-radius: 6px;
-              display: block;
-              position: absolute;
-              transform: translate(12px, -13px);
-              font-size: var(--font_size_s);
-            }
-          }
-        }
         .Info-Card {
-          background-color: #fff;
+          background-color: var(--bg_colour_absoluteWhite);
           margin-bottom: var(--mg_l);
           padding: var(--padding_m);
           display: flex;

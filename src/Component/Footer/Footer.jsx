@@ -1,30 +1,35 @@
 import React from "react";
 import "../../style/Footer/Footer.css";
 import LinkTo from "../Button/LinkTo";
-import GithubIcon from "../../assets/GithubIcon";
-import InstagramIcon from "../../assets/InstagramIcon";
-import LinkedinIcon from "../../assets/LinkedinIcon";
+
+import {
+  InstagramLogo,
+  LinkedinLogo,
+  GithubLogo
+} from "../../assets/Icon/LogoIcon";
+
+import Logo from "/icon.svg";
 
 const Footer = () => {
   return (
     <div className="Container Footer" id="Footer">
       <div className="Details">
         <h1 className="Name">Ahmad Adha</h1>
-        <p className="role">Software Developer</p>
+        <p className="role">Computer Science Student</p>
         <ul className="socials">
           <li>
             <a href="https://github.com/adhaghani" target="_blank">
-              <GithubIcon />
+              <GithubLogo />
             </a>
           </li>
           <li>
             <a href="https://linkedin.com/in/adhaghani/" target="_blank">
-              <LinkedinIcon />
+              <LinkedinLogo />
             </a>
           </li>
           <li>
             <a href="https://instagram.com/adhaghani" target="_blank">
-              <InstagramIcon />
+              <InstagramLogo />
             </a>
           </li>
         </ul>

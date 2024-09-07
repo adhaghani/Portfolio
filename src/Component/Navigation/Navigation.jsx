@@ -2,11 +2,18 @@ import React, { useEffect, useState } from "react";
 import "../../style/Navigation/Navigation.css";
 import { Link } from "react-router-dom";
 
-import Logo from "/icon.svg";
 import LinkTo from "../Button/LinkTo";
-
+import { motion } from "framer-motion";
+import { useStateContext } from "../ContextProvider/ContextProvider";
+import { DarkModeIcon, LightModeIcon } from "../../assets/Icon/FunctionIcon";
 const Navigation = () => {
   const [Sidebar, setSidebar] = useState(false);
+
+  const { isDarkMode, setIsDarkMode } = useStateContext();
+
+  const handleThemeChange = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -34,11 +41,7 @@ const Navigation = () => {
   return (
     <nav>
       <div className="Nav-Container">
-        <div className="Logo_Container">
-          <img src={Logo} alt="" className="logo" />
-        </div>
-
-        <ul className="List">
+        <ul className="List Desktop">
           <li>
             <Link to="/" onClick={scrollToTop}>
               Home
@@ -54,15 +57,10 @@ const Navigation = () => {
               Projects
             </Link>
           </li>
-          <li>
-            <LinkTo
-              goOutside
-              Link="/Resume.pdf"
-              text="My Resume"
-              className="Link"
-            />
-          </li>
         </ul>
+        <button className="DarkMode" onClick={handleThemeChange}>
+          {isDarkMode ? <LightModeIcon /> : <DarkModeIcon />}
+        </button>
         <button
           className={Sidebar ? "Hamburger Active" : "Hamburger"}
           id="Hamburger"
@@ -74,7 +72,12 @@ const Navigation = () => {
         </button>
       </div>
 
-      <div className={Sidebar ? "SideNav Active" : "SideNav"}>
+      <motion.div
+        className={Sidebar ? "SideNav Active" : "SideNav"}
+        initial={{ x: "-100%", opacity: 0 }}
+        animate={Sidebar ? { x: 0, opacity: 1 } : { x: "100%" }}
+        transition={{ duration: 0.25 }}
+      >
         <ul className="List">
           <li>
             <Link to="/" onClick={handleNavLinkClick}>
@@ -91,16 +94,8 @@ const Navigation = () => {
               Projects
             </Link>
           </li>
-          <li>
-            <LinkTo
-              goOutside
-              Link="/Resume.pdf"
-              text="My Resume"
-              className="Link"
-            />
-          </li>
         </ul>
-      </div>
+      </motion.div>
     </nav>
   );
 };

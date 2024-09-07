@@ -1,6 +1,7 @@
 #Projects {
   section {
     .Filter-Text {
+      color: var(--text_colour_dkgray);
       font-size: var(--font_size_s);
       margin-bottom: var(--mg_m);
     }
@@ -14,6 +15,7 @@
         background-color: var(--bg_colour_absoluteWhite);
         color: var(--text_colour_black);
         font-size: var(--font_size_s);
+        box-shadow: var(--shadow_box);
         cursor: pointer;
         &.active {
           background-color: var(--bg_colour_dkgray);
@@ -55,13 +57,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: var(--gap_l);
-        background-color: #fff;
+        background-color: var(--bg_colour_absoluteWhite);
         border-radius: var(--border_rad10);
+        box-shadow: var(--shadow_box);
         .image-Container {
-          aspect-ratio: 16/9;
+          aspect-ratio: 1/1;
           overflow: hidden;
-          padding: var(--padding_s);
           img {
             width: 100%;
             height: 100%;
@@ -72,6 +73,7 @@
             height: 100%;
             display: grid;
             place-items: center;
+            color: var(--text_colour_black);
           }
         }
         .details-Container {
@@ -94,26 +96,31 @@
             .Project-Description {
               margin-top: var(--mg_s);
               font-size: var(--font_size_s);
+              color: var(--text_colour_dkgray);
             }
           }
         }
         .Button-Container {
           display: flex;
-          gap: var(--gap_l);
-          padding: var(--padding_l);
+          gap: var(--gap_s);
+          padding: var(--padding_s);
           .Button {
             padding: var(--padding_btn_s);
-            background-color: var(--bg_colour_dkgray);
-            color: var(--text_colour_white);
-            font-weight: bold;
-            font-size: var(--font_size_ss);
-            cursor: pointer;
-            border-radius: var(--border_rad10);
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+              fill: var(--bg_colour_white);
+            }
           }
         }
       }
       .Empty_Pages {
         margin-top: var(--mg_l);
+        h1 {
+          color: var(--text_colour_black);
+        }
       }
     }
   }
@@ -124,6 +131,11 @@
     section {
       .section-Container {
         grid-template-columns: 1fr;
+        .ProjectCard {
+          .image-Container {
+            aspect-ratio: 16/9;
+          }
+        }
       }
 
       .option-Tab {
@@ -143,9 +155,12 @@
     section {
       .section-Container {
         .ProjectCard {
+          .image-Container {
+            aspect-ratio: 16/9;
+          }
           .Button-Container {
             flex-direction: column;
-            margin-top: var(--mg_l);
+            padding-top: 0px;
             gap: var(--gap_s);
             .Button {
               width: 100%;

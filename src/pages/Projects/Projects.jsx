@@ -1,21 +1,15 @@
 import React from "react";
-import Title from "../../component/Title/Title";
 
 import DesignProjects from "./Section/DesignProjects";
 import DevelopmentProjects from "./Section/DevelopmentProjects";
 
 import "../../style/Projects/Projects.css";
 import PromoCard from "../../component/PromoCard/PromoCard";
-
+import Hero from "../../component/Hero/Hero";
 const Projects = () => {
   return (
     <div className="Projects" id="Projects">
-      <div id="Hero">
-        <h1 className="Title">
-          My Projects,
-          <br /> Enjoy :)
-        </h1>
-      </div>
+      <Hero mainText="Some of my projects," subText="Enjoy :)" />
       <DesignProjects />
       <PromoCard
         MainText="Want me to work with you?"

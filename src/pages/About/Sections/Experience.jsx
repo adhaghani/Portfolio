@@ -1,7 +1,7 @@
 import React from "react";
 
-import DiY from "../../../assets/Icon/DiY";
 import Title from "../../../component/Title/Title";
+import { MRDIYLogo } from "../../../assets/Icon/LogoIcon";
 const Experience = () => {
   return (
     <>
@@ -28,7 +28,7 @@ const Experience = () => {
       <div className="Section-Card">
         <div className="Header">
           <div className="Logo">
-            <DiY />
+            <MRDIYLogo />
           </div>
           <div className="Details">
             <h3 className="Name">MR.DIY</h3>
